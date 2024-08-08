@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let layoutType = "grid";
     let showSolutionPath = false;
     
+    var audio_cd = false; // audio cooldown to prevent speaker damage
+    const audio_cooldown = 80;
+    
     const notes = [
         new Audio('audio/A.ogg'),
         new Audio('audio/B.ogg'),
@@ -395,8 +398,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
     
     function playNoteForNode(nodeId) {
+        if (audio_cd) return;
+        audio_cd = true;
+        setTimeout(() => {
+          audio_cd = false;
+        },audio_cooldown);
         const noteIndex = parseInt(nodeId, 10) % notes.length; // Map nodeId to note index
-      
+        notes[noteIndex].pause(); // Pause the note
+        notes[noteIndex].currentTime = 0; // Reset playback position
         notes[noteIndex].play(); // Play the corresponding note
         lastnode = nodeId; // Update lastNodeId
     }
