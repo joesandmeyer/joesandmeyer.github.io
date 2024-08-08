@@ -399,6 +399,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     function playNoteForNode(nodeId) {
         if (audio_cd) return;
+        if (!elementStates[nodes[nodeId].element]) return;
         audio_cd = true;
         setTimeout(() => {
           audio_cd = false;
