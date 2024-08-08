@@ -301,12 +301,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const angleStep = 0.1; // Determines the tightness of the spiral
             const radiusStep = maxRadius / numNodes; // Determines the spacing of the spiral
 
-            Object.keys(nodes).forEach((key, index) => {
-                const angle = angleStep * index;
-                const radius = radiusStep * index;
+            var i = 511;
+            Object.keys(nodes).forEach((key) => {
+                if (key > 99) return;
+                const angle = angleStep * i;
+                const radius = radiusStep * i;
                 const x = centerX + radius * Math.cos(angle);
                 const y = centerY + radius * Math.sin(angle);
                 positions[key] = { x, y };
+                i--;
+                console.log(key)
+            });
+            Object.keys(nodes).forEach((key) => {
+                if (key < 100) return;
+                const angle = angleStep * i;
+                const radius = radiusStep * i;
+                const x = centerX + radius * Math.cos(angle);
+                const y = centerY + radius * Math.sin(angle);
+                positions[key] = { x, y };
+                i--;
             });
         } else if (layoutType == "hexagram") {
             const numNodes = Object.keys(nodes).length;
