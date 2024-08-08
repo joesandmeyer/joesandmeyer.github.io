@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let showSolutionPath = false;
     
     var audio_cd = false; // audio cooldown to prevent speaker damage
-    const audio_cooldown = 80;
+    const audio_cooldown = 90;
     
     const notes = [
         new Audio('audio/A.ogg'),
