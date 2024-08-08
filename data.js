@@ -1,1719 +1,4 @@
-const cmData = {
-  "000": {
-    "element": "emptiness",
-    "season": "spring",
-    "form": "eternal moment",
-    "house": "darkness",
-    "access": "public",
-    "throne": "diamond",
-    "parity": "night",
-    "position": "16",
-    "rank": "terminus",
-    "level": "",
-    "doors": []
-  },
-  "001": {
-    "element": "earth",
-    "season": "winter",
-    "form": "distant star",
-    "house": "rumor",
-    "access": "public",
-    "throne": "lion",
-    "parity": "day",
-    "position": "12",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      160
-    ]
-  },
-  "002": {
-    "element": "metal",
-    "season": "summer",
-    "form": "distant star",
-    "house": "innocence",
-    "access": "private",
-    "throne": "coral",
-    "parity": "night",
-    "position": "1",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      336
-    ]
-  },
-  "003": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "lamentation",
-    "access": "private",
-    "throne": "peacock",
-    "parity": "day",
-    "position": "5",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      337,
-      162
-    ]
-  },
-  "004": {
-    "element": "earth",
-    "season": "winter",
-    "form": "distant star",
-    "house": "laughter",
-    "access": "public",
-    "throne": "peacock",
-    "parity": "day",
-    "position": "13",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      136
-    ]
-  },
-  "005": {
-    "element": "earth",
-    "season": "spring",
-    "form": "ravens",
-    "house": "whispers",
-    "access": "public",
-    "throne": "coral",
-    "parity": "night",
-    "position": "6",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      137,
-      164
-    ]
-  },
-  "006": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "judgement",
-    "access": "private",
-    "throne": "lion",
-    "parity": "day",
-    "position": "4",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      340,
-      138
-    ]
-  },
-  "007": {
-    "element": "wood",
-    "season": "summer",
-    "form": "facing the ravens",
-    "house": "desire",
-    "access": "private",
-    "throne": "diamond",
-    "parity": "night",
-    "position": "11",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      341,
-      139,
-      166
-    ]
-  },
-  "008": {
-    "element": "metal",
-    "season": "summer",
-    "form": "distant star",
-    "house": "rain",
-    "access": "private",
-    "throne": "lapis",
-    "parity": "night",
-    "position": "1",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      276
-    ]
-  },
-  "009": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "words",
-    "access": "private",
-    "throne": "carnelian",
-    "parity": "day",
-    "position": "5",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      277,
-      168
-    ]
-  },
-  "010": {
-    "element": "wood",
-    "season": "spring",
-    "form": "ravens",
-    "house": "sand",
-    "access": "public",
-    "throne": "iron",
-    "parity": "night",
-    "position": "16",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      278,
-      344
-    ]
-  },
-  "011": {
-    "element": "water",
-    "season": "winter",
-    "form": "facing the ravens",
-    "house": "dreams",
-    "access": "public",
-    "throne": "emerald",
-    "parity": "day",
-    "position": "12",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      279,
-      345,
-      170
-    ]
-  },
-  "012": {
-    "element": "earth",
-    "season": "fall",
-    "form": "cranes",
-    "house": "time",
-    "access": "private",
-    "throne": "emerald",
-    "parity": "day",
-    "position": "4",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      272,
-      128
-    ]
-  },
-  "013": {
-    "element": "wood",
-    "season": "summer",
-    "form": "chasing cranes left",
-    "house": "birds",
-    "access": "private",
-    "throne": "iron",
-    "parity": "night",
-    "position": "11",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      273,
-      129,
-      172
-    ]
-  },
-  "014": {
-    "element": "wood",
-    "season": "winter",
-    "form": "chasing cranes right",
-    "house": "bones",
-    "access": "public",
-    "throne": "carnelian",
-    "parity": "day",
-    "position": "13",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      274,
-      348,
-      130
-    ]
-  },
-  "015": {
-    "element": "water",
-    "season": "spring",
-    "form": "clouds",
-    "house": "numbers",
-    "access": "public",
-    "throne": "lapis",
-    "parity": "night",
-    "position": "6",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      275,
-      349,
-      131,
-      174
-    ]
-  },
-  "016": {
-    "element": "earth",
-    "season": "spring",
-    "form": "eternal moment",
-    "house": "darkness",
-    "access": "private",
-    "throne": "crystal",
-    "parity": "day",
-    "position": "1",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      325
-    ]
-  },
-  "017": {
-    "element": "earth",
-    "season": "winter",
-    "form": "distant star",
-    "house": "rumor",
-    "access": "private",
-    "throne": "falcon",
-    "parity": "night",
-    "position": "5",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      324,
-      176
-    ]
-  },
-  "018": {
-    "element": "earth",
-    "season": "summer",
-    "form": "distant star",
-    "house": "innocence",
-    "access": "public",
-    "throne": "ivory",
-    "parity": "day",
-    "position": "16",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      320,
-      327
-    ]
-  },
-  "019": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "lamentation",
-    "access": "public",
-    "throne": "dragon",
-    "parity": "day",
-    "position": "12",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      321,
-      326,
-      178
-    ]
-  },
-  "020": {
-    "element": "earth",
-    "season": "winter",
-    "form": "distant star",
-    "house": "laughter",
-    "access": "private",
-    "throne": "dragon",
-    "parity": "night",
-    "position": "4",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      152,
-      321
-    ]
-  },
-  "021": {
-    "element": "earth",
-    "season": "spring",
-    "form": "ravens",
-    "house": "whispers",
-    "access": "private",
-    "throne": "ivory",
-    "parity": "day",
-    "position": "11",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      153,
-      320,
-      180
-    ]
-  },
-  "022": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "judgement",
-    "access": "public",
-    "throne": "falcon",
-    "parity": "day",
-    "position": "13",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      324,
-      154,
-      323
-    ]
-  },
-  "023": {
-    "element": "wood",
-    "season": "summer",
-    "form": "facing the ravens",
-    "house": "desire",
-    "access": "public",
-    "throne": "crystal",
-    "parity": "day",
-    "position": "6",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      325,
-      155,
-      322,
-      182
-    ]
-  },
-  "024": {
-    "element": "earth",
-    "season": "summer",
-    "form": "distant star",
-    "house": "rain",
-    "access": "public",
-    "throne": "saphire",
-    "parity": "day",
-    "position": "16",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      260,
-      333
-    ]
-  },
-  "025": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "words",
-    "access": "public",
-    "throne": "amber",
-    "parity": "day",
-    "position": "12",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      261,
-      332,
-      184
-    ]
-  },
-  "026": {
-    "element": "wood",
-    "season": "spring",
-    "form": "ravens",
-    "house": "sand",
-    "access": "private",
-    "throne": "onyx",
-    "parity": "day",
-    "position": "1",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      262,
-      328,
-      335
-    ]
-  },
-  "027": {
-    "element": "water",
-    "season": "winter",
-    "form": "facing the ravens",
-    "house": "dreams",
-    "access": "private",
-    "throne": "jade",
-    "parity": "night",
-    "position": "5",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      263,
-      329,
-      334,
-      186
-    ]
-  },
-  "028": {
-    "element": "earth",
-    "season": "fall",
-    "form": "cranes",
-    "house": "time",
-    "access": "public",
-    "throne": "jade",
-    "parity": "night",
-    "position": "13",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      256,
-      144,
-      329
-    ]
-  },
-  "029": {
-    "element": "wood",
-    "season": "summer",
-    "form": "chasing cranes left",
-    "house": "birds",
-    "access": "public",
-    "throne": "onyx",
-    "parity": "day",
-    "position": "6",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      257,
-      145,
-      328,
-      188
-    ]
-  },
-  "030": {
-    "element": "wood",
-    "season": "winter",
-    "form": "chasing cranes right",
-    "house": "bones",
-    "access": "private",
-    "throne": "amber",
-    "parity": "night",
-    "position": "4",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      258,
-      332,
-      146,
-      331
-    ]
-  },
-  "031": {
-    "element": "water",
-    "season": "spring",
-    "form": "clouds",
-    "house": "numbers",
-    "access": "private",
-    "throne": "saphire",
-    "parity": "day",
-    "position": "11",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      259,
-      333,
-      147,
-      330,
-      190
-    ]
-  },
-  "032": {
-    "element": "metal",
-    "season": "summer",
-    "form": "distant star",
-    "house": "birds",
-    "access": "private",
-    "throne": "saphire",
-    "parity": "night",
-    "position": "1",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      81
-    ]
-  },
-  "033": {
-    "element": "earth",
-    "season": "fall",
-    "form": "cranes",
-    "house": "time",
-    "access": "private",
-    "throne": "amber",
-    "parity": "day",
-    "position": "5",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      128,
-      80
-    ]
-  },
-  "034": {
-    "element": "wood",
-    "season": "spring",
-    "form": "ravens",
-    "house": "numbers",
-    "access": "public",
-    "throne": "onyx",
-    "parity": "night",
-    "position": "16",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      368,
-      83
-    ]
-  },
-  "035": {
-    "element": "wood",
-    "season": "winter",
-    "form": "chasing cranes left",
-    "house": "bones",
-    "access": "public",
-    "throne": "jade",
-    "parity": "day",
-    "position": "12",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      369,
-      130,
-      82
-    ]
-  },
-  "036": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "words",
-    "access": "private",
-    "throne": "jade",
-    "parity": "day",
-    "position": "4",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      168,
-      85
-    ]
-  },
-  "037": {
-    "element": "wood",
-    "season": "summer",
-    "form": "chasing cranes right",
-    "house": "rain",
-    "access": "private",
-    "throne": "onyx",
-    "parity": "night",
-    "position": "11",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      169,
-      132,
-      84
-    ]
-  },
-  "038": {
-    "element": "water",
-    "season": "winter",
-    "form": "facing the ravens",
-    "house": "dreams",
-    "access": "public",
-    "throne": "amber",
-    "parity": "day",
-    "position": "13",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      372,
-      170,
-      87
-    ]
-  },
-  "039": {
-    "element": "water",
-    "season": "spring",
-    "form": "clouds",
-    "house": "sand",
-    "access": "public",
-    "throne": "saphire",
-    "parity": "night",
-    "position": "6",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      373,
-      171,
-      134,
-      86
-    ]
-  },
-  "040": {
-    "element": "wood",
-    "season": "spring",
-    "form": "cranes flying",
-    "house": "whispers",
-    "access": "public",
-    "throne": "crystal",
-    "parity": "night",
-    "position": "16",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      308,
-      89
-    ]
-  },
-  "041": {
-    "element": "wood",
-    "season": "winter",
-    "form": "dancing dog left",
-    "house": "laughter",
-    "access": "public",
-    "throne": "falcon",
-    "parity": "day",
-    "position": "12",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      309,
-      136,
-      88
-    ]
-  },
-  "042": {
-    "element": "water",
-    "season": "summer",
-    "form": "hidden dragon",
-    "house": "desire",
-    "access": "private",
-    "throne": "ivory",
-    "parity": "night",
-    "position": "1",
-    "rank": "dais",
-    "level": "",
-    "doors": [
-      310,
-      376,
-      91
-    ]
-  },
-  "043": {
-    "element": "water",
-    "season": "fall",
-    "form": "cranes and ravens",
-    "house": "judgement",
-    "access": "private",
-    "throne": "dragon",
-    "parity": "day",
-    "position": "5",
-    "rank": "dais",
-    "level": "",
-    "doors": [
-      311,
-      377,
-      138,
-      90
-    ]
-  },
-  "044": {
-    "element": "wood",
-    "season": "winter",
-    "form": "dancing dog right",
-    "house": "rumor",
-    "access": "public",
-    "throne": "dragon",
-    "parity": "day",
-    "position": "13",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      304,
-      160,
-      93
-    ]
-  },
-  "045": {
-    "element": "wood",
-    "season": "spring",
-    "form": "facing the lion",
-    "house": "darkness",
-    "access": "public",
-    "throne": "ivory",
-    "parity": "night",
-    "position": "6",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      305,
-      161,
-      140,
-      92
-    ]
-  },
-  "046": {
-    "element": "water",
-    "season": "fall",
-    "form": "cranes and ravens",
-    "house": "lamentation",
-    "access": "private",
-    "throne": "falcon",
-    "parity": "day",
-    "position": "4",
-    "rank": "dais",
-    "level": "",
-    "doors": [
-      306,
-      380,
-      162,
-      95
-    ]
-  },
-  "047": {
-    "element": "water",
-    "season": "summer",
-    "form": "facing the ravens",
-    "house": "innocence",
-    "access": "private",
-    "throne": "crystal",
-    "parity": "night",
-    "position": "11",
-    "rank": "dais",
-    "level": "",
-    "doors": [
-      307,
-      381,
-      163,
-      142,
-      94
-    ]
-  },
-  "048": {
-    "element": "earth",
-    "season": "summer",
-    "form": "distant star",
-    "house": "birds",
-    "access": "public",
-    "throne": "lapis",
-    "parity": "day",
-    "position": "16",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      357,
-      65
-    ]
-  },
-  "049": {
-    "element": "earth",
-    "season": "fall",
-    "form": "cranes",
-    "house": "time",
-    "access": "public",
-    "throne": "carnelian",
-    "parity": "night",
-    "position": "12",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      356,
-      144,
-      64
-    ]
-  },
-  "050": {
-    "element": "wood",
-    "season": "spring",
-    "form": "ravens",
-    "house": "numbers",
-    "access": "private",
-    "throne": "iron",
-    "parity": "day",
-    "position": "1",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      352,
-      359,
-      67
-    ]
-  },
-  "051": {
-    "element": "wood",
-    "season": "winter",
-    "form": "chasing cranes left",
-    "house": "bones",
-    "access": "private",
-    "throne": "emerald",
-    "parity": "night",
-    "position": "5",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      353,
-      358,
-      146,
-      66
-    ]
-  },
-  "052": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "words",
-    "access": "public",
-    "throne": "emerald",
-    "parity": "day",
-    "position": "13",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      184,
-      353,
-      69
-    ]
-  },
-  "053": {
-    "element": "wood",
-    "season": "summer",
-    "form": "chasing cranes right",
-    "house": "rain",
-    "access": "public",
-    "throne": "iron",
-    "parity": "day",
-    "position": "6",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      185,
-      352,
-      148,
-      68
-    ]
-  },
-  "054": {
-    "element": "water",
-    "season": "winter",
-    "form": "facing the ravens",
-    "house": "dreams",
-    "access": "private",
-    "throne": "carnelian",
-    "parity": "night",
-    "position": "4",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      356,
-      186,
-      355,
-      71
-    ]
-  },
-  "055": {
-    "element": "water",
-    "season": "spring",
-    "form": "clouds",
-    "house": "sand",
-    "access": "private",
-    "throne": "lapis",
-    "parity": "day",
-    "position": "11",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      357,
-      187,
-      354,
-      150,
-      70
-    ]
-  },
-  "056": {
-    "element": "wood",
-    "season": "spring",
-    "form": "cranes flying",
-    "house": "whispers",
-    "access": "private",
-    "throne": "diamond",
-    "parity": "day",
-    "position": "1",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      292,
-      365,
-      73
-    ]
-  },
-  "057": {
-    "element": "wood",
-    "season": "winter",
-    "form": "dancing dog left",
-    "house": "laughter",
-    "access": "private",
-    "throne": "lion",
-    "parity": "night",
-    "position": "5",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      293,
-      364,
-      152,
-      72
-    ]
-  },
-  "058": {
-    "element": "water",
-    "season": "summer",
-    "form": "hidden dragon",
-    "house": "desire",
-    "access": "public",
-    "throne": "coral",
-    "parity": "day",
-    "position": "16",
-    "rank": "dais",
-    "level": "",
-    "doors": [
-      294,
-      360,
-      367,
-      75
-    ]
-  },
-  "059": {
-    "element": "water",
-    "season": "fall",
-    "form": "cranes and ravens",
-    "house": "judgement",
-    "access": "public",
-    "throne": "peacock",
-    "parity": "night",
-    "position": "12",
-    "rank": "dais",
-    "level": "",
-    "doors": [
-      295,
-      361,
-      366,
-      154,
-      74
-    ]
-  },
-  "060": {
-    "element": "wood",
-    "season": "winter",
-    "form": "dancing dog right",
-    "house": "rumor",
-    "access": "private",
-    "throne": "peacock",
-    "parity": "night",
-    "position": "4",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      288,
-      176,
-      361,
-      77
-    ]
-  },
-  "061": {
-    "element": "wood",
-    "season": "spring",
-    "form": "facing the lion",
-    "house": "darkness",
-    "access": "private",
-    "throne": "coral",
-    "parity": "day",
-    "position": "11",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      289,
-      177,
-      360,
-      156,
-      76
-    ]
-  },
-  "062": {
-    "element": "water",
-    "season": "fall",
-    "form": "cranes and ravens",
-    "house": "lamentation",
-    "access": "public",
-    "throne": "lion",
-    "parity": "night",
-    "position": "13",
-    "rank": "dais",
-    "level": "",
-    "doors": [
-      290,
-      364,
-      178,
-      363,
-      79
-    ]
-  },
-  "063": {
-    "element": "water",
-    "season": "summer",
-    "form": "facing the ravens",
-    "house": "innocence",
-    "access": "public",
-    "throne": "diamond",
-    "parity": "day",
-    "position": "6",
-    "rank": "dais",
-    "level": "",
-    "doors": [
-      291,
-      365,
-      179,
-      362,
-      158,
-      78
-    ]
-  },
-  "064": {
-    "element": "earth",
-    "season": "winter",
-    "form": "distant star",
-    "house": "numbers",
-    "access": "public",
-    "throne": "carnelian",
-    "parity": "day",
-    "position": "14",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      34
-    ]
-  },
-  "065": {
-    "element": "earth",
-    "season": "spring",
-    "form": "ravens",
-    "house": "bones",
-    "access": "public",
-    "throne": "lapis",
-    "parity": "night",
-    "position": "7",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      35,
-      224
-    ]
-  },
-  "066": {
-    "element": "earth",
-    "season": "fall",
-    "form": "cranes",
-    "house": "birds",
-    "access": "private",
-    "throne": "emerald",
-    "parity": "day",
-    "position": "3",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      272,
-      32
-    ]
-  },
-  "067": {
-    "element": "wood",
-    "season": "summer",
-    "form": "chasing cranes right",
-    "house": "time",
-    "access": "private",
-    "throne": "iron",
-    "parity": "night",
-    "position": "10",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      273,
-      33,
-      226
-    ]
-  },
-  "068": {
-    "element": "wood",
-    "season": "spring",
-    "form": "cranes flying",
-    "house": "dreams",
-    "access": "public",
-    "throne": "iron",
-    "parity": "night",
-    "position": "8",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      200,
-      38
-    ]
-  },
-  "069": {
-    "element": "wood",
-    "season": "winter",
-    "form": "hidden dragon",
-    "house": "sand",
-    "access": "public",
-    "throne": "emerald",
-    "parity": "day",
-    "position": "2",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      201,
-      39,
-      228
-    ]
-  },
-  "070": {
-    "element": "wood",
-    "season": "summer",
-    "form": "dancing dog right",
-    "house": "words",
-    "access": "private",
-    "throne": "lapis",
-    "parity": "night",
-    "position": "9",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      276,
-      202,
-      36
-    ]
-  },
-  "071": {
-    "element": "wood",
-    "season": "fall",
-    "form": "cranes and ravens",
-    "house": "rain",
-    "access": "private",
-    "throne": "carnelian",
-    "parity": "day",
-    "position": "15",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      277,
-      203,
-      37,
-      230
-    ]
-  },
-  "072": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "desire",
-    "access": "private",
-    "throne": "lion",
-    "parity": "day",
-    "position": "3",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      340,
-      42
-    ]
-  },
-  "073": {
-    "element": "wood",
-    "season": "summer",
-    "form": "facing the ravens",
-    "house": "judgement",
-    "access": "private",
-    "throne": "diamond",
-    "parity": "night",
-    "position": "10",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      341,
-      43,
-      232
-    ]
-  },
-  "074": {
-    "element": "wood",
-    "season": "winter",
-    "form": "chasing cranes left",
-    "house": "whispers",
-    "access": "public",
-    "throne": "peacock",
-    "parity": "day",
-    "position": "14",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      342,
-      280,
-      40
-    ]
-  },
-  "075": {
-    "element": "water",
-    "season": "spring",
-    "form": "clouds",
-    "house": "laughter",
-    "access": "public",
-    "throne": "coral",
-    "parity": "night",
-    "position": "7",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      343,
-      281,
-      41,
-      234
-    ]
-  },
-  "076": {
-    "element": "wood",
-    "season": "summer",
-    "form": "dancing dog left",
-    "house": "lamentation",
-    "access": "private",
-    "throne": "coral",
-    "parity": "night",
-    "position": "9",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      336,
-      192,
-      46
-    ]
-  },
-  "077": {
-    "element": "wood",
-    "season": "fall",
-    "form": "cranes and ravens",
-    "house": "innocence",
-    "access": "private",
-    "throne": "peacock",
-    "parity": "day",
-    "position": "15",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      337,
-      193,
-      47,
-      236
-    ]
-  },
-  "078": {
-    "element": "wood",
-    "season": "spring",
-    "form": "facing the lion",
-    "house": "rumor",
-    "access": "public",
-    "throne": "diamond",
-    "parity": "night",
-    "position": "8",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      338,
-      284,
-      194,
-      44
-    ]
-  },
-  "079": {
-    "element": "water",
-    "season": "winter",
-    "form": "facing the ravens",
-    "house": "darkness",
-    "access": "public",
-    "throne": "lion",
-    "parity": "day",
-    "position": "2",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      339,
-      285,
-      195,
-      45,
-      238
-    ]
-  },
-  "080": {
-    "element": "earth",
-    "season": "winter",
-    "form": "distant star",
-    "house": "numbers",
-    "access": "private",
-    "throne": "amber",
-    "parity": "night",
-    "position": "3",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      261,
-      50
-    ]
-  },
-  "081": {
-    "element": "earth",
-    "season": "spring",
-    "form": "ravens",
-    "house": "bones",
-    "access": "private",
-    "throne": "saphire",
-    "parity": "day",
-    "position": "10",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      260,
-      51,
-      240
-    ]
-  },
-  "082": {
-    "element": "earth",
-    "season": "fall",
-    "form": "cranes",
-    "house": "birds",
-    "access": "public",
-    "throne": "jade",
-    "parity": "night",
-    "position": "14",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      256,
-      263,
-      48
-    ]
-  },
-  "083": {
-    "element": "wood",
-    "season": "summer",
-    "form": "chasing cranes right",
-    "house": "time",
-    "access": "public",
-    "throne": "onyx",
-    "parity": "day",
-    "position": "7",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      257,
-      262,
-      49,
-      242
-    ]
-  },
-  "084": {
-    "element": "wood",
-    "season": "spring",
-    "form": "cranes flying",
-    "house": "dreams",
-    "access": "private",
-    "throne": "onyx",
-    "parity": "day",
-    "position": "9",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      216,
-      257,
-      54
-    ]
-  },
-  "085": {
-    "element": "wood",
-    "season": "winter",
-    "form": "hidden dragon",
-    "house": "sand",
-    "access": "private",
-    "throne": "jade",
-    "parity": "night",
-    "position": "15",
-    "rank": "terminus",
-    "level": "",
-    "doors": [
-      217,
-      256,
-      55,
-      244
-    ]
-  },
-  "086": {
-    "element": "wood",
-    "season": "summer",
-    "form": "dancing dog right",
-    "house": "words",
-    "access": "public",
-    "throne": "saphire",
-    "parity": "day",
-    "position": "8",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      260,
-      218,
-      259,
-      52
-    ]
-  },
-  "087": {
-    "element": "wood",
-    "season": "fall",
-    "form": "cranes and ravens",
-    "house": "rain",
-    "access": "public",
-    "throne": "amber",
-    "parity": "night",
-    "position": "2",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      261,
-      219,
-      258,
-      53,
-      246
-    ]
-  },
-  "088": {
-    "element": "wood",
-    "season": "fall",
-    "form": "sun and moon",
-    "house": "desire",
-    "access": "public",
-    "throne": "falcon",
-    "parity": "day",
-    "position": "14",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      324,
-      269,
-      58
-    ]
-  },
-  "089": {
-    "element": "wood",
-    "season": "summer",
-    "form": "facing the ravens",
-    "house": "judgement",
-    "access": "public",
-    "throne": "crystal",
-    "parity": "day",
-    "position": "7",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      325,
-      268,
-      59,
-      248
-    ]
-  },
-  "090": {
-    "element": "wood",
-    "season": "winter",
-    "form": "chasing cranes left",
-    "house": "whispers",
-    "access": "private",
-    "throne": "dragon",
-    "parity": "night",
-    "position": "3",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      326,
-      264,
-      271,
-      56
-    ]
-  },
-  "091": {
-    "element": "water",
-    "season": "spring",
-    "form": "clouds",
-    "house": "laughter",
-    "access": "private",
-    "throne": "ivory",
-    "parity": "day",
-    "position": "10",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      327,
-      265,
-      270,
-      57,
-      250
-    ]
-  },
-  "092": {
-    "element": "wood",
-    "season": "summer",
-    "form": "dancing dog left",
-    "house": "lamentation",
-    "access": "public",
-    "throne": "ivory",
-    "parity": "day",
-    "position": "8",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      320,
-      208,
-      265,
-      62
-    ]
-  },
-  "093": {
-    "element": "wood",
-    "season": "fall",
-    "form": "cranes and ravens",
-    "house": "innocence",
-    "access": "public",
-    "throne": "dragon",
-    "parity": "night",
-    "position": "2",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      321,
-      209,
-      264,
-      63,
-      252
-    ]
-  },
-  "094": {
-    "element": "wood",
-    "season": "spring",
-    "form": "facing the lion",
-    "house": "rumor",
-    "access": "private",
-    "throne": "crystal",
-    "parity": "day",
-    "position": "9",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      322,
-      268,
-      210,
-      267,
-      60
-    ]
-  },
-  "095": {
-    "element": "water",
-    "season": "winter",
-    "form": "facing the ravens",
-    "house": "darkness",
-    "access": "private",
-    "throne": "falcon",
-    "parity": "night",
-    "position": "15",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      323,
-      269,
-      211,
-      266,
-      61,
-      254
-    ]
-  },
-  "096": {
-    "element": "earth",
-    "season": "fall",
-    "form": "cranes",
-    "house": "innocence",
-    "access": "private",
-    "throne": "falcon",
-    "parity": "day",
-    "position": "3",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      2,
-      17
-    ]
-  },
-  "097": {
-    "element": "earth",
-    "season": "summer",
-    "form": "lion",
-    "house": "lamentation",
-    "access": "private",
-    "throne": "crystal",
-    "parity": "night",
-    "position": "10",
-    "rank": "foundation",
-    "level": "",
-    "doors": [
-      3,
-      192,
-      16
-    ]
-  },
-  "098": {
-    "element": "wood",
-    "season": "winter",
-    "form": "lion",
-    "house": "darkness",
-    "access": "public",
-    "throne": "dragon",
-    "parity": "day",
-    "position": "14",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      304,
-      0,
-      19
-    ]
-  },
-  "099": {
-    "element": "wood",
-    "season": "spring",
-    "form": "dragon walking",
-    "house": "rumor",
-    "access": "public",
-    "throne": "ivory",
-    "parity": "night",
-    "position": "7",
-    "rank": "step",
-    "level": "",
-    "doors": [
-      305,
-      1,
-      194,
-      18
-    ]
-  },
+const smData = {
   "100": {
     "element": "wood",
     "season": "summer",
@@ -1724,7 +9,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       232,
       6,
@@ -1741,7 +26,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       233,
       7,
@@ -1759,7 +44,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       308,
       234,
@@ -1777,7 +62,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       309,
       235,
@@ -1796,7 +81,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       372,
       10,
@@ -1813,7 +98,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       373,
       11,
@@ -1831,7 +116,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       374,
       312,
@@ -1849,7 +134,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       375,
       313,
@@ -1868,7 +153,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       368,
       224,
@@ -1886,7 +171,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       369,
       225,
@@ -1905,7 +190,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       370,
       316,
@@ -1924,7 +209,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       371,
       317,
@@ -1944,7 +229,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       293,
       18,
@@ -1961,7 +246,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       292,
       19,
@@ -1979,7 +264,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       288,
       295,
@@ -1997,7 +282,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       289,
       294,
@@ -2016,7 +301,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       248,
       289,
@@ -2034,7 +319,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       249,
       288,
@@ -2053,7 +338,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       292,
       250,
@@ -2072,7 +357,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       293,
       251,
@@ -2092,7 +377,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       356,
       301,
@@ -2110,7 +395,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       357,
       300,
@@ -2129,7 +414,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       358,
       296,
@@ -2148,7 +433,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       359,
       297,
@@ -2168,7 +453,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       352,
       240,
@@ -2187,7 +472,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       353,
       241,
@@ -2207,7 +492,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       354,
       300,
@@ -2227,7 +512,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       355,
       301,
@@ -2248,7 +533,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "foundation",
-    "level": "",
+    "level": "1",
     "doors": [
       21
     ]
@@ -2263,7 +548,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       20,
       32
@@ -2279,7 +564,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       464,
       23
@@ -2295,7 +580,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       465,
       22,
@@ -2312,7 +597,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       8,
       17
@@ -2328,7 +613,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       9,
       16,
@@ -2345,7 +630,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       468,
       10,
@@ -2362,7 +647,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       469,
       11,
@@ -2380,7 +665,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       404,
       29
@@ -2396,7 +681,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       405,
       28,
@@ -2413,7 +698,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "dais",
-    "level": "",
+    "level": "1",
     "doors": [
       406,
       472,
@@ -2430,7 +715,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       407,
       473,
@@ -2448,7 +733,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       400,
       0,
@@ -2465,7 +750,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       401,
       1,
@@ -2483,7 +768,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       402,
       476,
@@ -2501,7 +786,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       403,
       477,
@@ -2520,7 +805,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "foundation",
-    "level": "",
+    "level": "5",
     "doors": [
       453,
       5
@@ -2536,7 +821,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       452,
       4,
@@ -2553,7 +838,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       448,
       455,
@@ -2570,7 +855,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       449,
       454,
@@ -2588,7 +873,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       24,
       449,
@@ -2605,7 +890,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       25,
       448,
@@ -2623,7 +908,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       452,
       26,
@@ -2641,7 +926,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       453,
       27,
@@ -2660,7 +945,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       388,
       461,
@@ -2677,7 +962,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       389,
       460,
@@ -2695,7 +980,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "dais",
-    "level": "",
+    "level": "5",
     "doors": [
       390,
       456,
@@ -2713,7 +998,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       391,
       457,
@@ -2732,7 +1017,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       384,
       16,
@@ -2750,7 +1035,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       385,
       17,
@@ -2769,7 +1054,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       386,
       460,
@@ -2788,7 +1073,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       387,
       461,
@@ -2808,7 +1093,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       53,
       209
@@ -2824,7 +1109,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       52,
       0,
@@ -2841,7 +1126,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "dais",
-    "level": "",
+    "level": "1",
     "doors": [
       496,
       55,
@@ -2858,7 +1143,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       497,
       54,
@@ -2876,7 +1161,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       40,
       49,
@@ -2893,7 +1178,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       41,
       48,
@@ -2911,7 +1196,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       500,
       42,
@@ -2929,7 +1214,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       501,
       43,
@@ -2948,7 +1233,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "dais",
-    "level": "",
+    "level": "1",
     "doors": [
       436,
       61,
@@ -2965,7 +1250,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       437,
       60,
@@ -2983,7 +1268,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "seat",
-    "level": "",
+    "level": "5",
     "doors": [
       438,
       504,
@@ -3001,7 +1286,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "seat",
-    "level": "",
+    "level": "4",
     "doors": [
       439,
       505,
@@ -3020,7 +1305,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       432,
       32,
@@ -3038,7 +1323,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       433,
       33,
@@ -3057,7 +1342,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "seat",
-    "level": "",
+    "level": "4",
     "doors": [
       434,
       508,
@@ -3076,7 +1361,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       435,
       509,
@@ -3096,7 +1381,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       485,
       37,
@@ -3113,7 +1398,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       484,
       36,
@@ -3131,7 +1416,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "dais",
-    "level": "",
+    "level": "5",
     "doors": [
       480,
       487,
@@ -3149,7 +1434,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       481,
       486,
@@ -3168,7 +1453,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       56,
       481,
@@ -3186,7 +1471,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       57,
       480,
@@ -3205,7 +1490,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       484,
       58,
@@ -3224,7 +1509,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       485,
       59,
@@ -3244,7 +1529,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "dais",
-    "level": "",
+    "level": "5",
     "doors": [
       420,
       493,
@@ -3262,7 +1547,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       421,
       492,
@@ -3281,7 +1566,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "seat",
-    "level": "",
+    "level": "1",
     "doors": [
       422,
       488,
@@ -3300,7 +1585,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "seat",
-    "level": "",
+    "level": "2",
     "doors": [
       423,
       489,
@@ -3320,7 +1605,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       416,
       48,
@@ -3339,7 +1624,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       417,
       49,
@@ -3359,7 +1644,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "seat",
-    "level": "",
+    "level": "2",
     "doors": [
       418,
       492,
@@ -3379,7 +1664,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       419,
       493,
@@ -3400,7 +1685,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       162,
       85
@@ -3416,7 +1701,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       163,
       84,
@@ -3433,7 +1718,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       400,
       160,
@@ -3450,7 +1735,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       401,
       161,
@@ -3468,7 +1753,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       72,
       166,
@@ -3485,7 +1770,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       73,
       167,
@@ -3503,7 +1788,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       404,
       74,
@@ -3521,7 +1806,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       405,
       75,
@@ -3540,7 +1825,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       468,
       170,
@@ -3557,7 +1842,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       469,
       171,
@@ -3575,7 +1860,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       470,
       408,
@@ -3593,7 +1878,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       471,
       409,
@@ -3612,7 +1897,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       464,
       64,
@@ -3630,7 +1915,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       465,
       65,
@@ -3649,7 +1934,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       466,
       412,
@@ -3668,7 +1953,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       467,
       413,
@@ -3688,7 +1973,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       389,
       178,
@@ -3705,7 +1990,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       388,
       179,
@@ -3723,7 +2008,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       384,
       391,
@@ -3741,7 +2026,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       385,
       390,
@@ -3760,7 +2045,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       88,
       385,
@@ -3778,7 +2063,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       89,
       384,
@@ -3797,7 +2082,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       388,
       90,
@@ -3816,7 +2101,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       389,
       91,
@@ -3836,7 +2121,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       452,
       397,
@@ -3854,7 +2139,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       453,
       396,
@@ -3873,7 +2158,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       454,
       392,
@@ -3892,7 +2177,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       455,
       393,
@@ -3912,7 +2197,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       448,
       80,
@@ -3931,7 +2216,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       449,
       81,
@@ -3951,7 +2236,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       450,
       396,
@@ -3971,7 +2256,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       451,
       397,
@@ -3992,7 +2277,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       130,
       117,
@@ -4009,7 +2294,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       131,
       116,
@@ -4027,7 +2312,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       432,
       128,
@@ -4045,7 +2330,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       433,
       129,
@@ -4064,7 +2349,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       104,
       134,
@@ -4082,7 +2367,7 @@ const cmData = {
     "parity": "",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       105,
       135,
@@ -4101,7 +2386,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       436,
       106,
@@ -4120,7 +2405,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       437,
       107,
@@ -4140,7 +2425,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       500,
       138,
@@ -4158,7 +2443,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       501,
       139,
@@ -4177,7 +2462,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "seat",
-    "level": "",
+    "level": "4",
     "doors": [
       502,
       440,
@@ -4196,7 +2481,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       503,
       441,
@@ -4216,7 +2501,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       496,
       96,
@@ -4235,7 +2520,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       497,
       97,
@@ -4255,7 +2540,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       498,
       444,
@@ -4275,7 +2560,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "seat",
-    "level": "",
+    "level": "2",
     "doors": [
       499,
       445,
@@ -4296,7 +2581,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       421,
       146,
@@ -4314,7 +2599,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       420,
       147,
@@ -4333,7 +2618,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       416,
       423,
@@ -4352,7 +2637,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       417,
       422,
@@ -4372,7 +2657,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       120,
       417,
@@ -4391,7 +2676,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       121,
       416,
@@ -4411,7 +2696,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       420,
       122,
@@ -4431,7 +2716,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       421,
       123,
@@ -4452,7 +2737,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       484,
       429,
@@ -4471,7 +2756,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       485,
       428,
@@ -4491,7 +2776,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "seat",
-    "level": "",
+    "level": "2",
     "doors": [
       486,
       424,
@@ -4511,7 +2796,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       487,
       425,
@@ -4532,7 +2817,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       480,
       112,
@@ -4552,7 +2837,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       481,
       113,
@@ -4573,7 +2858,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       482,
       428,
@@ -4594,7 +2879,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "seat",
-    "level": "",
+    "level": "4",
     "doors": [
       483,
       429,
@@ -4616,7 +2901,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "terminus",
-    "level": "",
+    "level": "4",
     "doors": [
       10
     ]
@@ -4631,7 +2916,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "terminus",
-    "level": "",
+    "level": "3",
     "doors": [
       11,
       416
@@ -4647,7 +2932,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       8,
       80
@@ -4663,7 +2948,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       9,
       81,
@@ -4680,7 +2965,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "terminus",
-    "level": "",
+    "level": "3",
     "doors": [
       14,
       392
@@ -4696,7 +2981,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "terminus",
-    "level": "",
+    "level": "2",
     "doors": [
       15,
       393,
@@ -4713,7 +2998,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       12,
       84,
@@ -4730,7 +3015,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       13,
       85,
@@ -4748,7 +3033,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       20,
       2
@@ -4764,7 +3049,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       21,
       3,
@@ -4781,7 +3066,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       22,
       0,
@@ -4798,7 +3083,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       23,
       1,
@@ -4816,7 +3101,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       16,
       6,
@@ -4833,7 +3118,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       17,
       7,
@@ -4851,7 +3136,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       18,
       4,
@@ -4869,7 +3154,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       19,
       5,
@@ -4888,7 +3173,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "terminus",
-    "level": "",
+    "level": "2",
     "doors": [
       26,
       69
@@ -4904,7 +3189,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "terminus",
-    "level": "",
+    "level": "3",
     "doors": [
       27,
       68,
@@ -4921,7 +3206,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       24,
       64,
@@ -4938,7 +3223,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       25,
       65,
@@ -4956,7 +3241,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "terminus",
-    "level": "",
+    "level": "3",
     "doors": [
       30,
       408,
@@ -4973,7 +3258,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "terminus",
-    "level": "",
+    "level": "4",
     "doors": [
       31,
       409,
@@ -4991,7 +3276,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       28,
       68,
@@ -5009,7 +3294,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       29,
       69,
@@ -5028,7 +3313,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       4,
       18,
@@ -5045,7 +3330,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       5,
       19,
@@ -5063,7 +3348,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       6,
       16,
@@ -5081,7 +3366,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       7,
       17,
@@ -5100,7 +3385,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       0,
       22,
@@ -5118,7 +3403,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       1,
       23,
@@ -5137,7 +3422,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       2,
       20,
@@ -5156,7 +3441,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       3,
       21,
@@ -5176,7 +3461,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       42,
       337
@@ -5192,7 +3477,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       43,
       384,
@@ -5209,7 +3494,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       40,
       112,
@@ -5226,7 +3511,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       41,
       113,
@@ -5244,7 +3529,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       46,
       424,
@@ -5261,7 +3546,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       47,
       425,
@@ -5279,7 +3564,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       44,
       116,
@@ -5297,7 +3582,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       45,
       117,
@@ -5316,7 +3601,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       52,
       34,
@@ -5333,7 +3618,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       53,
       35,
@@ -5351,7 +3636,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       54,
       32,
@@ -5369,7 +3654,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       55,
       33,
@@ -5388,7 +3673,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       48,
       38,
@@ -5406,7 +3691,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       49,
       39,
@@ -5425,7 +3710,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       50,
       36,
@@ -5444,7 +3729,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       51,
       37,
@@ -5464,7 +3749,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       58,
       101,
@@ -5481,7 +3766,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       59,
       100,
@@ -5499,7 +3784,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       56,
       96,
@@ -5517,7 +3802,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       57,
       97,
@@ -5536,7 +3821,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       62,
       440,
@@ -5554,7 +3839,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       63,
       441,
@@ -5573,7 +3858,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       60,
       100,
@@ -5592,7 +3877,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       61,
       101,
@@ -5612,7 +3897,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       36,
       50,
@@ -5630,7 +3915,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       37,
       51,
@@ -5649,7 +3934,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       38,
       48,
@@ -5668,7 +3953,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       39,
       49,
@@ -5688,7 +3973,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       32,
       54,
@@ -5707,7 +3992,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       33,
       55,
@@ -5727,7 +4012,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       34,
       52,
@@ -5747,7 +4032,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       35,
       53,
@@ -5768,7 +4053,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "terminus",
-    "level": "",
+    "level": "3",
     "doors": [
       74,
       290
@@ -5784,7 +4069,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "terminus",
-    "level": "",
+    "level": "2",
     "doors": [
       75,
       291,
@@ -5801,7 +4086,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       72,
       16,
@@ -5818,7 +4103,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       73,
       17,
@@ -5836,7 +4121,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "terminus",
-    "level": "",
+    "level": "2",
     "doors": [
       78,
       456,
@@ -5853,7 +4138,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "terminus",
-    "level": "",
+    "level": "1",
     "doors": [
       79,
       457,
@@ -5871,7 +4156,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       76,
       20,
@@ -5889,7 +4174,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "foundation",
-    "level": "",
+    "level": "5",
     "doors": [
       77,
       21,
@@ -5908,7 +4193,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       84,
       66,
@@ -5925,7 +4210,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       85,
       67,
@@ -5943,7 +4228,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       86,
       64,
@@ -5961,7 +4246,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       87,
       65,
@@ -5980,7 +4265,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       80,
       70,
@@ -5998,7 +4283,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "foundation",
-    "level": "",
+    "level": "5",
     "doors": [
       81,
       71,
@@ -6017,7 +4302,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       82,
       68,
@@ -6036,7 +4321,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       83,
       69,
@@ -6056,7 +4341,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "terminus",
-    "level": "",
+    "level": "3",
     "doors": [
       90,
       5,
@@ -6073,7 +4358,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "terminus",
-    "level": "",
+    "level": "4",
     "doors": [
       91,
       4,
@@ -6091,7 +4376,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       88,
       0,
@@ -6109,7 +4394,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       89,
       1,
@@ -6128,7 +4413,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "terminus",
-    "level": "",
+    "level": "4",
     "doors": [
       94,
       472,
@@ -6146,7 +4431,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "terminus",
-    "level": "",
+    "level": "5",
     "doors": [
       95,
       473,
@@ -6165,7 +4450,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       92,
       4,
@@ -6184,7 +4469,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "foundation",
-    "level": "",
+    "level": "1",
     "doors": [
       93,
       5,
@@ -6204,7 +4489,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       68,
       32,
@@ -6222,7 +4507,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       69,
       83,
@@ -6241,7 +4526,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       70,
       80,
@@ -6260,7 +4545,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       71,
       81,
@@ -6280,7 +4565,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       64,
       86,
@@ -6299,7 +4584,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "foundation",
-    "level": "",
+    "level": "1",
     "doors": [
       65,
       87,
@@ -6319,7 +4604,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       66,
       84,
@@ -6339,7 +4624,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       67,
       85,
@@ -6360,7 +4645,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       106,
       258,
@@ -6377,7 +4662,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       107,
       259,
@@ -6395,7 +4680,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       104,
       48,
@@ -6413,7 +4698,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       105,
       49,
@@ -6432,7 +4717,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       110,
       488,
@@ -6450,7 +4735,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "foundation",
-    "level": "",
+    "level": "5",
     "doors": [
       111,
       489,
@@ -6469,7 +4754,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       108,
       52,
@@ -6488,7 +4773,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       109,
       53,
@@ -6508,7 +4793,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       116,
       98,
@@ -6526,7 +4811,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       117,
       99,
@@ -6545,7 +4830,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       118,
       96,
@@ -6564,7 +4849,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       119,
       97,
@@ -6584,7 +4869,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       112,
       102,
@@ -6603,7 +4888,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       113,
       103,
@@ -6623,7 +4908,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       114,
       100,
@@ -6643,7 +4928,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "dais",
-    "level": "",
+    "level": "5",
     "doors": [
       115,
       101,
@@ -6664,7 +4949,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       122,
       37,
@@ -6682,7 +4967,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       123,
       36,
@@ -6701,7 +4986,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       120,
       32,
@@ -6720,7 +5005,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       121,
       33,
@@ -6740,7 +5025,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       126,
       504,
@@ -6759,7 +5044,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "foundation",
-    "level": "",
+    "level": "1",
     "doors": [
       127,
       505,
@@ -6779,7 +5064,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       124,
       36,
@@ -6799,7 +5084,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       125,
       37,
@@ -6820,7 +5105,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       100,
       114,
@@ -6839,7 +5124,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       101,
       115,
@@ -6859,7 +5144,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       102,
       112,
@@ -6879,7 +5164,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       103,
       113,
@@ -6900,7 +5185,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       96,
       118,
@@ -6920,7 +5205,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       97,
       119,
@@ -6941,7 +5226,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       98,
       116,
@@ -6962,7 +5247,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "dais",
-    "level": "",
+    "level": "1",
     "doors": [
       99,
       117,
@@ -6984,7 +5269,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       138,
       277
@@ -7000,7 +5285,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       139,
       276,
@@ -7017,7 +5302,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       136,
       208,
@@ -7034,7 +5319,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       137,
       209,
@@ -7052,7 +5337,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       142,
       264,
@@ -7069,7 +5354,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       143,
       265,
@@ -7087,7 +5372,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       140,
       212,
@@ -7105,7 +5390,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       141,
       213,
@@ -7124,7 +5409,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       148,
       130,
@@ -7141,7 +5426,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       149,
       131,
@@ -7159,7 +5444,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       150,
       128,
@@ -7177,7 +5462,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       151,
       129,
@@ -7196,7 +5481,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       144,
       134,
@@ -7214,7 +5499,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       145,
       135,
@@ -7233,7 +5518,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       146,
       132,
@@ -7252,7 +5537,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       147,
       133,
@@ -7272,7 +5557,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       154,
       197,
@@ -7289,7 +5574,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       155,
       196,
@@ -7307,7 +5592,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       152,
       192,
@@ -7325,7 +5610,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       153,
       193,
@@ -7344,7 +5629,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       158,
       280,
@@ -7362,7 +5647,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       159,
       281,
@@ -7381,7 +5666,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       156,
       196,
@@ -7400,7 +5685,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       157,
       197,
@@ -7420,7 +5705,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       132,
       146,
@@ -7438,7 +5723,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       133,
       147,
@@ -7457,7 +5742,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       134,
       144,
@@ -7476,7 +5761,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       135,
       145,
@@ -7496,7 +5781,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       128,
       150,
@@ -7515,7 +5800,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       129,
       151,
@@ -7535,7 +5820,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       130,
       148,
@@ -7555,7 +5840,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       131,
       149,
@@ -7576,7 +5861,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       170,
       309,
@@ -7593,7 +5878,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       171,
       308,
@@ -7611,7 +5896,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       168,
       240,
@@ -7629,7 +5914,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       169,
       241,
@@ -7648,7 +5933,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       174,
       296,
@@ -7666,7 +5951,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       175,
       297,
@@ -7685,7 +5970,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       172,
       244,
@@ -7704,7 +5989,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       173,
       245,
@@ -7724,7 +6009,7 @@ const cmData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       180,
       162,
@@ -7742,7 +6027,7 @@ const cmData = {
     "parity": "night",
     "position": "8",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       181,
       163,
@@ -7761,7 +6046,7 @@ const cmData = {
     "parity": "day",
     "position": "15",
     "rank": "seat",
-    "level": "",
+    "level": "4",
     "doors": [
       182,
       160,
@@ -7780,7 +6065,7 @@ const cmData = {
     "parity": "night",
     "position": "9",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       183,
       161,
@@ -7800,7 +6085,7 @@ const cmData = {
     "parity": "night",
     "position": "7",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       176,
       166,
@@ -7819,7 +6104,7 @@ const cmData = {
     "parity": "day",
     "position": "14",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       177,
       167,
@@ -7839,7 +6124,7 @@ const cmData = {
     "parity": "night",
     "position": "10",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       178,
       164,
@@ -7859,7 +6144,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "seat",
-    "level": "",
+    "level": "2",
     "doors": [
       179,
       165,
@@ -7880,7 +6165,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       186,
       229,
@@ -7898,7 +6183,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       187,
       228,
@@ -7917,7 +6202,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       184,
       224,
@@ -7936,7 +6221,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       185,
       225,
@@ -7956,7 +6241,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       190,
       312,
@@ -7975,7 +6260,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       191,
       313,
@@ -7995,7 +6280,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       188,
       228,
@@ -8015,7 +6300,7 @@ const cmData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       189,
       229,
@@ -8036,7 +6321,7 @@ const cmData = {
     "parity": "night",
     "position": "15",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       164,
       178,
@@ -8055,7 +6340,7 @@ const cmData = {
     "parity": "day",
     "position": "9",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       165,
       179,
@@ -8075,7 +6360,7 @@ const cmData = {
     "parity": "night",
     "position": "2",
     "rank": "seat",
-    "level": "",
+    "level": "2",
     "doors": [
       166,
       176,
@@ -8095,7 +6380,7 @@ const cmData = {
     "parity": "day",
     "position": "8",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       167,
       177,
@@ -8116,7 +6401,7 @@ const cmData = {
     "parity": "day",
     "position": "10",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       160,
       182,
@@ -8136,7 +6421,7 @@ const cmData = {
     "parity": "night",
     "position": "3",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       161,
       183,
@@ -8157,7 +6442,7 @@ const cmData = {
     "parity": "day",
     "position": "7",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       162,
       180,
@@ -8178,7 +6463,7 @@ const cmData = {
     "parity": "night",
     "position": "14",
     "rank": "seat",
-    "level": "",
+    "level": "4",
     "doors": [
       163,
       181,
@@ -8200,7 +6485,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       202,
       418,
@@ -8217,7 +6502,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       203,
       419,
@@ -8235,7 +6520,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       200,
       144,
@@ -8253,7 +6538,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       201,
       145,
@@ -8272,7 +6557,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
-    "level": "",
+    "level": "4",
     "doors": [
       206,
       328,
@@ -8290,7 +6575,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "foundation",
-    "level": "",
+    "level": "5",
     "doors": [
       207,
       329,
@@ -8309,7 +6594,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       204,
       148,
@@ -8328,7 +6613,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       205,
       149,
@@ -8348,7 +6633,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       212,
       194,
@@ -8366,7 +6651,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       213,
       195,
@@ -8385,7 +6670,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       214,
       192,
@@ -8404,7 +6689,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       215,
       193,
@@ -8424,7 +6709,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       208,
       198,
@@ -8443,7 +6728,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       209,
       199,
@@ -8463,7 +6748,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       210,
       196,
@@ -8483,7 +6768,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "dais",
-    "level": "",
+    "level": "5",
     "doors": [
       211,
       197,
@@ -8504,7 +6789,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "foundation",
-    "level": "",
+    "level": "3",
     "doors": [
       218,
       133,
@@ -8522,7 +6807,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       219,
       132,
@@ -8541,7 +6826,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       216,
       128,
@@ -8560,7 +6845,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       217,
       129,
@@ -8580,7 +6865,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "foundation",
-    "level": "",
+    "level": "2",
     "doors": [
       222,
       344,
@@ -8599,7 +6884,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "foundation",
-    "level": "",
+    "level": "1",
     "doors": [
       223,
       345,
@@ -8619,7 +6904,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       220,
       132,
@@ -8639,7 +6924,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       221,
       133,
@@ -8660,7 +6945,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       196,
       210,
@@ -8679,7 +6964,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       197,
       211,
@@ -8699,7 +6984,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       198,
       208,
@@ -8719,7 +7004,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       199,
       209,
@@ -8740,7 +7025,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       192,
       214,
@@ -8760,7 +7045,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       193,
       215,
@@ -8781,7 +7066,7 @@ const cmData = {
     "parity": "night",
     "position": "5",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       194,
       212,
@@ -8802,7 +7087,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "dais",
-    "level": "",
+    "level": "1",
     "doors": [
       195,
       213,
@@ -8824,7 +7109,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       234,
       386,
@@ -8842,7 +7127,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       235,
       387,
@@ -8861,7 +7146,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       232,
       176,
@@ -8880,7 +7165,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       233,
       177,
@@ -8900,7 +7185,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
-    "level": "",
+    "level": "2",
     "doors": [
       238,
       360,
@@ -8919,7 +7204,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
-    "level": "",
+    "level": "1",
     "doors": [
       239,
       361,
@@ -8939,7 +7224,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       236,
       180,
@@ -8959,7 +7244,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "dais",
-    "level": "",
+    "level": "5",
     "doors": [
       237,
       181,
@@ -8980,7 +7265,7 @@ const cmData = {
     "parity": "night",
     "position": "6",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       244,
       226,
@@ -8999,7 +7284,7 @@ const cmData = {
     "parity": "day",
     "position": "13",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       245,
       227,
@@ -9019,7 +7304,7 @@ const cmData = {
     "parity": "night",
     "position": "11",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       246,
       224,
@@ -9039,7 +7324,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "seat",
-    "level": "",
+    "level": "2",
     "doors": [
       247,
       225,
@@ -9060,7 +7345,7 @@ const cmData = {
     "parity": "day",
     "position": "12",
     "rank": "dais",
-    "level": "",
+    "level": "4",
     "doors": [
       240,
       230,
@@ -9080,7 +7365,7 @@ const cmData = {
     "parity": "night",
     "position": "16",
     "rank": "dais",
-    "level": "",
+    "level": "5",
     "doors": [
       241,
       231,
@@ -9101,7 +7386,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "seat",
-    "level": "",
+    "level": "2",
     "doors": [
       242,
       228,
@@ -9122,7 +7407,7 @@ const cmData = {
     "parity": "night",
     "position": "1",
     "rank": "seat",
-    "level": "",
+    "level": "1",
     "doors": [
       243,
       229,
@@ -9144,7 +7429,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
-    "level": "",
+    "level": "3",
     "doors": [
       250,
       165,
@@ -9163,7 +7448,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       251,
       164,
@@ -9183,7 +7468,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       248,
       160,
@@ -9203,7 +7488,7 @@ const cmData = {
     "parity": "night",
     "position": "4",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       249,
       161,
@@ -9224,7 +7509,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
-    "level": "",
+    "level": "4",
     "doors": [
       254,
       376,
@@ -9244,7 +7529,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
-    "level": "",
+    "level": "5",
     "doors": [
       255,
       377,
@@ -9265,7 +7550,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       252,
       164,
@@ -9286,7 +7571,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "dais",
-    "level": "",
+    "level": "1",
     "doors": [
       253,
       165,
@@ -9308,7 +7593,7 @@ const cmData = {
     "parity": "day",
     "position": "11",
     "rank": "dais",
-    "level": "",
+    "level": "3",
     "doors": [
       228,
       242,
@@ -9328,7 +7613,7 @@ const cmData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       229,
       243,
@@ -9349,7 +7634,7 @@ const cmData = {
     "parity": "day",
     "position": "6",
     "rank": "seat",
-    "level": "",
+    "level": "3",
     "doors": [
       230,
       240,
@@ -9370,7 +7655,7 @@ const cmData = {
     "parity": "night",
     "position": "13",
     "rank": "seat",
-    "level": "",
+    "level": "4",
     "doors": [
       231,
       241,
@@ -9392,7 +7677,7 @@ const cmData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
-    "level": "",
+    "level": "2",
     "doors": [
       224,
       246,
@@ -9413,7 +7698,7 @@ const cmData = {
     "parity": "day",
     "position": "1",
     "rank": "dais",
-    "level": "",
+    "level": "1",
     "doors": [
       225,
       247,
@@ -9435,7 +7720,7 @@ const cmData = {
     "parity": "night",
     "position": "12",
     "rank": "seat",
-    "level": "",
+    "level": "4",
     "doors": [
       226,
       244,
@@ -9457,7 +7742,7 @@ const cmData = {
     "parity": "day",
     "position": "16",
     "rank": "seat",
-    "level": "",
+    "level": "5",
     "doors": [
       227,
       245,
@@ -9468,6 +7753,1721 @@ const cmData = {
       362,
       350,
       398
+    ]
+  },
+  "000": {
+    "element": "emptiness",
+    "season": "spring",
+    "form": "eternal moment",
+    "house": "darkness",
+    "access": "public",
+    "throne": "diamond",
+    "parity": "night",
+    "position": "16",
+    "rank": "terminus",
+    "level": "5",
+    "doors": []
+  },
+  "001": {
+    "element": "earth",
+    "season": "winter",
+    "form": "distant star",
+    "house": "rumor",
+    "access": "public",
+    "throne": "lion",
+    "parity": "day",
+    "position": "12",
+    "rank": "terminus",
+    "level": "4",
+    "doors": [
+      160
+    ]
+  },
+  "002": {
+    "element": "metal",
+    "season": "summer",
+    "form": "distant star",
+    "house": "innocence",
+    "access": "private",
+    "throne": "coral",
+    "parity": "night",
+    "position": "1",
+    "rank": "foundation",
+    "level": "1",
+    "doors": [
+      336
+    ]
+  },
+  "003": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "lamentation",
+    "access": "private",
+    "throne": "peacock",
+    "parity": "day",
+    "position": "5",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      337,
+      162
+    ]
+  },
+  "004": {
+    "element": "earth",
+    "season": "winter",
+    "form": "distant star",
+    "house": "laughter",
+    "access": "public",
+    "throne": "peacock",
+    "parity": "day",
+    "position": "13",
+    "rank": "terminus",
+    "level": "4",
+    "doors": [
+      136
+    ]
+  },
+  "005": {
+    "element": "earth",
+    "season": "spring",
+    "form": "ravens",
+    "house": "whispers",
+    "access": "public",
+    "throne": "coral",
+    "parity": "night",
+    "position": "6",
+    "rank": "terminus",
+    "level": "3",
+    "doors": [
+      137,
+      164
+    ]
+  },
+  "006": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "judgement",
+    "access": "private",
+    "throne": "lion",
+    "parity": "day",
+    "position": "4",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      340,
+      138
+    ]
+  },
+  "007": {
+    "element": "wood",
+    "season": "summer",
+    "form": "facing the ravens",
+    "house": "desire",
+    "access": "private",
+    "throne": "diamond",
+    "parity": "night",
+    "position": "11",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      341,
+      139,
+      166
+    ]
+  },
+  "008": {
+    "element": "metal",
+    "season": "summer",
+    "form": "distant star",
+    "house": "rain",
+    "access": "private",
+    "throne": "lapis",
+    "parity": "night",
+    "position": "1",
+    "rank": "foundation",
+    "level": "1",
+    "doors": [
+      276
+    ]
+  },
+  "009": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "words",
+    "access": "private",
+    "throne": "carnelian",
+    "parity": "day",
+    "position": "5",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      277,
+      168
+    ]
+  },
+  "010": {
+    "element": "wood",
+    "season": "spring",
+    "form": "ravens",
+    "house": "sand",
+    "access": "public",
+    "throne": "iron",
+    "parity": "night",
+    "position": "16",
+    "rank": "step",
+    "level": "5",
+    "doors": [
+      278,
+      344
+    ]
+  },
+  "011": {
+    "element": "water",
+    "season": "winter",
+    "form": "facing the ravens",
+    "house": "dreams",
+    "access": "public",
+    "throne": "emerald",
+    "parity": "day",
+    "position": "12",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      279,
+      345,
+      170
+    ]
+  },
+  "012": {
+    "element": "earth",
+    "season": "fall",
+    "form": "cranes",
+    "house": "time",
+    "access": "private",
+    "throne": "emerald",
+    "parity": "day",
+    "position": "4",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      272,
+      128
+    ]
+  },
+  "013": {
+    "element": "wood",
+    "season": "summer",
+    "form": "chasing cranes left",
+    "house": "birds",
+    "access": "private",
+    "throne": "iron",
+    "parity": "night",
+    "position": "11",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      273,
+      129,
+      172
+    ]
+  },
+  "014": {
+    "element": "wood",
+    "season": "winter",
+    "form": "chasing cranes right",
+    "house": "bones",
+    "access": "public",
+    "throne": "carnelian",
+    "parity": "day",
+    "position": "13",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      274,
+      348,
+      130
+    ]
+  },
+  "015": {
+    "element": "water",
+    "season": "spring",
+    "form": "clouds",
+    "house": "numbers",
+    "access": "public",
+    "throne": "lapis",
+    "parity": "night",
+    "position": "6",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      275,
+      349,
+      131,
+      174
+    ]
+  },
+  "016": {
+    "element": "earth",
+    "season": "spring",
+    "form": "eternal moment",
+    "house": "darkness",
+    "access": "private",
+    "throne": "crystal",
+    "parity": "day",
+    "position": "1",
+    "rank": "terminus",
+    "level": "1",
+    "doors": [
+      325
+    ]
+  },
+  "017": {
+    "element": "earth",
+    "season": "winter",
+    "form": "distant star",
+    "house": "rumor",
+    "access": "private",
+    "throne": "falcon",
+    "parity": "night",
+    "position": "5",
+    "rank": "terminus",
+    "level": "2",
+    "doors": [
+      324,
+      176
+    ]
+  },
+  "018": {
+    "element": "earth",
+    "season": "summer",
+    "form": "distant star",
+    "house": "innocence",
+    "access": "public",
+    "throne": "ivory",
+    "parity": "day",
+    "position": "16",
+    "rank": "foundation",
+    "level": "5",
+    "doors": [
+      320,
+      327
+    ]
+  },
+  "019": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "lamentation",
+    "access": "public",
+    "throne": "dragon",
+    "parity": "day",
+    "position": "12",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      321,
+      326,
+      178
+    ]
+  },
+  "020": {
+    "element": "earth",
+    "season": "winter",
+    "form": "distant star",
+    "house": "laughter",
+    "access": "private",
+    "throne": "dragon",
+    "parity": "night",
+    "position": "4",
+    "rank": "terminus",
+    "level": "2",
+    "doors": [
+      152,
+      321
+    ]
+  },
+  "021": {
+    "element": "earth",
+    "season": "spring",
+    "form": "ravens",
+    "house": "whispers",
+    "access": "private",
+    "throne": "ivory",
+    "parity": "day",
+    "position": "11",
+    "rank": "terminus",
+    "level": "3",
+    "doors": [
+      153,
+      320,
+      180
+    ]
+  },
+  "022": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "judgement",
+    "access": "public",
+    "throne": "falcon",
+    "parity": "day",
+    "position": "13",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      324,
+      154,
+      323
+    ]
+  },
+  "023": {
+    "element": "wood",
+    "season": "summer",
+    "form": "facing the ravens",
+    "house": "desire",
+    "access": "public",
+    "throne": "crystal",
+    "parity": "day",
+    "position": "6",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      325,
+      155,
+      322,
+      182
+    ]
+  },
+  "024": {
+    "element": "earth",
+    "season": "summer",
+    "form": "distant star",
+    "house": "rain",
+    "access": "public",
+    "throne": "saphire",
+    "parity": "day",
+    "position": "16",
+    "rank": "foundation",
+    "level": "5",
+    "doors": [
+      260,
+      333
+    ]
+  },
+  "025": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "words",
+    "access": "public",
+    "throne": "amber",
+    "parity": "day",
+    "position": "12",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      261,
+      332,
+      184
+    ]
+  },
+  "026": {
+    "element": "wood",
+    "season": "spring",
+    "form": "ravens",
+    "house": "sand",
+    "access": "private",
+    "throne": "onyx",
+    "parity": "day",
+    "position": "1",
+    "rank": "step",
+    "level": "1",
+    "doors": [
+      262,
+      328,
+      335
+    ]
+  },
+  "027": {
+    "element": "water",
+    "season": "winter",
+    "form": "facing the ravens",
+    "house": "dreams",
+    "access": "private",
+    "throne": "jade",
+    "parity": "night",
+    "position": "5",
+    "rank": "step",
+    "level": "2",
+    "doors": [
+      263,
+      329,
+      334,
+      186
+    ]
+  },
+  "028": {
+    "element": "earth",
+    "season": "fall",
+    "form": "cranes",
+    "house": "time",
+    "access": "public",
+    "throne": "jade",
+    "parity": "night",
+    "position": "13",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      256,
+      144,
+      329
+    ]
+  },
+  "029": {
+    "element": "wood",
+    "season": "summer",
+    "form": "chasing cranes left",
+    "house": "birds",
+    "access": "public",
+    "throne": "onyx",
+    "parity": "day",
+    "position": "6",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      257,
+      145,
+      328,
+      188
+    ]
+  },
+  "030": {
+    "element": "wood",
+    "season": "winter",
+    "form": "chasing cranes right",
+    "house": "bones",
+    "access": "private",
+    "throne": "amber",
+    "parity": "night",
+    "position": "4",
+    "rank": "step",
+    "level": "2",
+    "doors": [
+      258,
+      332,
+      146,
+      331
+    ]
+  },
+  "031": {
+    "element": "water",
+    "season": "spring",
+    "form": "clouds",
+    "house": "numbers",
+    "access": "private",
+    "throne": "saphire",
+    "parity": "day",
+    "position": "11",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      259,
+      333,
+      147,
+      330,
+      190
+    ]
+  },
+  "032": {
+    "element": "metal",
+    "season": "summer",
+    "form": "distant star",
+    "house": "birds",
+    "access": "private",
+    "throne": "saphire",
+    "parity": "night",
+    "position": "1",
+    "rank": "foundation",
+    "level": "1",
+    "doors": [
+      81
+    ]
+  },
+  "033": {
+    "element": "earth",
+    "season": "fall",
+    "form": "cranes",
+    "house": "time",
+    "access": "private",
+    "throne": "amber",
+    "parity": "day",
+    "position": "5",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      128,
+      80
+    ]
+  },
+  "034": {
+    "element": "wood",
+    "season": "spring",
+    "form": "ravens",
+    "house": "numbers",
+    "access": "public",
+    "throne": "onyx",
+    "parity": "night",
+    "position": "16",
+    "rank": "step",
+    "level": "5",
+    "doors": [
+      368,
+      83
+    ]
+  },
+  "035": {
+    "element": "wood",
+    "season": "winter",
+    "form": "chasing cranes left",
+    "house": "bones",
+    "access": "public",
+    "throne": "jade",
+    "parity": "day",
+    "position": "12",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      369,
+      130,
+      82
+    ]
+  },
+  "036": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "words",
+    "access": "private",
+    "throne": "jade",
+    "parity": "day",
+    "position": "4",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      168,
+      85
+    ]
+  },
+  "037": {
+    "element": "wood",
+    "season": "summer",
+    "form": "chasing cranes right",
+    "house": "rain",
+    "access": "private",
+    "throne": "onyx",
+    "parity": "night",
+    "position": "11",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      169,
+      132,
+      84
+    ]
+  },
+  "038": {
+    "element": "water",
+    "season": "winter",
+    "form": "facing the ravens",
+    "house": "dreams",
+    "access": "public",
+    "throne": "amber",
+    "parity": "day",
+    "position": "13",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      372,
+      170,
+      87
+    ]
+  },
+  "039": {
+    "element": "water",
+    "season": "spring",
+    "form": "clouds",
+    "house": "sand",
+    "access": "public",
+    "throne": "saphire",
+    "parity": "night",
+    "position": "6",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      373,
+      171,
+      134,
+      86
+    ]
+  },
+  "040": {
+    "element": "wood",
+    "season": "spring",
+    "form": "cranes flying",
+    "house": "whispers",
+    "access": "public",
+    "throne": "crystal",
+    "parity": "night",
+    "position": "16",
+    "rank": "step",
+    "level": "5",
+    "doors": [
+      308,
+      89
+    ]
+  },
+  "041": {
+    "element": "wood",
+    "season": "winter",
+    "form": "dancing dog left",
+    "house": "laughter",
+    "access": "public",
+    "throne": "falcon",
+    "parity": "day",
+    "position": "12",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      309,
+      136,
+      88
+    ]
+  },
+  "042": {
+    "element": "water",
+    "season": "summer",
+    "form": "hidden dragon",
+    "house": "desire",
+    "access": "private",
+    "throne": "ivory",
+    "parity": "night",
+    "position": "1",
+    "rank": "dais",
+    "level": "1",
+    "doors": [
+      310,
+      376,
+      91
+    ]
+  },
+  "043": {
+    "element": "water",
+    "season": "fall",
+    "form": "cranes and ravens",
+    "house": "judgement",
+    "access": "private",
+    "throne": "dragon",
+    "parity": "day",
+    "position": "5",
+    "rank": "dais",
+    "level": "2",
+    "doors": [
+      311,
+      377,
+      138,
+      90
+    ]
+  },
+  "044": {
+    "element": "wood",
+    "season": "winter",
+    "form": "dancing dog right",
+    "house": "rumor",
+    "access": "public",
+    "throne": "dragon",
+    "parity": "day",
+    "position": "13",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      304,
+      160,
+      93
+    ]
+  },
+  "045": {
+    "element": "wood",
+    "season": "spring",
+    "form": "facing the lion",
+    "house": "darkness",
+    "access": "public",
+    "throne": "ivory",
+    "parity": "night",
+    "position": "6",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      305,
+      161,
+      140,
+      92
+    ]
+  },
+  "046": {
+    "element": "water",
+    "season": "fall",
+    "form": "cranes and ravens",
+    "house": "lamentation",
+    "access": "private",
+    "throne": "falcon",
+    "parity": "day",
+    "position": "4",
+    "rank": "dais",
+    "level": "2",
+    "doors": [
+      306,
+      380,
+      162,
+      95
+    ]
+  },
+  "047": {
+    "element": "water",
+    "season": "summer",
+    "form": "facing the ravens",
+    "house": "innocence",
+    "access": "private",
+    "throne": "crystal",
+    "parity": "night",
+    "position": "11",
+    "rank": "dais",
+    "level": "3",
+    "doors": [
+      307,
+      381,
+      163,
+      142,
+      94
+    ]
+  },
+  "048": {
+    "element": "earth",
+    "season": "summer",
+    "form": "distant star",
+    "house": "birds",
+    "access": "public",
+    "throne": "lapis",
+    "parity": "day",
+    "position": "16",
+    "rank": "foundation",
+    "level": "5",
+    "doors": [
+      357,
+      65
+    ]
+  },
+  "049": {
+    "element": "earth",
+    "season": "fall",
+    "form": "cranes",
+    "house": "time",
+    "access": "public",
+    "throne": "carnelian",
+    "parity": "night",
+    "position": "12",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      356,
+      144,
+      64
+    ]
+  },
+  "050": {
+    "element": "wood",
+    "season": "spring",
+    "form": "ravens",
+    "house": "numbers",
+    "access": "private",
+    "throne": "iron",
+    "parity": "day",
+    "position": "1",
+    "rank": "step",
+    "level": "1",
+    "doors": [
+      352,
+      359,
+      67
+    ]
+  },
+  "051": {
+    "element": "wood",
+    "season": "winter",
+    "form": "chasing cranes left",
+    "house": "bones",
+    "access": "private",
+    "throne": "emerald",
+    "parity": "night",
+    "position": "5",
+    "rank": "step",
+    "level": "2",
+    "doors": [
+      353,
+      358,
+      146,
+      66
+    ]
+  },
+  "052": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "words",
+    "access": "public",
+    "throne": "emerald",
+    "parity": "day",
+    "position": "13",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      184,
+      353,
+      69
+    ]
+  },
+  "053": {
+    "element": "wood",
+    "season": "summer",
+    "form": "chasing cranes right",
+    "house": "rain",
+    "access": "public",
+    "throne": "iron",
+    "parity": "day",
+    "position": "6",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      185,
+      352,
+      148,
+      68
+    ]
+  },
+  "054": {
+    "element": "water",
+    "season": "winter",
+    "form": "facing the ravens",
+    "house": "dreams",
+    "access": "private",
+    "throne": "carnelian",
+    "parity": "night",
+    "position": "4",
+    "rank": "step",
+    "level": "2",
+    "doors": [
+      356,
+      186,
+      355,
+      71
+    ]
+  },
+  "055": {
+    "element": "water",
+    "season": "spring",
+    "form": "clouds",
+    "house": "sand",
+    "access": "private",
+    "throne": "lapis",
+    "parity": "day",
+    "position": "11",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      357,
+      187,
+      354,
+      150,
+      70
+    ]
+  },
+  "056": {
+    "element": "wood",
+    "season": "spring",
+    "form": "cranes flying",
+    "house": "whispers",
+    "access": "private",
+    "throne": "diamond",
+    "parity": "day",
+    "position": "1",
+    "rank": "step",
+    "level": "1",
+    "doors": [
+      292,
+      365,
+      73
+    ]
+  },
+  "057": {
+    "element": "wood",
+    "season": "winter",
+    "form": "dancing dog left",
+    "house": "laughter",
+    "access": "private",
+    "throne": "lion",
+    "parity": "night",
+    "position": "5",
+    "rank": "step",
+    "level": "2",
+    "doors": [
+      293,
+      364,
+      152,
+      72
+    ]
+  },
+  "058": {
+    "element": "water",
+    "season": "summer",
+    "form": "hidden dragon",
+    "house": "desire",
+    "access": "public",
+    "throne": "coral",
+    "parity": "day",
+    "position": "16",
+    "rank": "dais",
+    "level": "5",
+    "doors": [
+      294,
+      360,
+      367,
+      75
+    ]
+  },
+  "059": {
+    "element": "water",
+    "season": "fall",
+    "form": "cranes and ravens",
+    "house": "judgement",
+    "access": "public",
+    "throne": "peacock",
+    "parity": "night",
+    "position": "12",
+    "rank": "dais",
+    "level": "4",
+    "doors": [
+      295,
+      361,
+      366,
+      154,
+      74
+    ]
+  },
+  "060": {
+    "element": "wood",
+    "season": "winter",
+    "form": "dancing dog right",
+    "house": "rumor",
+    "access": "private",
+    "throne": "peacock",
+    "parity": "night",
+    "position": "4",
+    "rank": "step",
+    "level": "2",
+    "doors": [
+      288,
+      176,
+      361,
+      77
+    ]
+  },
+  "061": {
+    "element": "wood",
+    "season": "spring",
+    "form": "facing the lion",
+    "house": "darkness",
+    "access": "private",
+    "throne": "coral",
+    "parity": "day",
+    "position": "11",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      289,
+      177,
+      360,
+      156,
+      76
+    ]
+  },
+  "062": {
+    "element": "water",
+    "season": "fall",
+    "form": "cranes and ravens",
+    "house": "lamentation",
+    "access": "public",
+    "throne": "lion",
+    "parity": "night",
+    "position": "13",
+    "rank": "dais",
+    "level": "4",
+    "doors": [
+      290,
+      364,
+      178,
+      363,
+      79
+    ]
+  },
+  "063": {
+    "element": "water",
+    "season": "summer",
+    "form": "facing the ravens",
+    "house": "innocence",
+    "access": "public",
+    "throne": "diamond",
+    "parity": "day",
+    "position": "6",
+    "rank": "dais",
+    "level": "3",
+    "doors": [
+      291,
+      365,
+      179,
+      362,
+      158,
+      78
+    ]
+  },
+  "064": {
+    "element": "earth",
+    "season": "winter",
+    "form": "distant star",
+    "house": "numbers",
+    "access": "public",
+    "throne": "carnelian",
+    "parity": "day",
+    "position": "14",
+    "rank": "terminus",
+    "level": "4",
+    "doors": [
+      34
+    ]
+  },
+  "065": {
+    "element": "earth",
+    "season": "spring",
+    "form": "ravens",
+    "house": "bones",
+    "access": "public",
+    "throne": "lapis",
+    "parity": "night",
+    "position": "7",
+    "rank": "terminus",
+    "level": "3",
+    "doors": [
+      35,
+      224
+    ]
+  },
+  "066": {
+    "element": "earth",
+    "season": "fall",
+    "form": "cranes",
+    "house": "birds",
+    "access": "private",
+    "throne": "emerald",
+    "parity": "day",
+    "position": "3",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      272,
+      32
+    ]
+  },
+  "067": {
+    "element": "wood",
+    "season": "summer",
+    "form": "chasing cranes right",
+    "house": "time",
+    "access": "private",
+    "throne": "iron",
+    "parity": "night",
+    "position": "10",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      273,
+      33,
+      226
+    ]
+  },
+  "068": {
+    "element": "wood",
+    "season": "spring",
+    "form": "cranes flying",
+    "house": "dreams",
+    "access": "public",
+    "throne": "iron",
+    "parity": "night",
+    "position": "8",
+    "rank": "terminus",
+    "level": "3",
+    "doors": [
+      200,
+      38
+    ]
+  },
+  "069": {
+    "element": "wood",
+    "season": "winter",
+    "form": "hidden dragon",
+    "house": "sand",
+    "access": "public",
+    "throne": "emerald",
+    "parity": "day",
+    "position": "2",
+    "rank": "terminus",
+    "level": "2",
+    "doors": [
+      201,
+      39,
+      228
+    ]
+  },
+  "070": {
+    "element": "wood",
+    "season": "summer",
+    "form": "dancing dog right",
+    "house": "words",
+    "access": "private",
+    "throne": "lapis",
+    "parity": "night",
+    "position": "9",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      276,
+      202,
+      36
+    ]
+  },
+  "071": {
+    "element": "wood",
+    "season": "fall",
+    "form": "cranes and ravens",
+    "house": "rain",
+    "access": "private",
+    "throne": "carnelian",
+    "parity": "day",
+    "position": "15",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      277,
+      203,
+      37,
+      230
+    ]
+  },
+  "072": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "desire",
+    "access": "private",
+    "throne": "lion",
+    "parity": "day",
+    "position": "3",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      340,
+      42
+    ]
+  },
+  "073": {
+    "element": "wood",
+    "season": "summer",
+    "form": "facing the ravens",
+    "house": "judgement",
+    "access": "private",
+    "throne": "diamond",
+    "parity": "night",
+    "position": "10",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      341,
+      43,
+      232
+    ]
+  },
+  "074": {
+    "element": "wood",
+    "season": "winter",
+    "form": "chasing cranes left",
+    "house": "whispers",
+    "access": "public",
+    "throne": "peacock",
+    "parity": "day",
+    "position": "14",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      342,
+      280,
+      40
+    ]
+  },
+  "075": {
+    "element": "water",
+    "season": "spring",
+    "form": "clouds",
+    "house": "laughter",
+    "access": "public",
+    "throne": "coral",
+    "parity": "night",
+    "position": "7",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      343,
+      281,
+      41,
+      234
+    ]
+  },
+  "076": {
+    "element": "wood",
+    "season": "summer",
+    "form": "dancing dog left",
+    "house": "lamentation",
+    "access": "private",
+    "throne": "coral",
+    "parity": "night",
+    "position": "9",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      336,
+      192,
+      46
+    ]
+  },
+  "077": {
+    "element": "wood",
+    "season": "fall",
+    "form": "cranes and ravens",
+    "house": "innocence",
+    "access": "private",
+    "throne": "peacock",
+    "parity": "day",
+    "position": "15",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      337,
+      193,
+      47,
+      236
+    ]
+  },
+  "078": {
+    "element": "wood",
+    "season": "spring",
+    "form": "facing the lion",
+    "house": "rumor",
+    "access": "public",
+    "throne": "diamond",
+    "parity": "night",
+    "position": "8",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      338,
+      284,
+      194,
+      44
+    ]
+  },
+  "079": {
+    "element": "water",
+    "season": "winter",
+    "form": "facing the ravens",
+    "house": "darkness",
+    "access": "public",
+    "throne": "lion",
+    "parity": "day",
+    "position": "2",
+    "rank": "step",
+    "level": "2",
+    "doors": [
+      339,
+      285,
+      195,
+      45,
+      238
+    ]
+  },
+  "080": {
+    "element": "earth",
+    "season": "winter",
+    "form": "distant star",
+    "house": "numbers",
+    "access": "private",
+    "throne": "amber",
+    "parity": "night",
+    "position": "3",
+    "rank": "terminus",
+    "level": "2",
+    "doors": [
+      261,
+      50
+    ]
+  },
+  "081": {
+    "element": "earth",
+    "season": "spring",
+    "form": "ravens",
+    "house": "bones",
+    "access": "private",
+    "throne": "saphire",
+    "parity": "day",
+    "position": "10",
+    "rank": "terminus",
+    "level": "3",
+    "doors": [
+      260,
+      51,
+      240
+    ]
+  },
+  "082": {
+    "element": "earth",
+    "season": "fall",
+    "form": "cranes",
+    "house": "birds",
+    "access": "public",
+    "throne": "jade",
+    "parity": "night",
+    "position": "14",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      256,
+      263,
+      48
+    ]
+  },
+  "083": {
+    "element": "wood",
+    "season": "summer",
+    "form": "chasing cranes right",
+    "house": "time",
+    "access": "public",
+    "throne": "onyx",
+    "parity": "day",
+    "position": "7",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      257,
+      262,
+      49,
+      242
+    ]
+  },
+  "084": {
+    "element": "wood",
+    "season": "spring",
+    "form": "cranes flying",
+    "house": "dreams",
+    "access": "private",
+    "throne": "onyx",
+    "parity": "day",
+    "position": "9",
+    "rank": "terminus",
+    "level": "3",
+    "doors": [
+      216,
+      257,
+      54
+    ]
+  },
+  "085": {
+    "element": "wood",
+    "season": "winter",
+    "form": "hidden dragon",
+    "house": "sand",
+    "access": "private",
+    "throne": "jade",
+    "parity": "night",
+    "position": "15",
+    "rank": "terminus",
+    "level": "4",
+    "doors": [
+      217,
+      256,
+      55,
+      244
+    ]
+  },
+  "086": {
+    "element": "wood",
+    "season": "summer",
+    "form": "dancing dog right",
+    "house": "words",
+    "access": "public",
+    "throne": "saphire",
+    "parity": "day",
+    "position": "8",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      260,
+      218,
+      259,
+      52
+    ]
+  },
+  "087": {
+    "element": "wood",
+    "season": "fall",
+    "form": "cranes and ravens",
+    "house": "rain",
+    "access": "public",
+    "throne": "amber",
+    "parity": "night",
+    "position": "2",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      261,
+      219,
+      258,
+      53,
+      246
+    ]
+  },
+  "088": {
+    "element": "wood",
+    "season": "fall",
+    "form": "sun and moon",
+    "house": "desire",
+    "access": "public",
+    "throne": "falcon",
+    "parity": "day",
+    "position": "14",
+    "rank": "foundation",
+    "level": "4",
+    "doors": [
+      324,
+      269,
+      58
+    ]
+  },
+  "089": {
+    "element": "wood",
+    "season": "summer",
+    "form": "facing the ravens",
+    "house": "judgement",
+    "access": "public",
+    "throne": "crystal",
+    "parity": "day",
+    "position": "7",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      325,
+      268,
+      59,
+      248
+    ]
+  },
+  "090": {
+    "element": "wood",
+    "season": "winter",
+    "form": "chasing cranes left",
+    "house": "whispers",
+    "access": "private",
+    "throne": "dragon",
+    "parity": "night",
+    "position": "3",
+    "rank": "step",
+    "level": "2",
+    "doors": [
+      326,
+      264,
+      271,
+      56
+    ]
+  },
+  "091": {
+    "element": "water",
+    "season": "spring",
+    "form": "clouds",
+    "house": "laughter",
+    "access": "private",
+    "throne": "ivory",
+    "parity": "day",
+    "position": "10",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      327,
+      265,
+      270,
+      57,
+      250
+    ]
+  },
+  "092": {
+    "element": "wood",
+    "season": "summer",
+    "form": "dancing dog left",
+    "house": "lamentation",
+    "access": "public",
+    "throne": "ivory",
+    "parity": "day",
+    "position": "8",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      320,
+      208,
+      265,
+      62
+    ]
+  },
+  "093": {
+    "element": "wood",
+    "season": "fall",
+    "form": "cranes and ravens",
+    "house": "innocence",
+    "access": "public",
+    "throne": "dragon",
+    "parity": "night",
+    "position": "2",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      321,
+      209,
+      264,
+      63,
+      252
+    ]
+  },
+  "094": {
+    "element": "wood",
+    "season": "spring",
+    "form": "facing the lion",
+    "house": "rumor",
+    "access": "private",
+    "throne": "crystal",
+    "parity": "day",
+    "position": "9",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      322,
+      268,
+      210,
+      267,
+      60
+    ]
+  },
+  "095": {
+    "element": "water",
+    "season": "winter",
+    "form": "facing the ravens",
+    "house": "darkness",
+    "access": "private",
+    "throne": "falcon",
+    "parity": "night",
+    "position": "15",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      323,
+      269,
+      211,
+      266,
+      61,
+      254
+    ]
+  },
+  "096": {
+    "element": "earth",
+    "season": "fall",
+    "form": "cranes",
+    "house": "innocence",
+    "access": "private",
+    "throne": "falcon",
+    "parity": "day",
+    "position": "3",
+    "rank": "foundation",
+    "level": "2",
+    "doors": [
+      2,
+      17
+    ]
+  },
+  "097": {
+    "element": "earth",
+    "season": "summer",
+    "form": "lion",
+    "house": "lamentation",
+    "access": "private",
+    "throne": "crystal",
+    "parity": "night",
+    "position": "10",
+    "rank": "foundation",
+    "level": "3",
+    "doors": [
+      3,
+      192,
+      16
+    ]
+  },
+  "098": {
+    "element": "wood",
+    "season": "winter",
+    "form": "lion",
+    "house": "darkness",
+    "access": "public",
+    "throne": "dragon",
+    "parity": "day",
+    "position": "14",
+    "rank": "step",
+    "level": "4",
+    "doors": [
+      304,
+      0,
+      19
+    ]
+  },
+  "099": {
+    "element": "wood",
+    "season": "spring",
+    "form": "dragon walking",
+    "house": "rumor",
+    "access": "public",
+    "throne": "ivory",
+    "parity": "night",
+    "position": "7",
+    "rank": "step",
+    "level": "3",
+    "doors": [
+      305,
+      1,
+      194,
+      18
     ]
   }
 };

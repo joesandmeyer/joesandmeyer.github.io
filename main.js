@@ -310,7 +310,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const y = centerY + radius * Math.sin(angle);
                 positions[key] = { x, y };
                 i--;
-                console.log(key)
             });
             Object.keys(nodes).forEach((key) => {
                 if (key < 100) return;
