@@ -1,4 +1,4 @@
-const smData = {
+const cmData = {
   "000": {
     "element": "emptiness",
     "season": "spring",
@@ -9,6 +9,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "terminus",
+    "level": "",
     "doors": []
   },
   "001": {
@@ -21,6 +22,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "terminus",
+    "level": "",
     "doors": [
       160
     ]
@@ -35,6 +37,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "foundation",
+    "level": "",
     "doors": [
       336
     ]
@@ -49,6 +52,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "foundation",
+    "level": "",
     "doors": [
       337,
       162
@@ -64,6 +68,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "terminus",
+    "level": "",
     "doors": [
       136
     ]
@@ -78,6 +83,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "terminus",
+    "level": "",
     "doors": [
       137,
       164
@@ -93,6 +99,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "foundation",
+    "level": "",
     "doors": [
       340,
       138
@@ -108,6 +115,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "foundation",
+    "level": "",
     "doors": [
       341,
       139,
@@ -124,6 +132,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "foundation",
+    "level": "",
     "doors": [
       276
     ]
@@ -138,6 +147,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "foundation",
+    "level": "",
     "doors": [
       277,
       168
@@ -153,6 +163,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       278,
       344
@@ -168,6 +179,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       279,
       345,
@@ -184,6 +196,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "foundation",
+    "level": "",
     "doors": [
       272,
       128
@@ -199,6 +212,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "foundation",
+    "level": "",
     "doors": [
       273,
       129,
@@ -215,6 +229,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       274,
       348,
@@ -231,6 +246,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       275,
       349,
@@ -248,6 +264,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "terminus",
+    "level": "",
     "doors": [
       325
     ]
@@ -262,6 +279,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "terminus",
+    "level": "",
     "doors": [
       324,
       176
@@ -277,6 +295,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "foundation",
+    "level": "",
     "doors": [
       320,
       327
@@ -292,6 +311,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
+    "level": "",
     "doors": [
       321,
       326,
@@ -308,6 +328,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "terminus",
+    "level": "",
     "doors": [
       152,
       321
@@ -323,6 +344,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "terminus",
+    "level": "",
     "doors": [
       153,
       320,
@@ -339,6 +361,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
+    "level": "",
     "doors": [
       324,
       154,
@@ -355,6 +378,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "foundation",
+    "level": "",
     "doors": [
       325,
       155,
@@ -372,6 +396,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "foundation",
+    "level": "",
     "doors": [
       260,
       333
@@ -387,6 +412,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
+    "level": "",
     "doors": [
       261,
       332,
@@ -403,6 +429,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       262,
       328,
@@ -419,6 +446,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       263,
       329,
@@ -436,6 +464,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "foundation",
+    "level": "",
     "doors": [
       256,
       144,
@@ -452,6 +481,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "foundation",
+    "level": "",
     "doors": [
       257,
       145,
@@ -469,6 +499,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       258,
       332,
@@ -486,6 +517,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       259,
       333,
@@ -504,6 +536,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "foundation",
+    "level": "",
     "doors": [
       81
     ]
@@ -518,6 +551,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "foundation",
+    "level": "",
     "doors": [
       128,
       80
@@ -533,6 +567,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       368,
       83
@@ -548,6 +583,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       369,
       130,
@@ -564,6 +600,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "foundation",
+    "level": "",
     "doors": [
       168,
       85
@@ -579,6 +616,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "foundation",
+    "level": "",
     "doors": [
       169,
       132,
@@ -595,6 +633,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       372,
       170,
@@ -611,6 +650,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       373,
       171,
@@ -628,6 +668,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       308,
       89
@@ -643,6 +684,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       309,
       136,
@@ -659,6 +701,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "dais",
+    "level": "",
     "doors": [
       310,
       376,
@@ -675,6 +718,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
+    "level": "",
     "doors": [
       311,
       377,
@@ -692,6 +736,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       304,
       160,
@@ -708,6 +753,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       305,
       161,
@@ -725,6 +771,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
+    "level": "",
     "doors": [
       306,
       380,
@@ -742,6 +789,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "dais",
+    "level": "",
     "doors": [
       307,
       381,
@@ -760,6 +808,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "foundation",
+    "level": "",
     "doors": [
       357,
       65
@@ -775,6 +824,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "foundation",
+    "level": "",
     "doors": [
       356,
       144,
@@ -791,6 +841,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       352,
       359,
@@ -807,6 +858,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       353,
       358,
@@ -824,6 +876,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
+    "level": "",
     "doors": [
       184,
       353,
@@ -840,6 +893,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "foundation",
+    "level": "",
     "doors": [
       185,
       352,
@@ -857,6 +911,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       356,
       186,
@@ -874,6 +929,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       357,
       187,
@@ -892,6 +948,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       292,
       365,
@@ -908,6 +965,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       293,
       364,
@@ -925,6 +983,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "dais",
+    "level": "",
     "doors": [
       294,
       360,
@@ -942,6 +1001,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "dais",
+    "level": "",
     "doors": [
       295,
       361,
@@ -960,6 +1020,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       288,
       176,
@@ -977,6 +1038,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       289,
       177,
@@ -995,6 +1057,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "dais",
+    "level": "",
     "doors": [
       290,
       364,
@@ -1013,6 +1076,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "dais",
+    "level": "",
     "doors": [
       291,
       365,
@@ -1032,6 +1096,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "terminus",
+    "level": "",
     "doors": [
       34
     ]
@@ -1046,6 +1111,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "terminus",
+    "level": "",
     "doors": [
       35,
       224
@@ -1061,6 +1127,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "foundation",
+    "level": "",
     "doors": [
       272,
       32
@@ -1076,6 +1143,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "foundation",
+    "level": "",
     "doors": [
       273,
       33,
@@ -1092,6 +1160,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "terminus",
+    "level": "",
     "doors": [
       200,
       38
@@ -1107,6 +1176,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "terminus",
+    "level": "",
     "doors": [
       201,
       39,
@@ -1123,6 +1193,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "foundation",
+    "level": "",
     "doors": [
       276,
       202,
@@ -1139,6 +1210,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
+    "level": "",
     "doors": [
       277,
       203,
@@ -1156,6 +1228,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "foundation",
+    "level": "",
     "doors": [
       340,
       42
@@ -1171,6 +1244,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "foundation",
+    "level": "",
     "doors": [
       341,
       43,
@@ -1187,6 +1261,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       342,
       280,
@@ -1203,6 +1278,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       343,
       281,
@@ -1220,6 +1296,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "foundation",
+    "level": "",
     "doors": [
       336,
       192,
@@ -1236,6 +1313,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
+    "level": "",
     "doors": [
       337,
       193,
@@ -1253,6 +1331,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       338,
       284,
@@ -1270,6 +1349,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       339,
       285,
@@ -1288,6 +1368,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "terminus",
+    "level": "",
     "doors": [
       261,
       50
@@ -1303,6 +1384,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "terminus",
+    "level": "",
     "doors": [
       260,
       51,
@@ -1319,6 +1401,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "foundation",
+    "level": "",
     "doors": [
       256,
       263,
@@ -1335,6 +1418,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "foundation",
+    "level": "",
     "doors": [
       257,
       262,
@@ -1352,6 +1436,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "terminus",
+    "level": "",
     "doors": [
       216,
       257,
@@ -1368,6 +1453,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "terminus",
+    "level": "",
     "doors": [
       217,
       256,
@@ -1385,6 +1471,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "foundation",
+    "level": "",
     "doors": [
       260,
       218,
@@ -1402,6 +1489,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "foundation",
+    "level": "",
     "doors": [
       261,
       219,
@@ -1420,6 +1508,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
+    "level": "",
     "doors": [
       324,
       269,
@@ -1436,6 +1525,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "foundation",
+    "level": "",
     "doors": [
       325,
       268,
@@ -1453,6 +1543,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       326,
       264,
@@ -1470,6 +1561,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       327,
       265,
@@ -1488,6 +1580,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "foundation",
+    "level": "",
     "doors": [
       320,
       208,
@@ -1505,6 +1598,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "foundation",
+    "level": "",
     "doors": [
       321,
       209,
@@ -1523,6 +1617,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       322,
       268,
@@ -1541,6 +1636,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       323,
       269,
@@ -1560,6 +1656,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "foundation",
+    "level": "",
     "doors": [
       2,
       17
@@ -1575,6 +1672,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "foundation",
+    "level": "",
     "doors": [
       3,
       192,
@@ -1591,6 +1689,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       304,
       0,
@@ -1607,6 +1706,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       305,
       1,
@@ -1624,6 +1724,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "foundation",
+    "level": "",
     "doors": [
       232,
       6,
@@ -1640,6 +1741,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
+    "level": "",
     "doors": [
       233,
       7,
@@ -1657,6 +1759,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       308,
       234,
@@ -1674,6 +1777,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       309,
       235,
@@ -1692,6 +1796,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       372,
       10,
@@ -1708,6 +1813,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       373,
       11,
@@ -1725,6 +1831,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
+    "level": "",
     "doors": [
       374,
       312,
@@ -1742,6 +1849,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "dais",
+    "level": "",
     "doors": [
       375,
       313,
@@ -1760,6 +1868,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       368,
       224,
@@ -1777,6 +1886,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       369,
       225,
@@ -1795,6 +1905,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "dais",
+    "level": "",
     "doors": [
       370,
       316,
@@ -1813,6 +1924,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "dais",
+    "level": "",
     "doors": [
       371,
       317,
@@ -1832,6 +1944,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "foundation",
+    "level": "",
     "doors": [
       293,
       18,
@@ -1848,6 +1961,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "foundation",
+    "level": "",
     "doors": [
       292,
       19,
@@ -1865,6 +1979,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       288,
       295,
@@ -1882,6 +1997,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       289,
       294,
@@ -1900,6 +2016,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "foundation",
+    "level": "",
     "doors": [
       248,
       289,
@@ -1917,6 +2034,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "foundation",
+    "level": "",
     "doors": [
       249,
       288,
@@ -1935,6 +2053,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       292,
       250,
@@ -1953,6 +2072,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       293,
       251,
@@ -1972,6 +2092,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       356,
       301,
@@ -1989,6 +2110,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       357,
       300,
@@ -2007,6 +2129,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "dais",
+    "level": "",
     "doors": [
       358,
       296,
@@ -2025,6 +2148,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "dais",
+    "level": "",
     "doors": [
       359,
       297,
@@ -2044,6 +2168,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       352,
       240,
@@ -2062,6 +2187,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       353,
       241,
@@ -2081,6 +2207,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "dais",
+    "level": "",
     "doors": [
       354,
       300,
@@ -2100,6 +2227,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
+    "level": "",
     "doors": [
       355,
       301,
@@ -2120,6 +2248,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "foundation",
+    "level": "",
     "doors": [
       21
     ]
@@ -2134,6 +2263,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "foundation",
+    "level": "",
     "doors": [
       20,
       32
@@ -2149,6 +2279,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       464,
       23
@@ -2164,6 +2295,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       465,
       22,
@@ -2180,6 +2312,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "foundation",
+    "level": "",
     "doors": [
       8,
       17
@@ -2195,6 +2328,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "foundation",
+    "level": "",
     "doors": [
       9,
       16,
@@ -2211,6 +2345,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       468,
       10,
@@ -2227,6 +2362,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       469,
       11,
@@ -2244,6 +2380,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       404,
       29
@@ -2259,6 +2396,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       405,
       28,
@@ -2275,6 +2413,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "dais",
+    "level": "",
     "doors": [
       406,
       472,
@@ -2291,6 +2430,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
+    "level": "",
     "doors": [
       407,
       473,
@@ -2308,6 +2448,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       400,
       0,
@@ -2324,6 +2465,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       401,
       1,
@@ -2341,6 +2483,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
+    "level": "",
     "doors": [
       402,
       476,
@@ -2358,6 +2501,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "dais",
+    "level": "",
     "doors": [
       403,
       477,
@@ -2376,6 +2520,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "foundation",
+    "level": "",
     "doors": [
       453,
       5
@@ -2391,6 +2536,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "foundation",
+    "level": "",
     "doors": [
       452,
       4,
@@ -2407,6 +2553,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       448,
       455,
@@ -2423,6 +2570,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       449,
       454,
@@ -2440,6 +2588,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "foundation",
+    "level": "",
     "doors": [
       24,
       449,
@@ -2456,6 +2605,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "foundation",
+    "level": "",
     "doors": [
       25,
       448,
@@ -2473,6 +2623,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       452,
       26,
@@ -2490,6 +2641,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       453,
       27,
@@ -2508,6 +2660,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       388,
       461,
@@ -2524,6 +2677,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       389,
       460,
@@ -2541,6 +2695,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "dais",
+    "level": "",
     "doors": [
       390,
       456,
@@ -2558,6 +2713,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "dais",
+    "level": "",
     "doors": [
       391,
       457,
@@ -2576,6 +2732,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       384,
       16,
@@ -2593,6 +2750,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       385,
       17,
@@ -2611,6 +2769,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "dais",
+    "level": "",
     "doors": [
       386,
       460,
@@ -2629,6 +2788,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "dais",
+    "level": "",
     "doors": [
       387,
       461,
@@ -2648,6 +2808,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       53,
       209
@@ -2663,6 +2824,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       52,
       0,
@@ -2679,6 +2841,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "dais",
+    "level": "",
     "doors": [
       496,
       55,
@@ -2695,6 +2858,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
+    "level": "",
     "doors": [
       497,
       54,
@@ -2712,6 +2876,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       40,
       49,
@@ -2728,6 +2893,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       41,
       48,
@@ -2745,6 +2911,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
+    "level": "",
     "doors": [
       500,
       42,
@@ -2762,6 +2929,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "dais",
+    "level": "",
     "doors": [
       501,
       43,
@@ -2780,6 +2948,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "dais",
+    "level": "",
     "doors": [
       436,
       61,
@@ -2796,6 +2965,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
+    "level": "",
     "doors": [
       437,
       60,
@@ -2813,6 +2983,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "seat",
+    "level": "",
     "doors": [
       438,
       504,
@@ -2830,6 +3001,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "seat",
+    "level": "",
     "doors": [
       439,
       505,
@@ -2848,6 +3020,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
+    "level": "",
     "doors": [
       432,
       32,
@@ -2865,6 +3038,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "dais",
+    "level": "",
     "doors": [
       433,
       33,
@@ -2883,6 +3057,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "seat",
+    "level": "",
     "doors": [
       434,
       508,
@@ -2901,6 +3076,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "seat",
+    "level": "",
     "doors": [
       435,
       509,
@@ -2920,6 +3096,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       485,
       37,
@@ -2936,6 +3113,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       484,
       36,
@@ -2953,6 +3131,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "dais",
+    "level": "",
     "doors": [
       480,
       487,
@@ -2970,6 +3149,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "dais",
+    "level": "",
     "doors": [
       481,
       486,
@@ -2988,6 +3168,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       56,
       481,
@@ -3005,6 +3186,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       57,
       480,
@@ -3023,6 +3205,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "dais",
+    "level": "",
     "doors": [
       484,
       58,
@@ -3041,6 +3224,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "dais",
+    "level": "",
     "doors": [
       485,
       59,
@@ -3060,6 +3244,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "dais",
+    "level": "",
     "doors": [
       420,
       493,
@@ -3077,6 +3262,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "dais",
+    "level": "",
     "doors": [
       421,
       492,
@@ -3095,6 +3281,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "seat",
+    "level": "",
     "doors": [
       422,
       488,
@@ -3113,6 +3300,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "seat",
+    "level": "",
     "doors": [
       423,
       489,
@@ -3132,6 +3320,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "dais",
+    "level": "",
     "doors": [
       416,
       48,
@@ -3150,6 +3339,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "dais",
+    "level": "",
     "doors": [
       417,
       49,
@@ -3169,6 +3359,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "seat",
+    "level": "",
     "doors": [
       418,
       492,
@@ -3188,6 +3379,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "seat",
+    "level": "",
     "doors": [
       419,
       493,
@@ -3208,6 +3400,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "foundation",
+    "level": "",
     "doors": [
       162,
       85
@@ -3223,6 +3416,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "foundation",
+    "level": "",
     "doors": [
       163,
       84,
@@ -3239,6 +3433,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       400,
       160,
@@ -3255,6 +3450,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       401,
       161,
@@ -3272,6 +3468,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "foundation",
+    "level": "",
     "doors": [
       72,
       166,
@@ -3288,6 +3485,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
+    "level": "",
     "doors": [
       73,
       167,
@@ -3305,6 +3503,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       404,
       74,
@@ -3322,6 +3521,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       405,
       75,
@@ -3340,6 +3540,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       468,
       170,
@@ -3356,6 +3557,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       469,
       171,
@@ -3373,6 +3575,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
+    "level": "",
     "doors": [
       470,
       408,
@@ -3390,6 +3593,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "dais",
+    "level": "",
     "doors": [
       471,
       409,
@@ -3408,6 +3612,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       464,
       64,
@@ -3425,6 +3630,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       465,
       65,
@@ -3443,6 +3649,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "dais",
+    "level": "",
     "doors": [
       466,
       412,
@@ -3461,6 +3668,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "dais",
+    "level": "",
     "doors": [
       467,
       413,
@@ -3480,6 +3688,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
+    "level": "",
     "doors": [
       389,
       178,
@@ -3496,6 +3705,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "foundation",
+    "level": "",
     "doors": [
       388,
       179,
@@ -3513,6 +3723,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       384,
       391,
@@ -3530,6 +3741,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       385,
       390,
@@ -3548,6 +3760,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "foundation",
+    "level": "",
     "doors": [
       88,
       385,
@@ -3565,6 +3778,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "foundation",
+    "level": "",
     "doors": [
       89,
       384,
@@ -3583,6 +3797,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       388,
       90,
@@ -3601,6 +3816,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       389,
       91,
@@ -3620,6 +3836,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       452,
       397,
@@ -3637,6 +3854,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       453,
       396,
@@ -3655,6 +3873,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "dais",
+    "level": "",
     "doors": [
       454,
       392,
@@ -3673,6 +3892,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "dais",
+    "level": "",
     "doors": [
       455,
       393,
@@ -3692,6 +3912,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       448,
       80,
@@ -3710,6 +3931,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       449,
       81,
@@ -3729,6 +3951,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "dais",
+    "level": "",
     "doors": [
       450,
       396,
@@ -3748,6 +3971,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
+    "level": "",
     "doors": [
       451,
       397,
@@ -3768,6 +3992,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       130,
       117,
@@ -3784,6 +4009,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       131,
       116,
@@ -3801,6 +4027,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
+    "level": "",
     "doors": [
       432,
       128,
@@ -3818,6 +4045,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "dais",
+    "level": "",
     "doors": [
       433,
       129,
@@ -3836,6 +4064,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       104,
       134,
@@ -3853,6 +4082,7 @@ const smData = {
     "parity": "",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       105,
       135,
@@ -3871,6 +4101,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "dais",
+    "level": "",
     "doors": [
       436,
       106,
@@ -3889,6 +4120,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "dais",
+    "level": "",
     "doors": [
       437,
       107,
@@ -3908,6 +4140,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
+    "level": "",
     "doors": [
       500,
       138,
@@ -3925,6 +4158,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "dais",
+    "level": "",
     "doors": [
       501,
       139,
@@ -3943,6 +4177,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "seat",
+    "level": "",
     "doors": [
       502,
       440,
@@ -3961,6 +4196,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "seat",
+    "level": "",
     "doors": [
       503,
       441,
@@ -3980,6 +4216,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "dais",
+    "level": "",
     "doors": [
       496,
       96,
@@ -3998,6 +4235,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "dais",
+    "level": "",
     "doors": [
       497,
       97,
@@ -4017,6 +4255,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "seat",
+    "level": "",
     "doors": [
       498,
       444,
@@ -4036,6 +4275,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "seat",
+    "level": "",
     "doors": [
       499,
       445,
@@ -4056,6 +4296,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       421,
       146,
@@ -4073,6 +4314,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       420,
       147,
@@ -4091,6 +4333,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "dais",
+    "level": "",
     "doors": [
       416,
       423,
@@ -4109,6 +4352,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "dais",
+    "level": "",
     "doors": [
       417,
       422,
@@ -4128,6 +4372,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       120,
       417,
@@ -4146,6 +4391,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       121,
       416,
@@ -4165,6 +4411,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "dais",
+    "level": "",
     "doors": [
       420,
       122,
@@ -4184,6 +4431,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "dais",
+    "level": "",
     "doors": [
       421,
       123,
@@ -4204,6 +4452,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "dais",
+    "level": "",
     "doors": [
       484,
       429,
@@ -4222,6 +4471,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "dais",
+    "level": "",
     "doors": [
       485,
       428,
@@ -4241,6 +4491,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "seat",
+    "level": "",
     "doors": [
       486,
       424,
@@ -4260,6 +4511,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "seat",
+    "level": "",
     "doors": [
       487,
       425,
@@ -4280,6 +4532,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "dais",
+    "level": "",
     "doors": [
       480,
       112,
@@ -4299,6 +4552,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "dais",
+    "level": "",
     "doors": [
       481,
       113,
@@ -4319,6 +4573,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "seat",
+    "level": "",
     "doors": [
       482,
       428,
@@ -4339,6 +4594,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "seat",
+    "level": "",
     "doors": [
       483,
       429,
@@ -4360,6 +4616,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "terminus",
+    "level": "",
     "doors": [
       10
     ]
@@ -4374,6 +4631,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "terminus",
+    "level": "",
     "doors": [
       11,
       416
@@ -4389,6 +4647,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "foundation",
+    "level": "",
     "doors": [
       8,
       80
@@ -4404,6 +4663,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "foundation",
+    "level": "",
     "doors": [
       9,
       81,
@@ -4420,6 +4680,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "terminus",
+    "level": "",
     "doors": [
       14,
       392
@@ -4435,6 +4696,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "terminus",
+    "level": "",
     "doors": [
       15,
       393,
@@ -4451,6 +4713,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "foundation",
+    "level": "",
     "doors": [
       12,
       84,
@@ -4467,6 +4730,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
+    "level": "",
     "doors": [
       13,
       85,
@@ -4484,6 +4748,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "foundation",
+    "level": "",
     "doors": [
       20,
       2
@@ -4499,6 +4764,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "foundation",
+    "level": "",
     "doors": [
       21,
       3,
@@ -4515,6 +4781,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       22,
       0,
@@ -4531,6 +4798,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       23,
       1,
@@ -4548,6 +4816,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "foundation",
+    "level": "",
     "doors": [
       16,
       6,
@@ -4564,6 +4833,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
+    "level": "",
     "doors": [
       17,
       7,
@@ -4581,6 +4851,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       18,
       4,
@@ -4598,6 +4869,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       19,
       5,
@@ -4616,6 +4888,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "terminus",
+    "level": "",
     "doors": [
       26,
       69
@@ -4631,6 +4904,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "terminus",
+    "level": "",
     "doors": [
       27,
       68,
@@ -4647,6 +4921,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "foundation",
+    "level": "",
     "doors": [
       24,
       64,
@@ -4663,6 +4938,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "foundation",
+    "level": "",
     "doors": [
       25,
       65,
@@ -4680,6 +4956,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "terminus",
+    "level": "",
     "doors": [
       30,
       408,
@@ -4696,6 +4973,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "terminus",
+    "level": "",
     "doors": [
       31,
       409,
@@ -4713,6 +4991,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "foundation",
+    "level": "",
     "doors": [
       28,
       68,
@@ -4730,6 +5009,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "foundation",
+    "level": "",
     "doors": [
       29,
       69,
@@ -4748,6 +5028,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "foundation",
+    "level": "",
     "doors": [
       4,
       18,
@@ -4764,6 +5045,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "foundation",
+    "level": "",
     "doors": [
       5,
       19,
@@ -4781,6 +5063,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       6,
       16,
@@ -4798,6 +5081,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       7,
       17,
@@ -4816,6 +5100,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "foundation",
+    "level": "",
     "doors": [
       0,
       22,
@@ -4833,6 +5118,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "foundation",
+    "level": "",
     "doors": [
       1,
       23,
@@ -4851,6 +5137,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       2,
       20,
@@ -4869,6 +5156,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       3,
       21,
@@ -4888,6 +5176,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "foundation",
+    "level": "",
     "doors": [
       42,
       337
@@ -4903,6 +5192,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "foundation",
+    "level": "",
     "doors": [
       43,
       384,
@@ -4919,6 +5209,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       40,
       112,
@@ -4935,6 +5226,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       41,
       113,
@@ -4952,6 +5244,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "foundation",
+    "level": "",
     "doors": [
       46,
       424,
@@ -4968,6 +5261,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
+    "level": "",
     "doors": [
       47,
       425,
@@ -4985,6 +5279,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       44,
       116,
@@ -5002,6 +5297,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       45,
       117,
@@ -5020,6 +5316,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       52,
       34,
@@ -5036,6 +5333,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       53,
       35,
@@ -5053,6 +5351,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
+    "level": "",
     "doors": [
       54,
       32,
@@ -5070,6 +5369,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "dais",
+    "level": "",
     "doors": [
       55,
       33,
@@ -5088,6 +5388,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       48,
       38,
@@ -5105,6 +5406,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       49,
       39,
@@ -5123,6 +5425,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "dais",
+    "level": "",
     "doors": [
       50,
       36,
@@ -5141,6 +5444,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "dais",
+    "level": "",
     "doors": [
       51,
       37,
@@ -5160,6 +5464,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
+    "level": "",
     "doors": [
       58,
       101,
@@ -5176,6 +5481,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "foundation",
+    "level": "",
     "doors": [
       59,
       100,
@@ -5193,6 +5499,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       56,
       96,
@@ -5210,6 +5517,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       57,
       97,
@@ -5228,6 +5536,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "foundation",
+    "level": "",
     "doors": [
       62,
       440,
@@ -5245,6 +5554,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "foundation",
+    "level": "",
     "doors": [
       63,
       441,
@@ -5263,6 +5573,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       60,
       100,
@@ -5281,6 +5592,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       61,
       101,
@@ -5300,6 +5612,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       36,
       50,
@@ -5317,6 +5630,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       37,
       51,
@@ -5335,6 +5649,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "dais",
+    "level": "",
     "doors": [
       38,
       48,
@@ -5353,6 +5668,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "dais",
+    "level": "",
     "doors": [
       39,
       49,
@@ -5372,6 +5688,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       32,
       54,
@@ -5390,6 +5707,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       33,
       55,
@@ -5409,6 +5727,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "dais",
+    "level": "",
     "doors": [
       34,
       52,
@@ -5428,6 +5747,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
+    "level": "",
     "doors": [
       35,
       53,
@@ -5448,6 +5768,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "terminus",
+    "level": "",
     "doors": [
       74,
       290
@@ -5463,6 +5784,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "terminus",
+    "level": "",
     "doors": [
       75,
       291,
@@ -5479,6 +5801,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "foundation",
+    "level": "",
     "doors": [
       72,
       16,
@@ -5495,6 +5818,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
+    "level": "",
     "doors": [
       73,
       17,
@@ -5512,6 +5836,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "terminus",
+    "level": "",
     "doors": [
       78,
       456,
@@ -5528,6 +5853,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "terminus",
+    "level": "",
     "doors": [
       79,
       457,
@@ -5545,6 +5871,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
+    "level": "",
     "doors": [
       76,
       20,
@@ -5562,6 +5889,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "foundation",
+    "level": "",
     "doors": [
       77,
       21,
@@ -5580,6 +5908,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "foundation",
+    "level": "",
     "doors": [
       84,
       66,
@@ -5596,6 +5925,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
+    "level": "",
     "doors": [
       85,
       67,
@@ -5613,6 +5943,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       86,
       64,
@@ -5630,6 +5961,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       87,
       65,
@@ -5648,6 +5980,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
+    "level": "",
     "doors": [
       80,
       70,
@@ -5665,6 +5998,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "foundation",
+    "level": "",
     "doors": [
       81,
       71,
@@ -5683,6 +6017,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       82,
       68,
@@ -5701,6 +6036,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       83,
       69,
@@ -5720,6 +6056,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "terminus",
+    "level": "",
     "doors": [
       90,
       5,
@@ -5736,6 +6073,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "terminus",
+    "level": "",
     "doors": [
       91,
       4,
@@ -5753,6 +6091,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "foundation",
+    "level": "",
     "doors": [
       88,
       0,
@@ -5770,6 +6109,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "foundation",
+    "level": "",
     "doors": [
       89,
       1,
@@ -5788,6 +6128,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "terminus",
+    "level": "",
     "doors": [
       94,
       472,
@@ -5805,6 +6146,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "terminus",
+    "level": "",
     "doors": [
       95,
       473,
@@ -5823,6 +6165,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "foundation",
+    "level": "",
     "doors": [
       92,
       4,
@@ -5841,6 +6184,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "foundation",
+    "level": "",
     "doors": [
       93,
       5,
@@ -5860,6 +6204,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "foundation",
+    "level": "",
     "doors": [
       68,
       32,
@@ -5877,6 +6222,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "foundation",
+    "level": "",
     "doors": [
       69,
       83,
@@ -5895,6 +6241,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       70,
       80,
@@ -5913,6 +6260,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       71,
       81,
@@ -5932,6 +6280,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "foundation",
+    "level": "",
     "doors": [
       64,
       86,
@@ -5950,6 +6299,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "foundation",
+    "level": "",
     "doors": [
       65,
       87,
@@ -5969,6 +6319,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       66,
       84,
@@ -5988,6 +6339,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       67,
       85,
@@ -6008,6 +6360,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "foundation",
+    "level": "",
     "doors": [
       106,
       258,
@@ -6024,6 +6377,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
+    "level": "",
     "doors": [
       107,
       259,
@@ -6041,6 +6395,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       104,
       48,
@@ -6058,6 +6413,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       105,
       49,
@@ -6076,6 +6432,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
+    "level": "",
     "doors": [
       110,
       488,
@@ -6093,6 +6450,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "foundation",
+    "level": "",
     "doors": [
       111,
       489,
@@ -6111,6 +6469,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       108,
       52,
@@ -6129,6 +6488,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       109,
       53,
@@ -6148,6 +6508,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       116,
       98,
@@ -6165,6 +6526,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       117,
       99,
@@ -6183,6 +6545,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "dais",
+    "level": "",
     "doors": [
       118,
       96,
@@ -6201,6 +6564,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "dais",
+    "level": "",
     "doors": [
       119,
       97,
@@ -6220,6 +6584,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       112,
       102,
@@ -6238,6 +6603,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       113,
       103,
@@ -6257,6 +6623,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "dais",
+    "level": "",
     "doors": [
       114,
       100,
@@ -6276,6 +6643,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "dais",
+    "level": "",
     "doors": [
       115,
       101,
@@ -6296,6 +6664,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "foundation",
+    "level": "",
     "doors": [
       122,
       37,
@@ -6313,6 +6682,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "foundation",
+    "level": "",
     "doors": [
       123,
       36,
@@ -6331,6 +6701,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       120,
       32,
@@ -6349,6 +6720,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       121,
       33,
@@ -6368,6 +6740,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "foundation",
+    "level": "",
     "doors": [
       126,
       504,
@@ -6386,6 +6759,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "foundation",
+    "level": "",
     "doors": [
       127,
       505,
@@ -6405,6 +6779,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       124,
       36,
@@ -6424,6 +6799,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       125,
       37,
@@ -6444,6 +6820,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       100,
       114,
@@ -6462,6 +6839,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       101,
       115,
@@ -6481,6 +6859,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "dais",
+    "level": "",
     "doors": [
       102,
       112,
@@ -6500,6 +6879,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "dais",
+    "level": "",
     "doors": [
       103,
       113,
@@ -6520,6 +6900,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       96,
       118,
@@ -6539,6 +6920,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       97,
       119,
@@ -6559,6 +6941,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "dais",
+    "level": "",
     "doors": [
       98,
       116,
@@ -6579,6 +6962,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "dais",
+    "level": "",
     "doors": [
       99,
       117,
@@ -6600,6 +6984,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "foundation",
+    "level": "",
     "doors": [
       138,
       277
@@ -6615,6 +7000,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "foundation",
+    "level": "",
     "doors": [
       139,
       276,
@@ -6631,6 +7017,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       136,
       208,
@@ -6647,6 +7034,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       137,
       209,
@@ -6664,6 +7052,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "foundation",
+    "level": "",
     "doors": [
       142,
       264,
@@ -6680,6 +7069,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "foundation",
+    "level": "",
     "doors": [
       143,
       265,
@@ -6697,6 +7087,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       140,
       212,
@@ -6714,6 +7105,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       141,
       213,
@@ -6732,6 +7124,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       148,
       130,
@@ -6748,6 +7141,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       149,
       131,
@@ -6765,6 +7159,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
+    "level": "",
     "doors": [
       150,
       128,
@@ -6782,6 +7177,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "dais",
+    "level": "",
     "doors": [
       151,
       129,
@@ -6800,6 +7196,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       144,
       134,
@@ -6817,6 +7214,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       145,
       135,
@@ -6835,6 +7233,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "dais",
+    "level": "",
     "doors": [
       146,
       132,
@@ -6853,6 +7252,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "dais",
+    "level": "",
     "doors": [
       147,
       133,
@@ -6872,6 +7272,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "foundation",
+    "level": "",
     "doors": [
       154,
       197,
@@ -6888,6 +7289,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "foundation",
+    "level": "",
     "doors": [
       155,
       196,
@@ -6905,6 +7307,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       152,
       192,
@@ -6922,6 +7325,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       153,
       193,
@@ -6940,6 +7344,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "foundation",
+    "level": "",
     "doors": [
       158,
       280,
@@ -6957,6 +7362,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "foundation",
+    "level": "",
     "doors": [
       159,
       281,
@@ -6975,6 +7381,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       156,
       196,
@@ -6993,6 +7400,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       157,
       197,
@@ -7012,6 +7420,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       132,
       146,
@@ -7029,6 +7438,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       133,
       147,
@@ -7047,6 +7457,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "dais",
+    "level": "",
     "doors": [
       134,
       144,
@@ -7065,6 +7476,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "dais",
+    "level": "",
     "doors": [
       135,
       145,
@@ -7084,6 +7496,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       128,
       150,
@@ -7102,6 +7515,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       129,
       151,
@@ -7121,6 +7535,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "dais",
+    "level": "",
     "doors": [
       130,
       148,
@@ -7140,6 +7555,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "dais",
+    "level": "",
     "doors": [
       131,
       149,
@@ -7160,6 +7576,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "step",
+    "level": "",
     "doors": [
       170,
       309,
@@ -7176,6 +7593,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "step",
+    "level": "",
     "doors": [
       171,
       308,
@@ -7193,6 +7611,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
+    "level": "",
     "doors": [
       168,
       240,
@@ -7210,6 +7629,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "dais",
+    "level": "",
     "doors": [
       169,
       241,
@@ -7228,6 +7648,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "step",
+    "level": "",
     "doors": [
       174,
       296,
@@ -7245,6 +7666,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "step",
+    "level": "",
     "doors": [
       175,
       297,
@@ -7263,6 +7685,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "dais",
+    "level": "",
     "doors": [
       172,
       244,
@@ -7281,6 +7704,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "dais",
+    "level": "",
     "doors": [
       173,
       245,
@@ -7300,6 +7724,7 @@ const smData = {
     "parity": "day",
     "position": "2",
     "rank": "dais",
+    "level": "",
     "doors": [
       180,
       162,
@@ -7317,6 +7742,7 @@ const smData = {
     "parity": "night",
     "position": "8",
     "rank": "dais",
+    "level": "",
     "doors": [
       181,
       163,
@@ -7335,6 +7761,7 @@ const smData = {
     "parity": "day",
     "position": "15",
     "rank": "seat",
+    "level": "",
     "doors": [
       182,
       160,
@@ -7353,6 +7780,7 @@ const smData = {
     "parity": "night",
     "position": "9",
     "rank": "seat",
+    "level": "",
     "doors": [
       183,
       161,
@@ -7372,6 +7800,7 @@ const smData = {
     "parity": "night",
     "position": "7",
     "rank": "dais",
+    "level": "",
     "doors": [
       176,
       166,
@@ -7390,6 +7819,7 @@ const smData = {
     "parity": "day",
     "position": "14",
     "rank": "dais",
+    "level": "",
     "doors": [
       177,
       167,
@@ -7409,6 +7839,7 @@ const smData = {
     "parity": "night",
     "position": "10",
     "rank": "seat",
+    "level": "",
     "doors": [
       178,
       164,
@@ -7428,6 +7859,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "seat",
+    "level": "",
     "doors": [
       179,
       165,
@@ -7448,6 +7880,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "step",
+    "level": "",
     "doors": [
       186,
       229,
@@ -7465,6 +7898,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "step",
+    "level": "",
     "doors": [
       187,
       228,
@@ -7483,6 +7917,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "dais",
+    "level": "",
     "doors": [
       184,
       224,
@@ -7501,6 +7936,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "dais",
+    "level": "",
     "doors": [
       185,
       225,
@@ -7520,6 +7956,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "step",
+    "level": "",
     "doors": [
       190,
       312,
@@ -7538,6 +7975,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "step",
+    "level": "",
     "doors": [
       191,
       313,
@@ -7557,6 +7995,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "dais",
+    "level": "",
     "doors": [
       188,
       228,
@@ -7576,6 +8015,7 @@ const smData = {
     "parity": "day",
     "position": "3",
     "rank": "dais",
+    "level": "",
     "doors": [
       189,
       229,
@@ -7596,6 +8036,7 @@ const smData = {
     "parity": "night",
     "position": "15",
     "rank": "dais",
+    "level": "",
     "doors": [
       164,
       178,
@@ -7614,6 +8055,7 @@ const smData = {
     "parity": "day",
     "position": "9",
     "rank": "dais",
+    "level": "",
     "doors": [
       165,
       179,
@@ -7633,6 +8075,7 @@ const smData = {
     "parity": "night",
     "position": "2",
     "rank": "seat",
+    "level": "",
     "doors": [
       166,
       176,
@@ -7652,6 +8095,7 @@ const smData = {
     "parity": "day",
     "position": "8",
     "rank": "seat",
+    "level": "",
     "doors": [
       167,
       177,
@@ -7672,6 +8116,7 @@ const smData = {
     "parity": "day",
     "position": "10",
     "rank": "dais",
+    "level": "",
     "doors": [
       160,
       182,
@@ -7691,6 +8136,7 @@ const smData = {
     "parity": "night",
     "position": "3",
     "rank": "dais",
+    "level": "",
     "doors": [
       161,
       183,
@@ -7711,6 +8157,7 @@ const smData = {
     "parity": "day",
     "position": "7",
     "rank": "seat",
+    "level": "",
     "doors": [
       162,
       180,
@@ -7731,6 +8178,7 @@ const smData = {
     "parity": "night",
     "position": "14",
     "rank": "seat",
+    "level": "",
     "doors": [
       163,
       181,
@@ -7752,6 +8200,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "foundation",
+    "level": "",
     "doors": [
       202,
       418,
@@ -7768,6 +8217,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "foundation",
+    "level": "",
     "doors": [
       203,
       419,
@@ -7785,6 +8235,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       200,
       144,
@@ -7802,6 +8253,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       201,
       145,
@@ -7820,6 +8272,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "foundation",
+    "level": "",
     "doors": [
       206,
       328,
@@ -7837,6 +8290,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "foundation",
+    "level": "",
     "doors": [
       207,
       329,
@@ -7855,6 +8309,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       204,
       148,
@@ -7873,6 +8328,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       205,
       149,
@@ -7892,6 +8348,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       212,
       194,
@@ -7909,6 +8366,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       213,
       195,
@@ -7927,6 +8385,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "dais",
+    "level": "",
     "doors": [
       214,
       192,
@@ -7945,6 +8404,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "dais",
+    "level": "",
     "doors": [
       215,
       193,
@@ -7964,6 +8424,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       208,
       198,
@@ -7982,6 +8443,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       209,
       199,
@@ -8001,6 +8463,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "dais",
+    "level": "",
     "doors": [
       210,
       196,
@@ -8020,6 +8483,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "dais",
+    "level": "",
     "doors": [
       211,
       197,
@@ -8040,6 +8504,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "foundation",
+    "level": "",
     "doors": [
       218,
       133,
@@ -8057,6 +8522,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "foundation",
+    "level": "",
     "doors": [
       219,
       132,
@@ -8075,6 +8541,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       216,
       128,
@@ -8093,6 +8560,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       217,
       129,
@@ -8112,6 +8580,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "foundation",
+    "level": "",
     "doors": [
       222,
       344,
@@ -8130,6 +8599,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "foundation",
+    "level": "",
     "doors": [
       223,
       345,
@@ -8149,6 +8619,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       220,
       132,
@@ -8168,6 +8639,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       221,
       133,
@@ -8188,6 +8660,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       196,
       210,
@@ -8206,6 +8679,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       197,
       211,
@@ -8225,6 +8699,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "dais",
+    "level": "",
     "doors": [
       198,
       208,
@@ -8244,6 +8719,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
+    "level": "",
     "doors": [
       199,
       209,
@@ -8264,6 +8740,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       192,
       214,
@@ -8283,6 +8760,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       193,
       215,
@@ -8303,6 +8781,7 @@ const smData = {
     "parity": "night",
     "position": "5",
     "rank": "dais",
+    "level": "",
     "doors": [
       194,
       212,
@@ -8323,6 +8802,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "dais",
+    "level": "",
     "doors": [
       195,
       213,
@@ -8344,6 +8824,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "step",
+    "level": "",
     "doors": [
       234,
       386,
@@ -8361,6 +8842,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "step",
+    "level": "",
     "doors": [
       235,
       387,
@@ -8379,6 +8861,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "dais",
+    "level": "",
     "doors": [
       232,
       176,
@@ -8397,6 +8880,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "dais",
+    "level": "",
     "doors": [
       233,
       177,
@@ -8416,6 +8900,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "step",
+    "level": "",
     "doors": [
       238,
       360,
@@ -8434,6 +8919,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "step",
+    "level": "",
     "doors": [
       239,
       361,
@@ -8453,6 +8939,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "dais",
+    "level": "",
     "doors": [
       236,
       180,
@@ -8472,6 +8959,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "dais",
+    "level": "",
     "doors": [
       237,
       181,
@@ -8492,6 +8980,7 @@ const smData = {
     "parity": "night",
     "position": "6",
     "rank": "dais",
+    "level": "",
     "doors": [
       244,
       226,
@@ -8510,6 +8999,7 @@ const smData = {
     "parity": "day",
     "position": "13",
     "rank": "dais",
+    "level": "",
     "doors": [
       245,
       227,
@@ -8529,6 +9019,7 @@ const smData = {
     "parity": "night",
     "position": "11",
     "rank": "seat",
+    "level": "",
     "doors": [
       246,
       224,
@@ -8548,6 +9039,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "seat",
+    "level": "",
     "doors": [
       247,
       225,
@@ -8568,6 +9060,7 @@ const smData = {
     "parity": "day",
     "position": "12",
     "rank": "dais",
+    "level": "",
     "doors": [
       240,
       230,
@@ -8587,6 +9080,7 @@ const smData = {
     "parity": "night",
     "position": "16",
     "rank": "dais",
+    "level": "",
     "doors": [
       241,
       231,
@@ -8607,6 +9101,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "seat",
+    "level": "",
     "doors": [
       242,
       228,
@@ -8627,6 +9122,7 @@ const smData = {
     "parity": "night",
     "position": "1",
     "rank": "seat",
+    "level": "",
     "doors": [
       243,
       229,
@@ -8648,6 +9144,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "step",
+    "level": "",
     "doors": [
       250,
       165,
@@ -8666,6 +9163,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "step",
+    "level": "",
     "doors": [
       251,
       164,
@@ -8685,6 +9183,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "dais",
+    "level": "",
     "doors": [
       248,
       160,
@@ -8704,6 +9203,7 @@ const smData = {
     "parity": "night",
     "position": "4",
     "rank": "dais",
+    "level": "",
     "doors": [
       249,
       161,
@@ -8724,6 +9224,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "step",
+    "level": "",
     "doors": [
       254,
       376,
@@ -8743,6 +9244,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "step",
+    "level": "",
     "doors": [
       255,
       377,
@@ -8763,6 +9265,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
+    "level": "",
     "doors": [
       252,
       164,
@@ -8783,6 +9286,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "dais",
+    "level": "",
     "doors": [
       253,
       165,
@@ -8804,6 +9308,7 @@ const smData = {
     "parity": "day",
     "position": "11",
     "rank": "dais",
+    "level": "",
     "doors": [
       228,
       242,
@@ -8823,6 +9328,7 @@ const smData = {
     "parity": "day",
     "position": "4",
     "rank": "dais",
+    "level": "",
     "doors": [
       229,
       243,
@@ -8843,6 +9349,7 @@ const smData = {
     "parity": "day",
     "position": "6",
     "rank": "seat",
+    "level": "",
     "doors": [
       230,
       240,
@@ -8863,6 +9370,7 @@ const smData = {
     "parity": "night",
     "position": "13",
     "rank": "seat",
+    "level": "",
     "doors": [
       231,
       241,
@@ -8884,6 +9392,7 @@ const smData = {
     "parity": "day",
     "position": "5",
     "rank": "dais",
+    "level": "",
     "doors": [
       224,
       246,
@@ -8904,6 +9413,7 @@ const smData = {
     "parity": "day",
     "position": "1",
     "rank": "dais",
+    "level": "",
     "doors": [
       225,
       247,
@@ -8925,6 +9435,7 @@ const smData = {
     "parity": "night",
     "position": "12",
     "rank": "seat",
+    "level": "",
     "doors": [
       226,
       244,
@@ -8946,6 +9457,7 @@ const smData = {
     "parity": "day",
     "position": "16",
     "rank": "seat",
+    "level": "",
     "doors": [
       227,
       245,
