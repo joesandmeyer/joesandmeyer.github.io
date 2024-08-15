@@ -10,6 +10,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       232,
       6,
@@ -27,6 +28,7 @@ const smData = {
     "position": "15",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       233,
       7,
@@ -45,6 +47,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       308,
       234,
@@ -63,6 +66,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       309,
       235,
@@ -82,6 +86,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       372,
       10,
@@ -99,6 +104,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       373,
       11,
@@ -117,6 +123,7 @@ const smData = {
     "position": "3",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       374,
       312,
@@ -135,6 +142,7 @@ const smData = {
     "position": "10",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       375,
       313,
@@ -154,6 +162,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       368,
       224,
@@ -172,6 +181,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       369,
       225,
@@ -191,6 +201,7 @@ const smData = {
     "position": "9",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       370,
       316,
@@ -210,6 +221,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       371,
       317,
@@ -230,6 +242,7 @@ const smData = {
     "position": "14",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       293,
       18,
@@ -247,6 +260,7 @@ const smData = {
     "position": "7",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       292,
       19,
@@ -265,6 +279,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       288,
       295,
@@ -283,6 +298,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       289,
       294,
@@ -302,6 +318,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       248,
       289,
@@ -320,6 +337,7 @@ const smData = {
     "position": "2",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       249,
       288,
@@ -339,6 +357,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       292,
       250,
@@ -358,6 +377,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       293,
       251,
@@ -378,6 +398,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       356,
       301,
@@ -396,6 +417,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       357,
       300,
@@ -415,6 +437,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       358,
       296,
@@ -434,6 +457,7 @@ const smData = {
     "position": "7",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       359,
       297,
@@ -454,6 +478,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       352,
       240,
@@ -473,6 +498,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       353,
       241,
@@ -493,6 +519,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       354,
       300,
@@ -513,6 +540,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       355,
       301,
@@ -534,6 +562,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
+    "description": "",
     "doors": [
       21
     ]
@@ -549,6 +578,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       20,
       32
@@ -565,6 +595,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       464,
       23
@@ -581,6 +612,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       465,
       22,
@@ -598,6 +630,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       8,
       17
@@ -614,6 +647,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       9,
       16,
@@ -631,6 +665,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       468,
       10,
@@ -648,6 +683,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       469,
       11,
@@ -666,6 +702,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       404,
       29
@@ -682,6 +719,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       405,
       28,
@@ -699,6 +737,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
+    "description": "",
     "doors": [
       406,
       472,
@@ -716,6 +755,7 @@ const smData = {
     "position": "5",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       407,
       473,
@@ -734,6 +774,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       400,
       0,
@@ -751,6 +792,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       401,
       1,
@@ -769,6 +811,7 @@ const smData = {
     "position": "4",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       402,
       476,
@@ -787,6 +830,7 @@ const smData = {
     "position": "11",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       403,
       477,
@@ -806,6 +850,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
+    "description": "",
     "doors": [
       453,
       5
@@ -822,6 +867,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       452,
       4,
@@ -839,6 +885,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       448,
       455,
@@ -856,6 +903,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       449,
       454,
@@ -874,6 +922,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       24,
       449,
@@ -891,6 +940,7 @@ const smData = {
     "position": "6",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       25,
       448,
@@ -909,6 +959,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       452,
       26,
@@ -927,6 +978,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       453,
       27,
@@ -946,6 +998,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       388,
       461,
@@ -963,6 +1016,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       389,
       460,
@@ -981,6 +1035,7 @@ const smData = {
     "position": "16",
     "rank": "dais",
     "level": "5",
+    "description": "",
     "doors": [
       390,
       456,
@@ -999,6 +1054,7 @@ const smData = {
     "position": "12",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       391,
       457,
@@ -1018,6 +1074,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       384,
       16,
@@ -1036,6 +1093,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       385,
       17,
@@ -1055,6 +1113,7 @@ const smData = {
     "position": "13",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       386,
       460,
@@ -1074,6 +1133,7 @@ const smData = {
     "position": "6",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       387,
       461,
@@ -1094,6 +1154,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       53,
       209
@@ -1110,6 +1171,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       52,
       0,
@@ -1127,6 +1189,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
+    "description": "",
     "doors": [
       496,
       55,
@@ -1144,6 +1207,7 @@ const smData = {
     "position": "5",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       497,
       54,
@@ -1162,6 +1226,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       40,
       49,
@@ -1179,6 +1244,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       41,
       48,
@@ -1197,6 +1263,7 @@ const smData = {
     "position": "4",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       500,
       42,
@@ -1215,6 +1282,7 @@ const smData = {
     "position": "11",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       501,
       43,
@@ -1234,6 +1302,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
+    "description": "",
     "doors": [
       436,
       61,
@@ -1251,6 +1320,7 @@ const smData = {
     "position": "5",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       437,
       60,
@@ -1269,6 +1339,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
+    "description": "",
     "doors": [
       438,
       504,
@@ -1287,6 +1358,7 @@ const smData = {
     "position": "12",
     "rank": "seat",
     "level": "4",
+    "description": "",
     "doors": [
       439,
       505,
@@ -1306,6 +1378,7 @@ const smData = {
     "position": "4",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       432,
       32,
@@ -1324,6 +1397,7 @@ const smData = {
     "position": "11",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       433,
       33,
@@ -1343,6 +1417,7 @@ const smData = {
     "position": "13",
     "rank": "seat",
     "level": "4",
+    "description": "",
     "doors": [
       434,
       508,
@@ -1362,6 +1437,7 @@ const smData = {
     "position": "6",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       435,
       509,
@@ -1382,6 +1458,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       485,
       37,
@@ -1399,6 +1476,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       484,
       36,
@@ -1417,6 +1495,7 @@ const smData = {
     "position": "16",
     "rank": "dais",
     "level": "5",
+    "description": "",
     "doors": [
       480,
       487,
@@ -1435,6 +1514,7 @@ const smData = {
     "position": "12",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       481,
       486,
@@ -1454,6 +1534,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       56,
       481,
@@ -1472,6 +1553,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       57,
       480,
@@ -1491,6 +1573,7 @@ const smData = {
     "position": "13",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       484,
       58,
@@ -1510,6 +1593,7 @@ const smData = {
     "position": "6",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       485,
       59,
@@ -1530,6 +1614,7 @@ const smData = {
     "position": "16",
     "rank": "dais",
     "level": "5",
+    "description": "",
     "doors": [
       420,
       493,
@@ -1548,6 +1633,7 @@ const smData = {
     "position": "12",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       421,
       492,
@@ -1567,6 +1653,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
+    "description": "",
     "doors": [
       422,
       488,
@@ -1586,6 +1673,7 @@ const smData = {
     "position": "5",
     "rank": "seat",
     "level": "2",
+    "description": "",
     "doors": [
       423,
       489,
@@ -1606,6 +1694,7 @@ const smData = {
     "position": "13",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       416,
       48,
@@ -1625,6 +1714,7 @@ const smData = {
     "position": "6",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       417,
       49,
@@ -1645,6 +1735,7 @@ const smData = {
     "position": "4",
     "rank": "seat",
     "level": "2",
+    "description": "",
     "doors": [
       418,
       492,
@@ -1665,6 +1756,7 @@ const smData = {
     "position": "11",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       419,
       493,
@@ -1686,6 +1778,7 @@ const smData = {
     "position": "3",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       162,
       85
@@ -1702,6 +1795,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       163,
       84,
@@ -1719,6 +1813,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       400,
       160,
@@ -1736,6 +1831,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       401,
       161,
@@ -1754,6 +1850,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       72,
       166,
@@ -1771,6 +1868,7 @@ const smData = {
     "position": "15",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       73,
       167,
@@ -1789,6 +1887,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       404,
       74,
@@ -1807,6 +1906,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       405,
       75,
@@ -1826,6 +1926,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       468,
       170,
@@ -1843,6 +1944,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       469,
       171,
@@ -1861,6 +1963,7 @@ const smData = {
     "position": "3",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       470,
       408,
@@ -1879,6 +1982,7 @@ const smData = {
     "position": "10",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       471,
       409,
@@ -1898,6 +2002,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       464,
       64,
@@ -1916,6 +2021,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       465,
       65,
@@ -1935,6 +2041,7 @@ const smData = {
     "position": "9",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       466,
       412,
@@ -1954,6 +2061,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       467,
       413,
@@ -1974,6 +2082,7 @@ const smData = {
     "position": "14",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       389,
       178,
@@ -1991,6 +2100,7 @@ const smData = {
     "position": "7",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       388,
       179,
@@ -2009,6 +2119,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       384,
       391,
@@ -2027,6 +2138,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       385,
       390,
@@ -2046,6 +2158,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       88,
       385,
@@ -2064,6 +2177,7 @@ const smData = {
     "position": "2",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       89,
       384,
@@ -2083,6 +2197,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       388,
       90,
@@ -2102,6 +2217,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       389,
       91,
@@ -2122,6 +2238,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       452,
       397,
@@ -2140,6 +2257,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       453,
       396,
@@ -2159,6 +2277,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       454,
       392,
@@ -2178,6 +2297,7 @@ const smData = {
     "position": "7",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       455,
       393,
@@ -2198,6 +2318,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       448,
       80,
@@ -2217,6 +2338,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       449,
       81,
@@ -2237,6 +2359,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       450,
       396,
@@ -2257,6 +2380,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       451,
       397,
@@ -2278,6 +2402,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       130,
       117,
@@ -2295,6 +2420,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       131,
       116,
@@ -2313,6 +2439,7 @@ const smData = {
     "position": "3",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       432,
       128,
@@ -2331,6 +2458,7 @@ const smData = {
     "position": "10",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       433,
       129,
@@ -2350,6 +2478,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       104,
       134,
@@ -2368,6 +2497,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       105,
       135,
@@ -2387,6 +2517,7 @@ const smData = {
     "position": "9",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       436,
       106,
@@ -2406,6 +2537,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       437,
       107,
@@ -2426,6 +2558,7 @@ const smData = {
     "position": "3",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       500,
       138,
@@ -2444,6 +2577,7 @@ const smData = {
     "position": "10",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       501,
       139,
@@ -2463,6 +2597,7 @@ const smData = {
     "position": "14",
     "rank": "seat",
     "level": "4",
+    "description": "",
     "doors": [
       502,
       440,
@@ -2482,6 +2617,7 @@ const smData = {
     "position": "7",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       503,
       441,
@@ -2502,6 +2638,7 @@ const smData = {
     "position": "9",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       496,
       96,
@@ -2521,6 +2658,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       497,
       97,
@@ -2541,6 +2679,7 @@ const smData = {
     "position": "8",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       498,
       444,
@@ -2561,6 +2700,7 @@ const smData = {
     "position": "2",
     "rank": "seat",
     "level": "2",
+    "description": "",
     "doors": [
       499,
       445,
@@ -2582,6 +2722,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       421,
       146,
@@ -2600,6 +2741,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       420,
       147,
@@ -2619,6 +2761,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       416,
       423,
@@ -2638,6 +2781,7 @@ const smData = {
     "position": "7",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       417,
       422,
@@ -2658,6 +2802,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       120,
       417,
@@ -2677,6 +2822,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       121,
       416,
@@ -2697,6 +2843,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       420,
       122,
@@ -2717,6 +2864,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       421,
       123,
@@ -2738,6 +2886,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       484,
       429,
@@ -2757,6 +2906,7 @@ const smData = {
     "position": "7",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       485,
       428,
@@ -2777,6 +2927,7 @@ const smData = {
     "position": "3",
     "rank": "seat",
     "level": "2",
+    "description": "",
     "doors": [
       486,
       424,
@@ -2797,6 +2948,7 @@ const smData = {
     "position": "10",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       487,
       425,
@@ -2818,6 +2970,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       480,
       112,
@@ -2838,6 +2991,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       481,
       113,
@@ -2859,6 +3013,7 @@ const smData = {
     "position": "9",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       482,
       428,
@@ -2880,6 +3035,7 @@ const smData = {
     "position": "15",
     "rank": "seat",
     "level": "4",
+    "description": "",
     "doors": [
       483,
       429,
@@ -2902,6 +3058,7 @@ const smData = {
     "position": "15",
     "rank": "terminus",
     "level": "4",
+    "description": "",
     "doors": [
       10
     ]
@@ -2917,6 +3074,7 @@ const smData = {
     "position": "9",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       11,
       416
@@ -2933,6 +3091,7 @@ const smData = {
     "position": "2",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       8,
       80
@@ -2949,6 +3108,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       9,
       81,
@@ -2966,6 +3126,7 @@ const smData = {
     "position": "10",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       14,
       392
@@ -2982,6 +3143,7 @@ const smData = {
     "position": "3",
     "rank": "terminus",
     "level": "2",
+    "description": "",
     "doors": [
       15,
       393,
@@ -2999,6 +3161,7 @@ const smData = {
     "position": "7",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       12,
       84,
@@ -3016,6 +3179,7 @@ const smData = {
     "position": "14",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       13,
       85,
@@ -3034,6 +3198,7 @@ const smData = {
     "position": "2",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       20,
       2
@@ -3050,6 +3215,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       21,
       3,
@@ -3067,6 +3233,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       22,
       0,
@@ -3084,6 +3251,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       23,
       1,
@@ -3102,6 +3270,7 @@ const smData = {
     "position": "7",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       16,
       6,
@@ -3119,6 +3288,7 @@ const smData = {
     "position": "14",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       17,
       7,
@@ -3137,6 +3307,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       18,
       4,
@@ -3155,6 +3326,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       19,
       5,
@@ -3174,6 +3346,7 @@ const smData = {
     "position": "2",
     "rank": "terminus",
     "level": "2",
+    "description": "",
     "doors": [
       26,
       69
@@ -3190,6 +3363,7 @@ const smData = {
     "position": "8",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       27,
       68,
@@ -3207,6 +3381,7 @@ const smData = {
     "position": "15",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       24,
       64,
@@ -3224,6 +3399,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       25,
       65,
@@ -3242,6 +3418,7 @@ const smData = {
     "position": "7",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       30,
       408,
@@ -3259,6 +3436,7 @@ const smData = {
     "position": "14",
     "rank": "terminus",
     "level": "4",
+    "description": "",
     "doors": [
       31,
       409,
@@ -3277,6 +3455,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       28,
       68,
@@ -3295,6 +3474,7 @@ const smData = {
     "position": "3",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       29,
       69,
@@ -3314,6 +3494,7 @@ const smData = {
     "position": "15",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       4,
       18,
@@ -3331,6 +3512,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       5,
       19,
@@ -3349,6 +3531,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       6,
       16,
@@ -3367,6 +3550,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       7,
       17,
@@ -3386,6 +3570,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       0,
       22,
@@ -3404,6 +3589,7 @@ const smData = {
     "position": "3",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       1,
       23,
@@ -3423,6 +3609,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       2,
       20,
@@ -3442,6 +3629,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       3,
       21,
@@ -3462,6 +3650,7 @@ const smData = {
     "position": "2",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       42,
       337
@@ -3478,6 +3667,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       43,
       384,
@@ -3495,6 +3685,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       40,
       112,
@@ -3512,6 +3703,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       41,
       113,
@@ -3530,6 +3722,7 @@ const smData = {
     "position": "7",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       46,
       424,
@@ -3547,6 +3740,7 @@ const smData = {
     "position": "14",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       47,
       425,
@@ -3565,6 +3759,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       44,
       116,
@@ -3583,6 +3778,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       45,
       117,
@@ -3602,6 +3798,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       52,
       34,
@@ -3619,6 +3816,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       53,
       35,
@@ -3637,6 +3835,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       54,
       32,
@@ -3655,6 +3854,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       55,
       33,
@@ -3674,6 +3874,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       48,
       38,
@@ -3692,6 +3893,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       49,
       39,
@@ -3711,6 +3913,7 @@ const smData = {
     "position": "7",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       50,
       36,
@@ -3730,6 +3933,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       51,
       37,
@@ -3750,6 +3954,7 @@ const smData = {
     "position": "15",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       58,
       101,
@@ -3767,6 +3972,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       59,
       100,
@@ -3785,6 +3991,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       56,
       96,
@@ -3803,6 +4010,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       57,
       97,
@@ -3822,6 +4030,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       62,
       440,
@@ -3840,6 +4049,7 @@ const smData = {
     "position": "3",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       63,
       441,
@@ -3859,6 +4069,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       60,
       100,
@@ -3878,6 +4089,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       61,
       101,
@@ -3898,6 +4110,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       36,
       50,
@@ -3916,6 +4129,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       37,
       51,
@@ -3935,6 +4149,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       38,
       48,
@@ -3954,6 +4169,7 @@ const smData = {
     "position": "9",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       39,
       49,
@@ -3974,6 +4190,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       32,
       54,
@@ -3993,6 +4210,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       33,
       55,
@@ -4013,6 +4231,7 @@ const smData = {
     "position": "10",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       34,
       52,
@@ -4033,6 +4252,7 @@ const smData = {
     "position": "3",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       35,
       53,
@@ -4054,6 +4274,7 @@ const smData = {
     "position": "11",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       74,
       290
@@ -4070,6 +4291,7 @@ const smData = {
     "position": "4",
     "rank": "terminus",
     "level": "2",
+    "description": "",
     "doors": [
       75,
       291,
@@ -4087,6 +4309,7 @@ const smData = {
     "position": "6",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       72,
       16,
@@ -4104,6 +4327,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       73,
       17,
@@ -4122,6 +4346,7 @@ const smData = {
     "position": "5",
     "rank": "terminus",
     "level": "2",
+    "description": "",
     "doors": [
       78,
       456,
@@ -4139,6 +4364,7 @@ const smData = {
     "position": "1",
     "rank": "terminus",
     "level": "1",
+    "description": "",
     "doors": [
       79,
       457,
@@ -4157,6 +4383,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       76,
       20,
@@ -4175,6 +4402,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
+    "description": "",
     "doors": [
       77,
       21,
@@ -4194,6 +4422,7 @@ const smData = {
     "position": "6",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       84,
       66,
@@ -4211,6 +4440,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       85,
       67,
@@ -4229,6 +4459,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       86,
       64,
@@ -4247,6 +4478,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       87,
       65,
@@ -4266,6 +4498,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       80,
       70,
@@ -4284,6 +4517,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
+    "description": "",
     "doors": [
       81,
       71,
@@ -4303,6 +4537,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       82,
       68,
@@ -4322,6 +4557,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       83,
       69,
@@ -4342,6 +4578,7 @@ const smData = {
     "position": "6",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       90,
       5,
@@ -4359,6 +4596,7 @@ const smData = {
     "position": "13",
     "rank": "terminus",
     "level": "4",
+    "description": "",
     "doors": [
       91,
       4,
@@ -4377,6 +4615,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       88,
       0,
@@ -4395,6 +4634,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       89,
       1,
@@ -4414,6 +4654,7 @@ const smData = {
     "position": "12",
     "rank": "terminus",
     "level": "4",
+    "description": "",
     "doors": [
       94,
       472,
@@ -4432,6 +4673,7 @@ const smData = {
     "position": "16",
     "rank": "terminus",
     "level": "5",
+    "description": "",
     "doors": [
       95,
       473,
@@ -4451,6 +4693,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       92,
       4,
@@ -4470,6 +4713,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
+    "description": "",
     "doors": [
       93,
       5,
@@ -4490,6 +4734,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       68,
       32,
@@ -4508,6 +4753,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       69,
       83,
@@ -4527,6 +4773,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       70,
       80,
@@ -4546,6 +4793,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       71,
       81,
@@ -4566,6 +4814,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       64,
       86,
@@ -4585,6 +4834,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
+    "description": "",
     "doors": [
       65,
       87,
@@ -4605,6 +4855,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       66,
       84,
@@ -4625,6 +4876,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       67,
       85,
@@ -4646,6 +4898,7 @@ const smData = {
     "position": "6",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       106,
       258,
@@ -4663,6 +4916,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       107,
       259,
@@ -4681,6 +4935,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       104,
       48,
@@ -4699,6 +4954,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       105,
       49,
@@ -4718,6 +4974,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       110,
       488,
@@ -4736,6 +4993,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
+    "description": "",
     "doors": [
       111,
       489,
@@ -4755,6 +5013,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       108,
       52,
@@ -4774,6 +5033,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       109,
       53,
@@ -4794,6 +5054,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       116,
       98,
@@ -4812,6 +5073,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       117,
       99,
@@ -4831,6 +5093,7 @@ const smData = {
     "position": "6",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       118,
       96,
@@ -4850,6 +5113,7 @@ const smData = {
     "position": "13",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       119,
       97,
@@ -4870,6 +5134,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       112,
       102,
@@ -4889,6 +5154,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       113,
       103,
@@ -4909,6 +5175,7 @@ const smData = {
     "position": "12",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       114,
       100,
@@ -4929,6 +5196,7 @@ const smData = {
     "position": "16",
     "rank": "dais",
     "level": "5",
+    "description": "",
     "doors": [
       115,
       101,
@@ -4950,6 +5218,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       122,
       37,
@@ -4968,6 +5237,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       123,
       36,
@@ -4987,6 +5257,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       120,
       32,
@@ -5006,6 +5277,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       121,
       33,
@@ -5026,6 +5298,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       126,
       504,
@@ -5045,6 +5318,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
+    "description": "",
     "doors": [
       127,
       505,
@@ -5065,6 +5339,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       124,
       36,
@@ -5085,6 +5360,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       125,
       37,
@@ -5106,6 +5382,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       100,
       114,
@@ -5125,6 +5402,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       101,
       115,
@@ -5145,6 +5423,7 @@ const smData = {
     "position": "11",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       102,
       112,
@@ -5165,6 +5444,7 @@ const smData = {
     "position": "4",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       103,
       113,
@@ -5186,6 +5466,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       96,
       118,
@@ -5206,6 +5487,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       97,
       119,
@@ -5227,6 +5509,7 @@ const smData = {
     "position": "5",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       98,
       116,
@@ -5248,6 +5531,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
+    "description": "",
     "doors": [
       99,
       117,
@@ -5270,6 +5554,7 @@ const smData = {
     "position": "2",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       138,
       277
@@ -5286,6 +5571,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       139,
       276,
@@ -5303,6 +5589,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       136,
       208,
@@ -5320,6 +5607,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       137,
       209,
@@ -5338,6 +5626,7 @@ const smData = {
     "position": "7",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       142,
       264,
@@ -5355,6 +5644,7 @@ const smData = {
     "position": "14",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       143,
       265,
@@ -5373,6 +5663,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       140,
       212,
@@ -5391,6 +5682,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       141,
       213,
@@ -5410,6 +5702,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       148,
       130,
@@ -5427,6 +5720,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       149,
       131,
@@ -5445,6 +5739,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       150,
       128,
@@ -5463,6 +5758,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       151,
       129,
@@ -5482,6 +5778,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       144,
       134,
@@ -5500,6 +5797,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       145,
       135,
@@ -5519,6 +5817,7 @@ const smData = {
     "position": "7",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       146,
       132,
@@ -5538,6 +5837,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       147,
       133,
@@ -5558,6 +5858,7 @@ const smData = {
     "position": "15",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       154,
       197,
@@ -5575,6 +5876,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       155,
       196,
@@ -5593,6 +5895,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       152,
       192,
@@ -5611,6 +5914,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       153,
       193,
@@ -5630,6 +5934,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       158,
       280,
@@ -5648,6 +5953,7 @@ const smData = {
     "position": "3",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       159,
       281,
@@ -5667,6 +5973,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       156,
       196,
@@ -5686,6 +5993,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       157,
       197,
@@ -5706,6 +6014,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       132,
       146,
@@ -5724,6 +6033,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       133,
       147,
@@ -5743,6 +6053,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       134,
       144,
@@ -5762,6 +6073,7 @@ const smData = {
     "position": "9",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       135,
       145,
@@ -5782,6 +6094,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       128,
       150,
@@ -5801,6 +6114,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       129,
       151,
@@ -5821,6 +6135,7 @@ const smData = {
     "position": "10",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       130,
       148,
@@ -5841,6 +6156,7 @@ const smData = {
     "position": "3",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       131,
       149,
@@ -5862,6 +6178,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       170,
       309,
@@ -5879,6 +6196,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       171,
       308,
@@ -5897,6 +6215,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       168,
       240,
@@ -5915,6 +6234,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       169,
       241,
@@ -5934,6 +6254,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       174,
       296,
@@ -5952,6 +6273,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       175,
       297,
@@ -5971,6 +6293,7 @@ const smData = {
     "position": "7",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       172,
       244,
@@ -5990,6 +6313,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       173,
       245,
@@ -6010,6 +6334,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       180,
       162,
@@ -6028,6 +6353,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       181,
       163,
@@ -6047,6 +6373,7 @@ const smData = {
     "position": "15",
     "rank": "seat",
     "level": "4",
+    "description": "",
     "doors": [
       182,
       160,
@@ -6066,6 +6393,7 @@ const smData = {
     "position": "9",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       183,
       161,
@@ -6086,6 +6414,7 @@ const smData = {
     "position": "7",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       176,
       166,
@@ -6105,6 +6434,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       177,
       167,
@@ -6125,6 +6455,7 @@ const smData = {
     "position": "10",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       178,
       164,
@@ -6145,6 +6476,7 @@ const smData = {
     "position": "3",
     "rank": "seat",
     "level": "2",
+    "description": "",
     "doors": [
       179,
       165,
@@ -6166,6 +6498,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       186,
       229,
@@ -6184,6 +6517,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       187,
       228,
@@ -6203,6 +6537,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       184,
       224,
@@ -6222,6 +6557,7 @@ const smData = {
     "position": "9",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       185,
       225,
@@ -6242,6 +6578,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       190,
       312,
@@ -6261,6 +6598,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       191,
       313,
@@ -6281,6 +6619,7 @@ const smData = {
     "position": "10",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       188,
       228,
@@ -6301,6 +6640,7 @@ const smData = {
     "position": "3",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       189,
       229,
@@ -6322,6 +6662,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       164,
       178,
@@ -6341,6 +6682,7 @@ const smData = {
     "position": "9",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       165,
       179,
@@ -6361,6 +6703,7 @@ const smData = {
     "position": "2",
     "rank": "seat",
     "level": "2",
+    "description": "",
     "doors": [
       166,
       176,
@@ -6381,6 +6724,7 @@ const smData = {
     "position": "8",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       167,
       177,
@@ -6402,6 +6746,7 @@ const smData = {
     "position": "10",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       160,
       182,
@@ -6422,6 +6767,7 @@ const smData = {
     "position": "3",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       161,
       183,
@@ -6443,6 +6789,7 @@ const smData = {
     "position": "7",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       162,
       180,
@@ -6464,6 +6811,7 @@ const smData = {
     "position": "14",
     "rank": "seat",
     "level": "4",
+    "description": "",
     "doors": [
       163,
       181,
@@ -6486,6 +6834,7 @@ const smData = {
     "position": "6",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       202,
       418,
@@ -6503,6 +6852,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       203,
       419,
@@ -6521,6 +6871,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       200,
       144,
@@ -6539,6 +6890,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       201,
       145,
@@ -6558,6 +6910,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       206,
       328,
@@ -6576,6 +6929,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
+    "description": "",
     "doors": [
       207,
       329,
@@ -6595,6 +6949,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       204,
       148,
@@ -6614,6 +6969,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       205,
       149,
@@ -6634,6 +6990,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       212,
       194,
@@ -6652,6 +7009,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       213,
       195,
@@ -6671,6 +7029,7 @@ const smData = {
     "position": "6",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       214,
       192,
@@ -6690,6 +7049,7 @@ const smData = {
     "position": "13",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       215,
       193,
@@ -6710,6 +7070,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       208,
       198,
@@ -6729,6 +7090,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       209,
       199,
@@ -6749,6 +7111,7 @@ const smData = {
     "position": "12",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       210,
       196,
@@ -6769,6 +7132,7 @@ const smData = {
     "position": "16",
     "rank": "dais",
     "level": "5",
+    "description": "",
     "doors": [
       211,
       197,
@@ -6790,6 +7154,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       218,
       133,
@@ -6808,6 +7173,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       219,
       132,
@@ -6827,6 +7193,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       216,
       128,
@@ -6846,6 +7213,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       217,
       129,
@@ -6866,6 +7234,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       222,
       344,
@@ -6885,6 +7254,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
+    "description": "",
     "doors": [
       223,
       345,
@@ -6905,6 +7275,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       220,
       132,
@@ -6925,6 +7296,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       221,
       133,
@@ -6946,6 +7318,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       196,
       210,
@@ -6965,6 +7338,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       197,
       211,
@@ -6985,6 +7359,7 @@ const smData = {
     "position": "11",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       198,
       208,
@@ -7005,6 +7380,7 @@ const smData = {
     "position": "4",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       199,
       209,
@@ -7026,6 +7402,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       192,
       214,
@@ -7046,6 +7423,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       193,
       215,
@@ -7067,6 +7445,7 @@ const smData = {
     "position": "5",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       194,
       212,
@@ -7088,6 +7467,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
+    "description": "",
     "doors": [
       195,
       213,
@@ -7110,6 +7490,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       234,
       386,
@@ -7128,6 +7509,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       235,
       387,
@@ -7147,6 +7529,7 @@ const smData = {
     "position": "6",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       232,
       176,
@@ -7166,6 +7549,7 @@ const smData = {
     "position": "13",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       233,
       177,
@@ -7186,6 +7570,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       238,
       360,
@@ -7205,6 +7590,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       239,
       361,
@@ -7225,6 +7611,7 @@ const smData = {
     "position": "12",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       236,
       180,
@@ -7245,6 +7632,7 @@ const smData = {
     "position": "16",
     "rank": "dais",
     "level": "5",
+    "description": "",
     "doors": [
       237,
       181,
@@ -7266,6 +7654,7 @@ const smData = {
     "position": "6",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       244,
       226,
@@ -7285,6 +7674,7 @@ const smData = {
     "position": "13",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       245,
       227,
@@ -7305,6 +7695,7 @@ const smData = {
     "position": "11",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       246,
       224,
@@ -7325,6 +7716,7 @@ const smData = {
     "position": "4",
     "rank": "seat",
     "level": "2",
+    "description": "",
     "doors": [
       247,
       225,
@@ -7346,6 +7738,7 @@ const smData = {
     "position": "12",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       240,
       230,
@@ -7366,6 +7759,7 @@ const smData = {
     "position": "16",
     "rank": "dais",
     "level": "5",
+    "description": "",
     "doors": [
       241,
       231,
@@ -7387,6 +7781,7 @@ const smData = {
     "position": "5",
     "rank": "seat",
     "level": "2",
+    "description": "",
     "doors": [
       242,
       228,
@@ -7408,6 +7803,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
+    "description": "",
     "doors": [
       243,
       229,
@@ -7430,6 +7826,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       250,
       165,
@@ -7449,6 +7846,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       251,
       164,
@@ -7469,6 +7867,7 @@ const smData = {
     "position": "11",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       248,
       160,
@@ -7489,6 +7888,7 @@ const smData = {
     "position": "4",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       249,
       161,
@@ -7510,6 +7910,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       254,
       376,
@@ -7530,6 +7931,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       255,
       377,
@@ -7551,6 +7953,7 @@ const smData = {
     "position": "5",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       252,
       164,
@@ -7572,6 +7975,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
+    "description": "",
     "doors": [
       253,
       165,
@@ -7594,6 +7998,7 @@ const smData = {
     "position": "11",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       228,
       242,
@@ -7614,6 +8019,7 @@ const smData = {
     "position": "4",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       229,
       243,
@@ -7635,6 +8041,7 @@ const smData = {
     "position": "6",
     "rank": "seat",
     "level": "3",
+    "description": "",
     "doors": [
       230,
       240,
@@ -7656,6 +8063,7 @@ const smData = {
     "position": "13",
     "rank": "seat",
     "level": "4",
+    "description": "",
     "doors": [
       231,
       241,
@@ -7678,6 +8086,7 @@ const smData = {
     "position": "5",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       224,
       246,
@@ -7699,6 +8108,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
+    "description": "",
     "doors": [
       225,
       247,
@@ -7721,6 +8131,7 @@ const smData = {
     "position": "12",
     "rank": "seat",
     "level": "4",
+    "description": "",
     "doors": [
       226,
       244,
@@ -7743,6 +8154,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
+    "description": "",
     "doors": [
       227,
       245,
@@ -7766,6 +8178,7 @@ const smData = {
     "position": "16",
     "rank": "terminus",
     "level": "5",
+    "description": "",
     "doors": []
   },
   "001": {
@@ -7779,6 +8192,7 @@ const smData = {
     "position": "12",
     "rank": "terminus",
     "level": "4",
+    "description": "",
     "doors": [
       160
     ]
@@ -7794,6 +8208,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
+    "description": "",
     "doors": [
       336
     ]
@@ -7809,6 +8224,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       337,
       162
@@ -7825,6 +8241,7 @@ const smData = {
     "position": "13",
     "rank": "terminus",
     "level": "4",
+    "description": "",
     "doors": [
       136
     ]
@@ -7840,6 +8257,7 @@ const smData = {
     "position": "6",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       137,
       164
@@ -7856,6 +8274,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       340,
       138
@@ -7872,6 +8291,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       341,
       139,
@@ -7889,6 +8309,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
+    "description": "",
     "doors": [
       276
     ]
@@ -7904,6 +8325,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       277,
       168
@@ -7920,6 +8342,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       278,
       344
@@ -7936,6 +8359,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       279,
       345,
@@ -7953,6 +8377,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       272,
       128
@@ -7969,6 +8394,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       273,
       129,
@@ -7986,6 +8412,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       274,
       348,
@@ -8003,6 +8430,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       275,
       349,
@@ -8021,6 +8449,7 @@ const smData = {
     "position": "1",
     "rank": "terminus",
     "level": "1",
+    "description": "",
     "doors": [
       325
     ]
@@ -8036,6 +8465,7 @@ const smData = {
     "position": "5",
     "rank": "terminus",
     "level": "2",
+    "description": "",
     "doors": [
       324,
       176
@@ -8052,6 +8482,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
+    "description": "",
     "doors": [
       320,
       327
@@ -8068,6 +8499,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       321,
       326,
@@ -8085,6 +8517,7 @@ const smData = {
     "position": "4",
     "rank": "terminus",
     "level": "2",
+    "description": "",
     "doors": [
       152,
       321
@@ -8101,6 +8534,7 @@ const smData = {
     "position": "11",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       153,
       320,
@@ -8118,6 +8552,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       324,
       154,
@@ -8135,6 +8570,7 @@ const smData = {
     "position": "6",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       325,
       155,
@@ -8153,6 +8589,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
+    "description": "",
     "doors": [
       260,
       333
@@ -8169,6 +8606,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       261,
       332,
@@ -8186,6 +8624,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       262,
       328,
@@ -8203,6 +8642,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       263,
       329,
@@ -8221,6 +8661,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       256,
       144,
@@ -8238,6 +8679,7 @@ const smData = {
     "position": "6",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       257,
       145,
@@ -8256,6 +8698,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       258,
       332,
@@ -8274,6 +8717,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       259,
       333,
@@ -8293,6 +8737,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
+    "description": "",
     "doors": [
       81
     ]
@@ -8308,6 +8753,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       128,
       80
@@ -8324,6 +8770,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       368,
       83
@@ -8340,6 +8787,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       369,
       130,
@@ -8357,6 +8805,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       168,
       85
@@ -8373,6 +8822,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       169,
       132,
@@ -8390,6 +8840,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       372,
       170,
@@ -8407,6 +8858,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       373,
       171,
@@ -8425,6 +8877,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
+    "description": "",
     "doors": [
       308,
       89
@@ -8441,6 +8894,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       309,
       136,
@@ -8458,6 +8912,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
+    "description": "",
     "doors": [
       310,
       376,
@@ -8475,6 +8930,7 @@ const smData = {
     "position": "5",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       311,
       377,
@@ -8493,6 +8949,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       304,
       160,
@@ -8510,6 +8967,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       305,
       161,
@@ -8528,6 +8986,7 @@ const smData = {
     "position": "4",
     "rank": "dais",
     "level": "2",
+    "description": "",
     "doors": [
       306,
       380,
@@ -8546,6 +9005,7 @@ const smData = {
     "position": "11",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       307,
       381,
@@ -8565,6 +9025,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
+    "description": "",
     "doors": [
       357,
       65
@@ -8581,6 +9042,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       356,
       144,
@@ -8598,6 +9060,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       352,
       359,
@@ -8615,6 +9078,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       353,
       358,
@@ -8633,6 +9097,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       184,
       353,
@@ -8650,6 +9115,7 @@ const smData = {
     "position": "6",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       185,
       352,
@@ -8668,6 +9134,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       356,
       186,
@@ -8686,6 +9153,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       357,
       187,
@@ -8705,6 +9173,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
+    "description": "",
     "doors": [
       292,
       365,
@@ -8722,6 +9191,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       293,
       364,
@@ -8740,6 +9210,7 @@ const smData = {
     "position": "16",
     "rank": "dais",
     "level": "5",
+    "description": "",
     "doors": [
       294,
       360,
@@ -8758,6 +9229,7 @@ const smData = {
     "position": "12",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       295,
       361,
@@ -8777,6 +9249,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       288,
       176,
@@ -8795,6 +9268,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       289,
       177,
@@ -8814,6 +9288,7 @@ const smData = {
     "position": "13",
     "rank": "dais",
     "level": "4",
+    "description": "",
     "doors": [
       290,
       364,
@@ -8833,6 +9308,7 @@ const smData = {
     "position": "6",
     "rank": "dais",
     "level": "3",
+    "description": "",
     "doors": [
       291,
       365,
@@ -8853,6 +9329,7 @@ const smData = {
     "position": "14",
     "rank": "terminus",
     "level": "4",
+    "description": "",
     "doors": [
       34
     ]
@@ -8868,6 +9345,7 @@ const smData = {
     "position": "7",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       35,
       224
@@ -8884,6 +9362,7 @@ const smData = {
     "position": "3",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       272,
       32
@@ -8900,6 +9379,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       273,
       33,
@@ -8917,6 +9397,7 @@ const smData = {
     "position": "8",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       200,
       38
@@ -8933,6 +9414,7 @@ const smData = {
     "position": "2",
     "rank": "terminus",
     "level": "2",
+    "description": "",
     "doors": [
       201,
       39,
@@ -8950,6 +9432,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       276,
       202,
@@ -8967,6 +9450,7 @@ const smData = {
     "position": "15",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       277,
       203,
@@ -8985,6 +9469,7 @@ const smData = {
     "position": "3",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       340,
       42
@@ -9001,6 +9486,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       341,
       43,
@@ -9018,6 +9504,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       342,
       280,
@@ -9035,6 +9522,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       343,
       281,
@@ -9053,6 +9541,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       336,
       192,
@@ -9070,6 +9559,7 @@ const smData = {
     "position": "15",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       337,
       193,
@@ -9088,6 +9578,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       338,
       284,
@@ -9106,6 +9597,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       339,
       285,
@@ -9125,6 +9617,7 @@ const smData = {
     "position": "3",
     "rank": "terminus",
     "level": "2",
+    "description": "",
     "doors": [
       261,
       50
@@ -9141,6 +9634,7 @@ const smData = {
     "position": "10",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       260,
       51,
@@ -9158,6 +9652,7 @@ const smData = {
     "position": "14",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       256,
       263,
@@ -9175,6 +9670,7 @@ const smData = {
     "position": "7",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       257,
       262,
@@ -9193,6 +9689,7 @@ const smData = {
     "position": "9",
     "rank": "terminus",
     "level": "3",
+    "description": "",
     "doors": [
       216,
       257,
@@ -9210,6 +9707,7 @@ const smData = {
     "position": "15",
     "rank": "terminus",
     "level": "4",
+    "description": "",
     "doors": [
       217,
       256,
@@ -9228,6 +9726,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       260,
       218,
@@ -9246,6 +9745,7 @@ const smData = {
     "position": "2",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       261,
       219,
@@ -9265,6 +9765,7 @@ const smData = {
     "position": "14",
     "rank": "foundation",
     "level": "4",
+    "description": "",
     "doors": [
       324,
       269,
@@ -9282,6 +9783,7 @@ const smData = {
     "position": "7",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       325,
       268,
@@ -9300,6 +9802,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
+    "description": "",
     "doors": [
       326,
       264,
@@ -9318,6 +9821,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       327,
       265,
@@ -9337,6 +9841,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       320,
       208,
@@ -9355,6 +9860,7 @@ const smData = {
     "position": "2",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       321,
       209,
@@ -9374,6 +9880,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       322,
       268,
@@ -9393,6 +9900,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       323,
       269,
@@ -9413,6 +9921,7 @@ const smData = {
     "position": "3",
     "rank": "foundation",
     "level": "2",
+    "description": "",
     "doors": [
       2,
       17
@@ -9429,6 +9938,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
+    "description": "",
     "doors": [
       3,
       192,
@@ -9446,6 +9956,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
+    "description": "",
     "doors": [
       304,
       0,
@@ -9463,6 +9974,7 @@ const smData = {
     "position": "7",
     "rank": "step",
     "level": "3",
+    "description": "",
     "doors": [
       305,
       1,
