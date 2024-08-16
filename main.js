@@ -460,7 +460,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
                 
             if (highlightedNodeId && elementStates[nodes[highlightedNodeId].element]) {
-                infoDiv.innerHTML = `<strong><br>Room id:</strong> ${highlightedNodeId}<strong></strong><pre>${JSON.stringify(highlightedNode, null, 2)}</pre>`;
+                // The text to be displayed with line breaks
+// The text to be displayed with line breaks
+const poem = highlightedNode.description;
+
+// Create a copy of highlightedNode excluding the 'description' field
+const { description, ...highlightedNodeWithoutDescription } = highlightedNode;
+
+// Format JSON as a string and replace new lines for HTML
+const formattedJson = JSON.stringify(highlightedNodeWithoutDescription, null, 2)
+    .replace(/\n/g, '<br>')
+    .replace(/ /g, '&nbsp;');
+
+// Set HTML content including formatted JSON and the text
+infoDiv.innerHTML = `
+    <strong>Room id:</strong> ${highlightedNodeId}
+    <pre style="white-space: pre-wrap; margin-top: -5px;">${poem}</pre>
+    <hr>
+    <pre style="margin-bottom: -5px;">${formattedJson}</pre>
+`;
+
+
+
+       
             } else {
                 infoDiv.innerHTML = '';
                 lastnode = -1;

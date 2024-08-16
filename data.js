@@ -8154,7 +8154,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
-    "description": "",
+    "description": "In darkness deep, an eternal eclipse dwells,\nA realm of shadows where no light prevails.\nImpenetrable walls guard secrets deep,\nA place unseen, save in the dreamer’s sleep.",
     "doors": [
       227,
       245,
