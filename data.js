@@ -3058,7 +3058,7 @@ const smData = {
     "position": "15",
     "rank": "terminus",
     "level": "4",
-    "description": "",
+    "description": "In celestial convergence, paths align,\nA cosmic dance of stars and dreams entwined.\nThe terminus of the jade throne’s grand rule,\nThe heart of the maze where fates draw close.",
     "doors": [
       10
     ]
@@ -8178,7 +8178,7 @@ const smData = {
     "position": "16",
     "rank": "terminus",
     "level": "5",
-    "description": "",
+    "description": "In shadowed depths, where pathways come to end,\nNo door appears, nor light doth pierce the gloom.\nA silent snare, where time itself seems paused,\nA realm of stillness, untouched by restless steps.",
     "doors": []
   },
   "001": {
@@ -8912,7 +8912,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
-    "description": "",
+    "description": "The answer to life, the universe, and everything.",
     "doors": [
       310,
       376,
