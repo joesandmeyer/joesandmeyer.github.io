@@ -562,7 +562,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
-    "description": "",
+    "description": "On narrow paths, choose your footing with care,\nA summer star hidden in the deep, dark depths.\nOne crucial line that guides the course of time,\nThe balance beam on which foundations rest.",
     "doors": [
       21
     ]
@@ -3035,7 +3035,7 @@ const smData = {
     "position": "15",
     "rank": "seat",
     "level": "4",
-    "description": "",
+    "description": "A fading flame as winter’s chill descends,\nA distant star lost in the depths of cold.\nIn fleeting glow, the jade throne’s shadow grows,\nA final gleam against the endless night.",
     "doors": [
       483,
       429,
@@ -8131,7 +8131,7 @@ const smData = {
     "position": "12",
     "rank": "seat",
     "level": "4",
-    "description": "",
+    "description": "In winter’s chill, as shadow obscures flame,\nThe hidden horizon keeps secrets veiled.\nSouthernmost bastion within the House of Sand,\nA lioness presides upon her throne.",
     "doors": [
       226,
       244,
@@ -8192,7 +8192,7 @@ const smData = {
     "position": "12",
     "rank": "terminus",
     "level": "4",
-    "description": "",
+    "description": "The path unfolds beneath an icy sky,\nFirst frostnip bite, a distant star alight.\nA chilling whisper beckons through the dark,\nAs winter's grip leaves its indelible mark.",
     "doors": [
       160
     ]
