@@ -1339,7 +1339,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
-    "description": "",
+    "description": "In fleeting thoughts, dusk’s daydream weaves its way,\nAt twilight’s edge, where day dissolves to night.\nA realm where phantoms murmur in the dark,\nAnd distant echoes stir the boundaries of sight.",
     "doors": [
       438,
       504,
@@ -1653,7 +1653,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
-    "description": "",
+    "description": "Before the end, is the final frontier,\nShrouded in flame, hidden secrets emerge.\nUpon the crystal throne, a royal sleeps,\nA dragon soars as twilight greets the dawn,\nAt Spring’s first breath, all destinies converge.",
     "doors": [
       422,
       488,
@@ -8342,7 +8342,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
-    "description": "",
+    "description": "In winter’s chill, frozen waters lie still,\nThrough the night, ravens dream of frost’s flight,\nThe Jade Throne’s steps lead northwest through the dark.",
     "doors": [
       278,
       344
