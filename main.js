@@ -16,12 +16,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const height = window.innerHeight - margin - extraBottomMargin;
     const nodes = smData;
     let positions = {};
+    let targetPositions = {}; // Target positions after layout update
+    let animationStartTimes = {}; // When each node starts moving
+    let animationDuration = 500; // Duration of the animation in milliseconds
+    const staggerTime = 10; // Delay between each node's movement start in milliseconds
+
     const infoDiv = document.getElementById('info');
     let layoutType = "grid";
-    let showSolutionPath = false;
+    let showSolutionPath = true;
     
     var audio_cd = false; // audio cooldown to prevent speaker damage
     const audio_cooldown = 90;
+    
+    const frameRateCap = 60; // 30 FPS
     
     const notes = [
         new Audio('audio/A.ogg'),
@@ -237,39 +244,43 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function drawAll() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    drawArrows();
+        drawArrows();
 
-    Object.keys(positions).forEach(key => {
-        const { x, y } = positions[key];
-        const node = nodes[key];
-        const radius = rankSizes[node.rank] || 15;
-        const color = houseColors[node.house] || 'gray';
-        const elementColor = elementColors[node.element] || 'white';
-
-        if (elementStates[node.element]) {
-            ctx.beginPath();
-            ctx.arc(x, y, radius, 0, 2 * Math.PI);
-            ctx.fillStyle = color;
-            ctx.fill();
-
-            ctx.beginPath();
-            ctx.arc(x, y, radius * 0.8, 0, 2 * Math.PI);
-            ctx.fillStyle = elementColor;
-            ctx.fill();
-
-            // Draw numbers in 'dais' and 'seat' nodes
-            if (node.rank === 'dais' || node.rank === 'seat' || node.rank === 'step') {
-                drawNumber(x, y, paddedIdToNumber(key));
+        Object.keys(positions).forEach(key => {
+            const { x, y } = positions[key];
+            if (x < 0 || x > canvas.width || y < 0 || y > canvas.height) {
+                return; // Skip drawing nodes outside the canvas
             }
+
+            const node = nodes[key];
+            const radius = rankSizes[node.rank] || 15;
+            const color = houseColors[node.house] || 'gray';
+            const elementColor = elementColors[node.element] || 'white';
+
+            if (elementStates[node.element]) {
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, 2 * Math.PI);
+                ctx.fillStyle = color;
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.arc(x, y, radius * 0.8, 0, 2 * Math.PI);
+                ctx.fillStyle = elementColor;
+                ctx.fill();
+
+                if (node.rank === 'dais' || node.rank === 'seat' || node.rank === 'step') {
+                    drawNumber(x, y, paddedIdToNumber(key));
+                }
+            }
+        });
+
+        if (showSolutionPath) {
+            drawSolutionPath();
         }
-    });
-    
-    if (showSolutionPath) {
-        drawSolutionPath();
     }
-}
+
 
     
     function drawNumber(x, y, number) {
@@ -281,34 +292,44 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function updateLayout() {
+        const now = performance.now(); // Get the current time
+        let animationOffset = 0; //Allows staggering to account for invisible nodes;
+
+        // Calculate target positions based on the chosen layout
         if (layoutType == "ring") {
-            // Implement the ring layout logic here
             const numNodes = Object.keys(nodes).length;
             const angleStep = 2 * Math.PI / numNodes;
             Object.keys(nodes).forEach((key, index) => {
+              
+                //check node visibility
+                if (!elementStates[nodes[key].element]) {
+                    
+                }
+              
                 const angle = angleStep * index;
                 const radius = 280;
                 const x = canvas.width / 2 + radius * Math.cos(angle);
                 const y = canvas.height / 2 + radius * Math.sin(angle);
-                positions[key] = { x, y };
+                targetPositions[key] = { x, y };
+                animationStartTimes[key] = now + index * staggerTime; // Stagger start time
             });
         } else if (layoutType == "spiral") {
-            // Implement the spiral layout logic here
             const numNodes = Object.keys(nodes).length;
             const centerX = canvas.width / 2;
             const centerY = canvas.height / 2;
-            const maxRadius = Math.min(centerX, centerY) - 50; // To ensure nodes stay within canvas bounds
-            const angleStep = 0.1; // Determines the tightness of the spiral
-            const radiusStep = maxRadius / numNodes; // Determines the spacing of the spiral
+            const maxRadius = Math.min(centerX, centerY) - 50;
+            const angleStep = 0.1;
+            const radiusStep = maxRadius / numNodes;
 
-            var i = 511;
+            let i = 511;
             Object.keys(nodes).forEach((key) => {
                 if (key > 99) return;
                 const angle = angleStep * i;
                 const radius = radiusStep * i;
                 const x = centerX + radius * Math.cos(angle);
                 const y = centerY + radius * Math.sin(angle);
-                positions[key] = { x, y };
+                targetPositions[key] = { x, y };
+                animationStartTimes[key] = now + i * staggerTime;
                 i--;
             });
             Object.keys(nodes).forEach((key) => {
@@ -317,24 +338,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const radius = radiusStep * i;
                 const x = centerX + radius * Math.cos(angle);
                 const y = centerY + radius * Math.sin(angle);
-                positions[key] = { x, y };
+                targetPositions[key] = { x, y };
+                animationStartTimes[key] = now + i * staggerTime;
                 i--;
             });
         } else if (layoutType == "hexagram") {
-            const numNodes = Object.keys(nodes).length;
-            const hexagramWidth = 80; // Width of each hexagram rectangle (reduced)
-            const hexagramHeight = 120; // Height of each hexagram rectangle (reduced)
-            const margin = 30; // Margin between hexagrams (reduced)
+            const hexagramWidth = 80;
+            const hexagramHeight = 120;
+            const margin = 30;
 
-            // Function to get the hexagram for a room ID
             function getHexagram(roomId) {
-                // Compute hexagram index based on room ID
-                // For simplicity, assuming hexagrams are directly mapped to room IDs
-                // Replace with actual calculation or mapping if needed
-                return roomId % 64; // Example mapping
+                return roomId % 64;
             }
 
-            // Group nodes by hexagram
             const hexagramGroups = {};
             Object.keys(nodes).forEach((key) => {
                 const hexagram = getHexagram(parseInt(key, 10));
@@ -347,47 +363,106 @@ document.addEventListener('DOMContentLoaded', (event) => {
             let xOffset = margin;
             let yOffset = margin + 50;
 
-            Object.keys(hexagramGroups).forEach((hexagram, index) => {
+            Object.keys(hexagramGroups).forEach((hexagram, groupIndex) => {
                 let extra_offset = 20;
-                if (index % 2 == 0) extra_offset = -20;
+                if (groupIndex % 2 == 0) extra_offset = -20;
                 const group = hexagramGroups[hexagram];
                 group.forEach((key, index) => {
-                    const col = index % 6; // Assuming 6 columns per hexagram
-                    const row = Math.floor(index / 6); // Rows in each hexagram
+                    const col = index % 6;
+                    const row = Math.floor(index / 6);
                     const x = xOffset + col * (hexagramWidth / 6);
                     const y = yOffset + row * (hexagramHeight / 6) + extra_offset;
-                    positions[key] = { x, y };
+                    targetPositions[key] = { x, y };
+                    animationStartTimes[key] = now + (groupIndex * group.length + index) * staggerTime;
                 });
-                xOffset += hexagramWidth + margin; // Move to next column for the next hexagram
+                xOffset += hexagramWidth + margin;
                 if (xOffset + hexagramWidth > canvas.width) {
-                    xOffset = margin; // Reset xOffset and move down to the next row
+                    xOffset = margin;
                     yOffset += hexagramHeight + margin;
                 }
             });
         } else {
-            // Grid layout
             const numNodes = Object.keys(nodes).length;
             const cols = Math.ceil(Math.sqrt(numNodes));
             const rows = Math.ceil(numNodes / cols);
 
             const cellWidth = (canvas.width - margin * 2) / cols;
             const cellHeight = (canvas.height - margin * 2) / rows;
-            Object.keys(nodes).forEach((key) => {
-              const paddedKey = key.padStart(3, '0'); // Ensure key is padded to 3 digits
-              const index = paddedKey; // Use the padded key as index for calculation
 
-              const row = Math.floor(paddedKey / cols);
-              const col = paddedKey % cols;
-              const radius = rankSizes[nodes[key].rank] || 15;
-              const x = margin + col * cellWidth + (row % 2 === 0 ? 0 : cellWidth / 2);
-              const y = margin + row * cellHeight + cellHeight / 2;
-              
-              positions[key] = { x, y };
-          });
+            Object.keys(nodes).forEach((key, index) => {
+                const paddedKey = key.padStart(3, '0');
+                //const index = parseInt(paddedKey, 10);
+
+                const row = Math.floor(index / cols);
+                const col = index % cols;
+
+                const x = margin + col * cellWidth + (row % 2 === 0 ? 0 : cellWidth / 2);
+                const y = margin + row * cellHeight + cellHeight / 2;
+                targetPositions[key] = { x, y };
+                animationStartTimes[key] = now + index * staggerTime;
+            });
+        }
+
+        animateNodes();
+    }
+
+    let lastFrameTime = 0;
+    const nodeKeys = Object.keys(nodes); // Cache keys for performance
+
+    function lerp(start, end, t) {
+        return start + (end - start) * t;
+    }
+
+    function animateNodes(timestamp) {
+        let nodeAnimationComplete = {};
+        
+        if (timestamp - lastFrameTime < 1000 / frameRateCap) {
+            requestAnimationFrame(animateNodes);
+            return;
+        }
+        lastFrameTime = timestamp;
+
+        const now = performance.now();
+        let allNodesReached = true;
+
+        for (let i = 0; i < nodeKeys.length; i++) {
+            const key = nodeKeys[i];
+            if (nodeAnimationComplete[key]) continue;
+            
+            const startX = positions[key].x;
+            const startY = positions[key].y;
+            const targetX = targetPositions[key].x;
+            const targetY = targetPositions[key].y;
+            const startTime = animationStartTimes[key];
+
+            if (now < startTime) {
+                allNodesReached = false;
+                continue;
+            }
+
+            const elapsedTime = Math.min(now - startTime, animationDuration);
+            
+            if (elapsedTime >= animationDuration) {
+                nodeAnimationComplete[key] = true;
+                continue;
+            }
+            const t = elapsedTime / animationDuration;
+            
+            positions[key].x = lerp(startX, targetX, t);
+            positions[key].y = lerp(startY, targetY, t);
+            if (t < 1) {
+                allNodesReached = false;
+            }
         }
 
         drawAll();
+
+        if (!allNodesReached) {
+            requestAnimationFrame(animateNodes);
+        }
     }
+
+
 
     // Add drag-related event listeners
     canvas.addEventListener('mousedown', (event) => {
