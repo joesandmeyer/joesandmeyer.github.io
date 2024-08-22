@@ -391,10 +391,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             Object.keys(nodes).forEach((key, index) => {
                 const paddedKey = key.padStart(3, '0');
-                //const index = parseInt(paddedKey, 10);
+                const n = parseInt(paddedKey, 10);
 
-                const row = Math.floor(index / cols);
-                const col = index % cols;
+                const row = Math.floor(n / cols);
+                const col = n % cols;
 
                 const x = margin + col * cellWidth + (row % 2 === 0 ? 0 : cellWidth / 2);
                 const y = margin + row * cellHeight + cellHeight / 2;
