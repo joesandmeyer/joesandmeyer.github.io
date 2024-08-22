@@ -1653,7 +1653,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
-    "description": "Before the end, is the final frontier,\nShrouded in flame, hidden secrets emerge.\nUpon the crystal throne, a royal sleeps,\nA dragon soars as twilight greets the dawn,\nAt Spring’s first breath, all destinies converge.",
+    "description": "Before the end, is the final frontier,\nLuminous flame... hidden secrets emerge.\nUpon the crystal throne, royalty sleeps,\nA dragon soars as twilight greets the dawn,\nAt Spring’s last breath, all destinies converge.",
     "doors": [
       422,
       488,
