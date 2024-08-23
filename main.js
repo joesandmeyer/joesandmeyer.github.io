@@ -301,83 +301,83 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Function to generate coordinates from a string
         function generateTextLayout(text, xStart, yStart, charSpacing, rowSpacing, totalNodes) {
-    const layout = {};
-    const textArray = text.split('');
-    const totalChars = textArray.length;
-    const nodesPerChar = Math.floor(totalNodes / totalChars); // Nodes per character
-    const maxCharsPerRow = 10; // Number of characters per row
+                const layout = {};
+                const textArray = text.split('');
+                const totalChars = textArray.length;
+                const nodesPerChar = Math.floor(totalNodes / totalChars); // Nodes per character
+                const maxCharsPerRow = 10; // Number of characters per row
 
-    let nodeIndex = 0;
-    let x = xStart;
-    let y = yStart;
+                let nodeIndex = 0;
+                let x = xStart;
+                let y = yStart;
 
-    textArray.forEach((char, charIndex) => {
-        if (char === ' ') {
-            x += charSpacing; // Move to the next space for spaces in the text
-            return;
-        }
+                textArray.forEach((char, charIndex) => {
+                    if (char === ' ') {
+                        x += charSpacing; // Move to the next space for spaces in the text
+                        return;
+                    }
 
-        // Determine the number of nodes to assign for this character
-        for (let i = 0; i < nodesPerChar; i++) {
-            if (nodeIndex >= totalNodes) return;
-            layout[nodeIndex] = { x, y };
-            nodeIndex++;
-        }
+                    // Determine the number of nodes to assign for this character
+                    for (let i = 0; i < nodesPerChar; i++) {
+                        if (nodeIndex >= totalNodes) return;
+                        layout[nodeIndex] = { x, y };
+                        nodeIndex++;
+                    }
 
-        x += charSpacing; // Move to the next character position
+                    x += charSpacing; // Move to the next character position
 
-        // Move to the next row if necessary
-        if ((charIndex + 1) % maxCharsPerRow === 0) {
-            x = xStart; // Reset x to start position
-            y += rowSpacing; // Move down to the next row
-        }
-    });
+                    // Move to the next row if necessary
+                    if ((charIndex + 1) % maxCharsPerRow === 0) {
+                        x = xStart; // Reset x to start position
+                        y += rowSpacing; // Move down to the next row
+                    }
+                });
 
-    // If there are any remaining nodes, assign them to the last position
-    while (nodeIndex < totalNodes) {
-        layout[nodeIndex] = { x, y };
-        nodeIndex++;
-    }
-
-    return layout;
-}
-
-
-        if (layoutType == "text") {
-    const startX = canvas.width / 4;
-    const startY = canvas.height / 4;
-    const charSpacing = 30;   //
-    const rowSpacing = 60;   //
-
-    // Generate layout based on text string
-    const textLayout = generateTextLayout(textString, startX, startY, charSpacing, rowSpacing, totalNodes);
-
-    // Set positions and animation start times
-    Object.keys(nodes).forEach((key, index) => {
-        if (textLayout[index]) {
-            targetPositions[key] = textLayout[index];
-            console.log(textLayout[index].y);
-            animationStartTimes[key] = now + index * staggerTime;
-        }
-    });
-}
- else if (layoutType == "ring") {
-            const numNodes = Object.keys(nodes).length;
-            const angleStep = 2 * Math.PI / numNodes;
-            Object.keys(nodes).forEach((key, index) => {
-              
-                //check node visibility
-                if (!elementStates[nodes[key].element]) {
-                    
+                // If there are any remaining nodes, assign them to the last position
+                while (nodeIndex < totalNodes) {
+                    layout[nodeIndex] = { x, y };
+                    nodeIndex++;
                 }
-              
-                const angle = angleStep * index;
-                const radius = 280;
-                const x = canvas.width / 2 + radius * Math.cos(angle);
-                const y = canvas.height / 2 + radius * Math.sin(angle);
-                targetPositions[key] = { x, y };
-                animationStartTimes[key] = now + index * staggerTime; // Stagger start time
-            });
+
+                return layout;
+            }
+
+
+            if (layoutType == "text") {
+                const startX = canvas.width / 4;
+                const startY = canvas.height / 4;
+                const charSpacing = 30;   //
+                const rowSpacing = 60;   //
+
+                // Generate layout based on text string
+                const textLayout = generateTextLayout(textString, startX, startY, charSpacing, rowSpacing, totalNodes);
+
+                // Set positions and animation start times
+                Object.keys(nodes).forEach((key, index) => {
+                    if (textLayout[index]) {
+                        targetPositions[key] = textLayout[index];
+                        console.log(textLayout[index].y);
+                        animationStartTimes[key] = now + index * staggerTime;
+                    }
+                });
+            }
+            else if (layoutType == "ring") {
+              const numNodes = Object.keys(nodes).length;
+              const angleStep = 2 * Math.PI / numNodes;
+              Object.keys(nodes).forEach((key, index) => {
+                
+                  //check node visibility
+                  if (!elementStates[nodes[key].element]) {
+                      
+                  }
+                
+                  const angle = angleStep * index;
+                  const radius = 280;
+                  const x = canvas.width / 2 + radius * Math.cos(angle);
+                  const y = canvas.height / 2 + radius * Math.sin(angle);
+                  targetPositions[key] = { x, y };
+                  animationStartTimes[key] = now + index * staggerTime; // Stagger start time
+              });
         } else if (layoutType == "spiral") {
             const numNodes = Object.keys(nodes).length;
             const centerX = canvas.width / 2;
