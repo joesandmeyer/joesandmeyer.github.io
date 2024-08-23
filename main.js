@@ -301,45 +301,45 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Function to generate coordinates from a string
         function generateTextLayout(text, xStart, yStart, charSpacing, rowSpacing, totalNodes) {
-                const layout = {};
-                const textArray = text.split('');
-                const totalChars = textArray.length;
-                const nodesPerChar = Math.floor(totalNodes / totalChars); // Nodes per character
-                const maxCharsPerRow = 10; // Number of characters per row
+              const layout = {};
+              const textArray = text.split('');
+              const totalChars = textArray.length;
+              const nodesPerChar = Math.floor(totalNodes / totalChars); // Nodes per character
+              const maxCharsPerRow = 10; // Number of characters per row
 
-                let nodeIndex = 0;
-                let x = xStart;
-                let y = yStart;
+              let nodeIndex = 0;
+              let x = xStart;
+              let y = yStart;
 
-                textArray.forEach((char, charIndex) => {
-                    if (char === ' ') {
-                        x += charSpacing; // Move to the next space for spaces in the text
-                        return;
-                    }
+              textArray.forEach((char, charIndex) => {
+                  if (char === ' ') {
+                      x += charSpacing; // Move to the next space for spaces in the text
+                      return;
+                  }
 
-                    // Determine the number of nodes to assign for this character
-                    for (let i = 0; i < nodesPerChar; i++) {
-                        if (nodeIndex >= totalNodes) return;
-                        layout[nodeIndex] = { x, y };
-                        nodeIndex++;
-                    }
+                  // Determine the number of nodes to assign for this character
+                  for (let i = 0; i < nodesPerChar; i++) {
+                      if (nodeIndex >= totalNodes) return;
+                      layout[nodeIndex] = { x, y };
+                      nodeIndex++;
+                  }
 
-                    x += charSpacing; // Move to the next character position
+                  x += charSpacing; // Move to the next character position
 
-                    // Move to the next row if necessary
-                    if ((charIndex + 1) % maxCharsPerRow === 0) {
-                        x = xStart; // Reset x to start position
-                        y += rowSpacing; // Move down to the next row
-                    }
-                });
+                  // Move to the next row if necessary
+                  if ((charIndex + 1) % maxCharsPerRow === 0) {
+                      x = xStart; // Reset x to start position
+                      y += rowSpacing; // Move down to the next row
+                  }
+              });
 
-                // If there are any remaining nodes, assign them to the last position
-                while (nodeIndex < totalNodes) {
-                    layout[nodeIndex] = { x, y };
-                    nodeIndex++;
-                }
+              // If there are any remaining nodes, assign them to the last position
+              while (nodeIndex < totalNodes) {
+                  layout[nodeIndex] = { x, y };
+                  nodeIndex++;
+              }
 
-                return layout;
+              return layout;
             }
 
 
