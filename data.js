@@ -3035,7 +3035,7 @@ const smData = {
     "position": "15",
     "rank": "seat",
     "level": "4",
-    "description": "<span class=\"super-bold\">Fleeting flame</span>, barely piercing the looming dark. Hallway torches doth flicker as winter’s chill descends,\nA distant star, fading in the depths of cold.\nIn lingering glow, the jade throne reflects a faint light,\nA final gleam 'gainst the endless night.",
+    "description": "<span class=\"super-bold\">Fleeting Flames</span>, barely piercing the looming dark. Hallway torches doth flicker as winter’s chill descends,\nA distant star, fading in the depths of cold.\nIn lingering glow, the jade throne reflects a faint light,\nA final gleam 'gainst the endless night.",
     "doors": [
       483,
       429,
