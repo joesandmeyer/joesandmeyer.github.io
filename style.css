@@ -113,3 +113,9 @@
   margin-top: -30px;
   margin-bottom: -30px;
 }
+
+.super-bold {
+    font-weight: 900;
+    font-size: 1.2em; /* You can increase the size slightly for extra emphasis */
+    text-shadow: 1px 1px 1px lightblue; /* Optional: adds a shadow for more emphasis */
+}

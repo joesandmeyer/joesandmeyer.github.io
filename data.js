@@ -562,7 +562,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
-    "description": "On narrow paths, choose your footing with care,\nA summer star hidden in the deep, dark depths.\nOne crucial line that guides the course of time,\nThe balance beam on which foundations rest.",
+    "description": "On narrow paths, choose your footing with care,\nA summer star hidden in the deep, dark depths.\nOne crucial line that guides the course of time,\nThe <span class=\"super-bold\">Balance beam</span> on which foundations rest.",
     "doors": [
       21
     ]
@@ -1339,7 +1339,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
-    "description": "In fleeting thoughts, dusk’s daydream weaves its way,\nAt twilight’s edge, where day dissolves to night.\nA realm where phantoms murmur in the dark,\nAnd distant echoes stir the boundaries of sight.",
+    "description": "Fleeting thoughts. I drift into<span class=\"super-bold\"> Dusk’s Daydream</span>.\nAt twilight’s edge, day yields to night.\nPhantoms doth murmur in the dark,\nAnd silhouette doth stir at the peripherals of sight.",
     "doors": [
       438,
       504,
@@ -1653,7 +1653,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
-    "description": "Before the end, is the final frontier,\nLuminous flame... hidden secrets emerge.\nUpon the crystal throne, royalty sleeps,\nA dragon soars as twilight greets the dawn,\nAt Spring’s last breath, all destinies converge.",
+    "description": "Before the end, is the <span class=\"super-bold\">Final Frontier</span>,\nLuminous flame... hidden secrets emerge.\nUpon the crystal throne, royalty sleeps,\nA dragon soars as twilight greets the dawn,\nAt Spring’s last breath, all destinies converge.",
     "doors": [
       422,
       488,
@@ -3035,7 +3035,7 @@ const smData = {
     "position": "15",
     "rank": "seat",
     "level": "4",
-    "description": "A fading flame as winter’s chill descends,\nA distant star lost in the depths of cold.\nIn fleeting glow, the jade throne’s shadow grows,\nA final gleam against the endless night.",
+    "description": "<span class=\"super-bold\">Fleeting flame</span>, barely piercing the looming dark. Hallway torches doth flicker as winter’s chill descends,\nA distant star, fading in the depths of cold.\nIn lingering glow, the jade throne reflects a faint light,\nA final gleam 'gainst the endless night.",
     "doors": [
       483,
       429,
@@ -3058,7 +3058,7 @@ const smData = {
     "position": "15",
     "rank": "terminus",
     "level": "4",
-    "description": "In celestial convergence, paths align,\nA cosmic dance of stars and dreams entwined.\nThe terminus of the jade throne’s grand rule,\nThe heart of the Maze where fates draw close.",
+    "description": "In <span class=\"super-bold\">cosmic convergence</span>, paths doth align,\nA celestial dance in which stars and dreams entwine.\nTerminus of the jade throne’s grand rule,\nRepose, within the very heart of the Maze.\nHere I pause and find my bearings,\nFor the moment, fate is neither kind nor cruel.",
     "doors": [
       10
     ]
@@ -8131,7 +8131,7 @@ const smData = {
     "position": "12",
     "rank": "seat",
     "level": "4",
-    "description": "In winter’s chill, as shadow obscures flame,\nThe hidden horizon keeps secrets veiled.\nSouthernmost bastion within the House of Sand,\nA lioness presides upon her throne.",
+    "description": "In winter’s chill, flame begets shadow,\nA <span class=\"super-bold\">Harbon Hidden</span> beyond the frozen dunes,\nUpon southernmost horizon, in the House of Sand,\nThe Baroness presides upon her throne.",
     "doors": [
       226,
       244,
@@ -8154,7 +8154,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
-    "description": "Beyond darkness deep, 'neath the eternal eclipse,\nIt dwells within \nA long-lost metropolis, bathed in light. Here, shadow ne'er prevails.\nImpenetrable walls doth secrets keep,\nA place unseen, save in dreamer’s sleep.\n\nThe Starmaze hath proven a more fitting meditation tool than the map erstwhile used for introspection.\nIt is most meet to observe that the Maze's arcane lore hath long persisted through epoch and era alike. Some of the most devout Oneironauts doth proclaim that the Maze in its prevailing guise, hath ever stayed the same, dating back eons. 'Twas no accident, however. Foolish be it to reduce the Starmaze's creation to happy chance, in equal measure to view it as an arbitrary settling of matter, wrought by natural laws. Curiosity begets pilgrimage, a principle with which I am well acquainted. As time would tell, destiny forced my hand. I eventually made the journey, to see the Maze for myself. In order to collect a sample, and to resume my research. Under microscopic lens must one closely examine fragments of stone fortifications, the Maze's hard caraprice, and delve into its material properties. The unique arrangement of chemicals unearths a profound truth: 'twas a being of great wisdom that first concieved of the Starmaze. These are not thine average catombs. Rather, dilapidated ruins conceal sacred warrens, brimming with spiritual vitality!\nA travesty indeed to mistake its dasein for mere happenstance. As the surreptitious labyrinth taketh hold of my waking throughts, so too it begins to shape the landscape of my non-cognizant realms. I can conveniently place anyone or anything within the Starmaze and they will more or less remain there indefinitely, provided the associations are in alignment. If, perchance, such an appirition grows restless, or else does not find sufficient comfort in the room I had chosen for it, the agent will perambulate about the Maze of its own volition, in quest of solace.\nTake caution, traveler. One such apparition haunts the maze's depths. A dangerous patroling Minotaur of unknown origin. Typically, a Minotaur's aggressive tendencies are taken for granted. The dastardly denizen will immediately make his way toward any foe that encroaches on his domain, regardless of provocation by any other means. Be that as it may, his navigational processes remain a mystery. What I do know is that he lacks suitable methods to fully explore the 9-dimensional space. Three-dimensional microcosms can be rather appealing for one unacquainted with the Maze's unique structure. The bovine himself oft travels in circles for days on end. It appears my initial estimate of his intelligence had been too generous.\nThese 'cycles' as Cartan dubs them are given seasonal patterns, denoted as\n\nspring, summer, winter, fall\n\nIf one wishes to chart the Maze thoroughly it will require the dreamer to break free from rigid notions of time and space. There are instances where fall will become summer, then fall, then summer once again.\n",
+    "description": "Beyond darkness deep, 'neath the <span class=\"super-bold\">Eternal Eclipse</span>,\nIt dwells within \nA long-lost metropolis, bathed in light. Here, shadow ne'er prevails.\nImpenetrable walls doth secrets keep,\nA place unseen, save in dreamer’s sleep.\n\nThe Starmaze hath proven a more fitting meditation tool than the map erstwhile used for introspection.\nIt is most meet to observe that the Maze's arcane lore hath long persisted through epoch and era alike. Some of the most devout Oneironauts doth proclaim that the Maze in its prevailing guise, hath ever stayed the same, dating back eons. 'Twas no accident, however. Foolish be it to reduce the Starmaze's creation to happy chance, in equal measure to view it as an arbitrary settling of matter, wrought by natural laws. Curiosity begets pilgrimage, a principle with which I am now well acquainted. As time would tell, destiny forced my hand. I eventually made the journey, to see the Maze for myself. In order to collect a sample, and to resume my research. Under microscopic lens must one closely examine fragments of stone fortifications, which compose the Maze's hard caraprice, and delve into its material properties. The stone's unique chemical arrangement unearths a profound truth: 'twas a being of great wisdom that first concieved of the Starmaze. These are not thine average catacombs, though piles upon piles of corpses reside within the subterranean veins. Crypt it may be, the Maze conceals a multitude of purposes unknown. The upper layers, (dilapidated, bone-filled ruins) conceal a network of sacred warrens, brimming with spiritual vitality!\nA travesty indeed to mistake its dasein for mere happenstance. As the surreptitious labyrinth taketh hold of my waking throughts, so too it begins to shape the landscape of my non-cognizant realms. I can conveniently place anyone or anything within the Starmaze and they will more or less remain there indefinitely, provided the associations are in alignment. If, perchance, such an appirition grows restless, or else does not find sufficient comfort in the room I had chosen for it, the agent will perambulate about the Maze of its own volition, in quest of solace.\nTake caution, traveler. One such apparition haunts the maze's depths. A dangerous patroling Minotaur of unknown origin. Minotaurs are known for their aggressive tendencies, and immense strength. The dastardly denizen will immediately make its way toward any foe that encroaches on its domain, regardless of further provocations. Be that as it may, his navigational processes remain a mystery. What I do know is that he lacks suitable methods to fully explore the 9-dimensional space. Three-dimensional microcosms can be rather appealing for one unacquainted with the Maze's structure. The bovine himself oft travels in circles for days on end. It appears my initial estimate of his intelligence had been too generous.\nThese 'cycles' as Cartan dubs them are given seasonal patterns, denoted as\n\nspring, summer, winter, fall\n\nIf one wishes to chart the Maze thoroughly, it will require the dreamer to break free from rigid notions of time and space. There are instances where fall will become summer, then fall, then summer once again.\n",
     "doors": [
       227,
       245,
@@ -8178,7 +8178,7 @@ const smData = {
     "position": "16",
     "rank": "terminus",
     "level": "5",
-    "description": "In shadowed depths, where pathways come to end,\nNo door appears, nor light doth pierce the gloom.\nA silent snare, where time itself seems paused,\nA realm of stillness, untouched by restless steps.",
+    "description": "In shadowed depths, where pathways come to end,\nNo door appears, nor light doth pierce the gloom.\nA <span class=\"super-bold\">Silent Snare</span>, where time itself seems paused,\nA realm of stillness, untouched by restless steps.",
     "doors": []
   },
   "001": {
@@ -8192,7 +8192,7 @@ const smData = {
     "position": "12",
     "rank": "terminus",
     "level": "4",
-    "description": "The path unfolds beneath an icy sky,\nFirst frostnip bite, a distant star alight.\nA chilling whisper beckons through the dark,\nAs winter's grip leaves its indelible mark.",
+    "description": "The path unfolds beneath an icy sky,\n<span class=\"super-bold\">First Frostnip</span> bite, a star so distant yet so bright.\nChilling whisper beckons through the dark,\nAs winter's grip leaves its indelible mark.",
     "doors": [
       160
     ]
@@ -8342,7 +8342,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
-    "description": "In winter’s chill, frozen waters lie still,\nThrough the night, ravens dream of frost’s flight,\nThe Jade Throne’s steps lead northwest through the dark.",
+    "description": "In winter’s chill, frozen waters lie still,\nThrough the night, ravens dream of <span class=\"super-bold\">Frost’s Flight</span>,\nThe Jade Throne’s steps lead northwest through the dark.",
     "doors": [
       278,
       344
@@ -8449,7 +8449,7 @@ const smData = {
     "position": "1",
     "rank": "terminus",
     "level": "1",
-    "description": "",
+    "description": "In Elsinore's shadow, I seek my fate.\nA prince of honor, yet driven by hate.\n\nKing Claudius, his majesty, wears the crown.\nSoon shall I usurp him, and bring him down.\nWeaving through starlit paths, I tread with care,\nFor now, I may face the Minotaur.\n\nA beast of legend, known for its strength and might,\nYet I dare to brave the depths, with vengeance as my guiding light.\nPressing ever forth, to bring Claudius the Kinslayer to heel,\nBut first, I must obviate this Starmaze ordeal.\n\nSo tell me, Minotaur, why art thou here?\nIs it thine duty to strike terror and fear,\nOr dost thou, like me, seek a greater cause?\nTo punish those who disregard nature's laws...\n\nIn this <span class=\"super-bold\">Fateful Fray</span>, fortunes doth intertwine.\nWe may find common purpose in our shared design.\nFor the stars guide us both, through parallel twists and turns,\nRekindling threads that had only but half-burned.",
     "doors": [
       325
     ]
@@ -8912,7 +8912,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
-    "description": "The answer to life, the universe, and everything.",
+    "description": "\"To sleep, perchance to dream———Ay, there's the rub.\"\n\nWith the weight of his <span class=\"super-bold\">Being Banished</span>, Leo fell into disrepair,\nHis mind awash with burdens difficult to bear.\nIn exile he doth ponder life, the universe, and all that is there.",
     "doors": [
       310,
       376,

@@ -612,7 +612,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
                 // Set HTML content including formatted JSON and the text
                 infoDiv.innerHTML = `
-                    <strong>Room id:</strong> ${highlightedNodeId}
+                    Room id: ${highlightedNodeId}
                     <pre style="white-space: pre-wrap; margin-top: -5px;">${poem}</pre>
                     <hr>
                     <pre style="margin-bottom: -5px;">${formattedJson}</pre>
