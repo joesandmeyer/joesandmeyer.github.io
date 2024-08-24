@@ -8131,7 +8131,7 @@ const smData = {
     "position": "12",
     "rank": "seat",
     "level": "4",
-    "description": "In winter’s chill, flame begets shadow,\nA <span class=\"super-bold\">Harbon Hidden</span> beyond the frozen dunes,\nUpon southernmost horizon, in the House of Sand,\nThe Baroness presides upon her throne.",
+    "description": "In winter’s chill, flame begets shadow,\nA <span class=\"super-bold\">Harbor Hidden</span> beyond the frozen dunes,\nUpon southernmost horizon, in the House of Sand,\nThe Baroness presides upon her throne.",
     "doors": [
       226,
       244,
