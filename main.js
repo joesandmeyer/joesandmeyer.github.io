@@ -7,6 +7,7 @@ function to9BitBinary(num) {
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
+    const body = document.body;
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     const margin = 50;
@@ -627,6 +628,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     canvas.addEventListener('mouseup', () => {
         draggingNode = null;
+    });
+    
+    body.addEventListener('click', () => {
+        infoDiv.innerHTML = '';
+        //lastnode = -1;   uncomment for node's sound to repeat on click
     });
 
     function toggleLayout() {
