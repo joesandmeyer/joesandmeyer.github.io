@@ -4149,7 +4149,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
-    "description": "",
+    "description": "A number vast, its sequence never fades,\nWhere dancing dogs bark at birds in sunny glades.\nEncircling the ivory throne, the waters sway,\nIn Summer’s <span class=\"super-bold\">Endless Embrace,\ntime drifts away.",
     "doors": [
       38,
       48,
@@ -5934,7 +5934,7 @@ const smData = {
     "position": "10",
     "rank": "foundation",
     "level": "3",
-    "description": "",
+    "description": "Onyx walls make for poor shadowplay.\nA hollow <span class=\"super-bold\">Empty Enclave.</span>\nIn here, one forgets the day.\nOutside the cave, cranes in formation fly through the warm Summer air, \nAnd innocence lingers in the silence there.",
     "doors": [
       158,
       280,
