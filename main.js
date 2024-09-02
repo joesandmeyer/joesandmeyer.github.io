@@ -136,10 +136,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const cell_height = (height - margin * 2) / rows;
 
     // Generate staggered grid positions for nodes
-    // Generate grid positions for nodes
     sorted_node_keys.forEach((key, index) => {
-        const row = Math.floor(index / cols); // Determine the row based on index
-        const col = index % cols;            // Determine the column based on index
+        const row = Math.floor(index / cols); // Determine row based on index
+        const col = index % cols;            // Determine col based on index
         const radius = rank_sizes[nodes[key].rank] || 15;
 
         // Calculate x and y positions
@@ -208,12 +207,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const node = nodes[key];
             const house_color = house_colors[node.house][1];
             const radius = rank_sizes[node.rank] || 15;
-            if (node.doors && node.doors.length > 0 && house_states[node.house]) {
+            if (!node.doors) return;
+            if (node.doors.length > 0 && house_states[node.house]) {
                 node.doors.forEach(door => {
-                    const doorkey = door.toString().padStart(3, '0'); // Define doorkey here
-                    if (positions[doorkey] && element_states[nodes[doorkey].element] && element_states[nodes[key].element]) {
-                        const door_radius = rank_sizes[nodes[doorkey].rank] || 15;
-                        drawArrow(positions[key].x, positions[key].y, positions[doorkey].x, positions[doorkey].y, house_color, radius, door_radius);
+                    const doorkey = door.toString().padStart(3, '0');
+                    if (positions[doorkey] && 
+                        element_states[nodes[doorkey].element] && 
+                        element_states[nodes[key].element]) {
+                          //
+                        const door_radius = rank_sizes[nodes[doorkey].rank] 
+                                                                     || 15;
+                        drawArrow(positions[key].x, positions[key].y,
+                            positions[doorkey].x, positions[doorkey].y,
+                            house_color, radius, door_radius);
                     }
                 });
             }
@@ -223,12 +229,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const node = nodes[key];
                 const house_color = house_colors[node.house][1];
                 const radius = rank_sizes[node.rank] || 15;
-                if (node.doors && node.doors.length > 0 && house_states[node.house]) {
+                if (!node.doors) return;
+                if (node.doors.length > 0 && house_states[node.house]) {
                     node.doors.forEach(door => {
-                        const doorkey = door.toString().padStart(3, '0'); // Define doorkey here
-                        if (positions[doorkey] && element_states[nodes[doorkey].element] && element_states[nodes[key].element]) {
-                            const door_radius = rank_sizes[nodes[doorkey].rank] || 15;
-                            drawArrow(positions[key].x, positions[key].y, positions[doorkey].x, positions[doorkey].y, house_color, radius, door_radius);
+                        const doorkey = door.toString().padStart(3, '0');
+                        if (positions[doorkey] &&
+                            element_states[nodes[doorkey].element] &&
+                            element_states[nodes[key].element]) {
+                            const door_radius = rank_sizes[nodes[doorkey].rank]
+                                                                         || 15;
+                            drawArrow(positions[key].x, positions[key].y,
+                                positions[doorkey].x, positions[doorkey].y,
+                                house_color, radius, door_radius);
                         }
                     });
                 }
@@ -236,30 +248,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    function drawArrow(x1, y1, x2, y2, house_color, start_radius, end_radius) {
-        const head_length = 10;
+    function drawArrow(x1, y1, x2, y2, house_color, r_start, r_end) {
+        const head_length = 10;                     //radius start & end
         const dx = x2 - x1;
         const dy = y2 - y1;
         const angle = fastAtan2(dy, dx);
 
         // Adjust start and end points based on node radius
-        const adjustedstart_x = x1 + (start_radius / Math.sqrt(dx * dx + dy * dy)) * dx;
-        const adjustedstart_y = y1 + (start_radius / Math.sqrt(dx * dx + dy * dy)) * dy;
-        const adjusted_end_x = x2 - (end_radius / Math.sqrt(dx * dx + dy * dy)) * dx;
-        const adjusted_end_y = y2 - (end_radius / Math.sqrt(dx * dx + dy * dy)) * dy;
-
+        const ajd_start_x = x1 + (r_start / Math.sqrt(dx * dx + dy * dy)) * dx;
+        const ajd_start_y = y1 + (r_start / Math.sqrt(dx * dx + dy * dy)) * dy;
+        const ajd_end_x = x2 - (r_end / Math.sqrt(dx * dx + dy * dy)) * dx;
+        const ajd_end_y = y2 - (r_end / Math.sqrt(dx * dx + dy * dy)) * dy;
+        
+        //line segments
+        const seg_1 = ajd_end_x - head_length * Math.cos(angle - Math.PI / 6);
+        const seg_2 = ajd_end_y - head_length * Math.sin(angle - Math.PI / 6);
+        const seg_3 = ajd_end_x - head_length * Math.cos(angle + Math.PI / 6);
+        const seg_4 = ajd_end_y - head_length * Math.sin(angle + Math.PI / 6);
+        
         ctx.beginPath();
-        ctx.moveTo(adjustedstart_x, adjustedstart_y);
-        ctx.lineTo(adjusted_end_x, adjusted_end_y);
+        ctx.moveTo(ajd_start_x, ajd_start_y);
+        ctx.lineTo(ajd_end_x, ajd_end_y);
         ctx.strokeStyle = house_color;
         ctx.lineWidth = 2;
         ctx.stroke();
 
         ctx.beginPath();
-        ctx.moveTo(adjusted_end_x, adjusted_end_y);
-        ctx.lineTo(adjusted_end_x - head_length * Math.cos(angle - Math.PI / 6), adjusted_end_y - head_length * Math.sin(angle - Math.PI / 6));
-        ctx.lineTo(adjusted_end_x - head_length * Math.cos(angle + Math.PI / 6), adjusted_end_y - head_length * Math.sin(angle + Math.PI / 6));
-        ctx.lineTo(adjusted_end_x, adjusted_end_y);
+        ctx.moveTo(ajd_end_x, ajd_end_y);
+        ctx.lineTo(seg_1, seg_2); //adjusted segments
+        ctx.lineTo(seg_3, seg_4); //adjusted segments
+        ctx.lineTo(ajd_end_x, ajd_end_y);
         ctx.fillStyle = house_color;
         ctx.fill();
     }
@@ -336,7 +354,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             ctx.fillStyle = element_color;
             ctx.fill();
 
-            if (node.rank === 'dais' || node.rank === 'seat' || node.rank === 'step') {
+            switch (node.rank) { case "dais": case "seat": case "step": 
                 drawNumber(x, y, paddedIdToNumber(key));
             }
         }
@@ -352,7 +370,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function updateLayout() {
         const now = performance.now(); // Get the current time
-        let animation_offset = 0; //Allows staggering to account for invisible nodes;
+        let animation_offset = 0; //Staggering to account for invisible nodes;
 
         const text_string = "HELP ME"; // The text to spell out
         const total_nodes = 512; // Total number of nodes
@@ -689,15 +707,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 }
             });
             
-            if (highlighted_node_id != lastnode && highlighted_node_id != null) {
-                lastnode = highlighted_node_id;
+            let n_id = highlighted_node_id;
+            if (n_id != lastnode && n_id != null) {
+                lastnode = n_id;
                 playNoteForNode(lastnode);
             }
                 
-            if (highlighted_node_id && element_states[nodes[highlighted_node_id].element]) {
+            if (n_id && element_states[nodes[n_id].element]) {
                 const poem = highlighted_node.description;
                 
-                // Extrapolated data (e.g. house types [districts], from houses)
+                // Extrapolate data (e.g. house types [districts], from houses)
                     
                 let dir = "";      //("N", "S", "E", "W") cardinal direction
                 let sect = "";    // ("Deep", "Bastion", ...) temple section
@@ -818,14 +837,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Ensure elements exist before adding event listeners
     const toggle_layout_button = document.getElementById('toggleLayout');
-    const toggle_solution_path_button = document.getElementById('toggleSolutionPath');
+    const toggle_solution_btn = document.getElementById('toggleSolutionPath');
 
     if (toggle_layout_button) {
         toggle_layout_button.addEventListener('click', toggleLayout);
     }
 
-    if (toggle_solution_path_button) {
-        toggle_solution_path_button.addEventListener('click', toggleSolutionPath);
+    if (toggle_solution_btn) {
+        toggle_solution_btn.addEventListener('click', toggleSolutionPath);
     }
 
     updateLayout();
