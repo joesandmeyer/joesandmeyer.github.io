@@ -753,7 +753,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                         sect = "Depths";
                         break;
                     default:
-                        sect = "???"
+                        sect = "???";
                 }
   
                 //insert district and re-ordered keys
