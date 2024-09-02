@@ -700,44 +700,39 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 // Extrapolated data (e.g. house types [districts], from houses)
                     
                 let dir = "";      //("N", "S", "E", "W") cardinal direction
-                let sect = "";    // ("deep", "bastion", ...) temple section
+                let sect = "";    // ("Deep", "Bastion", ...) temple section
                  
-               // "Temple"    /starmaze/glossary.html#temple
-              // A collection of rooms in the three-dimensional starmaze.
-             // There is a temple for each of the four cardinal directions.
-            // Each temple consists of four houses: an underground deep which
-           // leads up to an outward facing bastion and an inward-facing
-          // courtyard which in turn lead up to a tower.
-         // The East Temple includes the houses of
-        // Words, Bones, Desire, and Darkness and overlooks a forest.
-       // The South Temple includes the houses of
-      // Sand, Birds, Laughter, and Lamentation and overlooks a desert.
-     // The West Temple includes the houses of
-    // Time, Dreams, Innocence, and Whispers and overlooks an ocean.
-   // The North Temple includes the houses of
-  // Numbers, Rain, Rumor, and Judgement and overlooks a mountain.
-  
+                         // "Temple"    /starmaze/glossary.html#temple
+                        // A collection of rooms in the starmaze.
+                       //  There is a North, South, East, and West temple.
+                      //   Each temple consists of four houses:
+                     //       - an underground    <Deep>      which leads up to
+                    //        - an outward facing <Bastion>   and
+                   //         - an inward-facing  <Courtyard> which in turn
+                  //          - lead up to a      <Tower>.
+          
                 //determine district (direction .. section)
                 let haus = highlighted_node["house"];
-                switch (true) {
+                
+                switch (true) { // The Eastearn Temple overlooks a forest
                     case haus == "words"     || haus == "bones":
                     case haus == "desire"    || haus == "darkness":
-                        dir = "Eastern";
-                        break;
+                        dir = "Eastern"; 
+                        break; // The Southern Temple overlooks a desert
                     case haus == "sand"      || haus == "birds":
                     case haus == "laughter"  || haus == "lamentation":
                         dir = "Southern";
-                        break;
+                        break; // The Western Temple overlooks an ocean
                     case haus == "time"      || haus == "dreams":
                     case haus == "innocence" || haus == "whispers":
                         dir = "Western";
-                        break;
+                        break; // The Northern Temple overlooks a mountain
                     case haus == "numbers"   || haus == "rain":
                     case haus == "rumor"     || haus == "judgement":
                         dir = "Northern";
                         break;
                     default:
-                        console.log("Something wrong in main.js");
+                        dir = "???";
                 }
                 
                 switch (true) {
@@ -758,7 +753,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                         sect = "Depths";
                         break;
                     default:
-                        console.log(dir);
+                        sect = "???"
                 }
   
                 //insert district and re-ordered keys
