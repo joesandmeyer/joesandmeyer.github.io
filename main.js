@@ -697,10 +697,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             if (highlighted_node_id && element_states[nodes[highlighted_node_id].element]) {
                 const poem = highlighted_node.description;
                 
-                    // Extrapolated data (e.g. house types from houses)
+                // Extrapolated data (e.g. house types [districts], from houses)
                     
-                let cardinal_dir = "";    //("N", "S", "E", "W") 
-                let temple_section = ""; // ("deep", "bastion", ...)
+                let dir = "";      //("N", "S", "E", "W") cardinal direction
+                let sect = "";    // ("deep", "bastion", ...) temple section
                  
                // "Temple"    /starmaze/glossary.html#temple
               // A collection of rooms in the three-dimensional starmaze.
@@ -717,17 +717,69 @@ document.addEventListener('DOMContentLoaded', (event) => {
    // The North Temple includes the houses of
   // Numbers, Rain, Rumor, and Judgement and overlooks a mountain.
   
+                //determine district (direction .. section)
+                let haus = highlighted_node["house"];
+                switch (true) {
+                    case haus == "words"     || haus == "bones":
+                    case haus == "desire"    || haus == "darkness":
+                        dir = "Eastern";
+                        break;
+                    case haus == "sand"      || haus == "birds":
+                    case haus == "laughter"  || haus == "lamentation":
+                        dir = "Southern";
+                        break;
+                    case haus == "time"      || haus == "dreams":
+                    case haus == "innocence" || haus == "whispers":
+                        dir = "Western";
+                        break;
+                    case haus == "numbers"   || haus == "rain":
+                    case haus == "rumor"     || haus == "judgement":
+                        dir = "Northern";
+                        break;
+                    default:
+                        console.log("Something wrong in main.js");
+                }
                 
+                switch (true) {
+                    case haus == "words"     || haus == "sand":
+                    case haus == "time"      || haus == "numbers":
+                        sect = "Bastion";
+                        break;
+                    case haus == "bones"     || haus == "birds":
+                    case haus == "dreams"    || haus == "rain":
+                        sect = "Tower";
+                        break;
+                    case haus == "desire"    || haus == "laughter":
+                    case haus == "innocence" || haus == "rumor":
+                        sect = "Courtyard";
+                        break;
+                    case haus == "darkness"  || haus == "lamentation":
+                    case haus == "whispers"  || haus == "judgement":
+                        sect = "Depths";
+                        break;
+                    default:
+                        console.log(dir);
+                }
+  
+                //insert district and re-ordered keys
+                let new_highlighted_node = {};
+                let newKeyInserted = false;
+                for (let key in highlighted_node) {
+                    if (!newKeyInserted) {
+                        new_highlighted_node["district"] = dir + " " + sect; 
+                        newKeyInserted = true;
+                    }
+                    new_highlighted_node[key] = highlighted_node[key];
+                }
+                highlighted_node = new_highlighted_node;
   
                  // Create a copy of highlighted_node excluding the 'description'
                 const { description, ...no_description } = highlighted_node;
 
                 // Format JSON as a string and replace new lines for HTML
-                const formatted_json = JSON.stringify(no_description, null, 2)
+                let formatted_json = JSON.stringify(no_description, null, 2)
                     .replace(/\n/g, '<br>')
                     .replace(/ /g, '&nbsp;');
-                    
-                console.log(formatted_json)
 
                 // Set HTML content including formatted JSON and the text
                 info_div.innerHTML = `
