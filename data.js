@@ -66,7 +66,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       309,
       235,
@@ -377,7 +377,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       293,
       251,
@@ -719,7 +719,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       405,
       28,
@@ -1016,7 +1016,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       389,
       460,
@@ -1226,7 +1226,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       40,
       49,
@@ -1534,7 +1534,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       56,
       481,
@@ -1887,7 +1887,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       404,
       74,
@@ -2197,7 +2197,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       388,
       90,
@@ -2617,7 +2617,7 @@ const smData = {
     "position": "7",
     "rank": "seat",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       503,
       441,
@@ -2948,7 +2948,7 @@ const smData = {
     "position": "10",
     "rank": "seat",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       487,
       425,
@@ -3326,7 +3326,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       19,
       5,
@@ -3629,7 +3629,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       3,
       21,
@@ -3685,7 +3685,7 @@ const smData = {
     "position": "15",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       40,
       112,
@@ -3991,7 +3991,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       56,
       96,
@@ -4274,7 +4274,7 @@ const smData = {
     "position": "11",
     "rank": "terminus",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       74,
       290
@@ -4578,7 +4578,7 @@ const smData = {
     "position": "6",
     "rank": "terminus",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       90,
       5,
@@ -5154,7 +5154,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       113,
       103,
@@ -5487,7 +5487,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       97,
       119,
@@ -5607,7 +5607,7 @@ const smData = {
     "position": "9",
     "rank": "step",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       137,
       209,
@@ -5914,7 +5914,7 @@ const smData = {
     "position": "8",
     "rank": "step",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       153,
       193,
@@ -6455,7 +6455,7 @@ const smData = {
     "position": "10",
     "rank": "seat",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       178,
       164,
@@ -6789,7 +6789,7 @@ const smData = {
     "position": "7",
     "rank": "seat",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       162,
       180,
@@ -7070,7 +7070,7 @@ const smData = {
     "position": "5",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       208,
       198,
@@ -7402,7 +7402,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       192,
       214,
@@ -7509,7 +7509,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       235,
       387,
@@ -7846,7 +7846,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       251,
       164,
@@ -8154,7 +8154,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
-    "description": "Beyond darkness deep, 'neath the <span class=\"super-bold\">Eternal Eclipse</span>,\nIt dwells within \nA long-lost metropolis, bathed in light. Here, shadow ne'er prevails.\nImpenetrable walls doth secrets keep,\nA place unseen, save in dreamer’s sleep.\n\nThe Starmaze hath proven a more fitting meditation tool than the map erstwhile used for introspection.\nIt is most meet to observe that the Maze's arcane lore hath long persisted through epoch and era alike. Some of the most devout Oneironauts doth proclaim that the Maze in its prevailing guise, hath ever stayed the same, dating back eons. 'Twas no accident, however. Foolish be it to reduce the Starmaze's creation to happy chance, in equal measure to view it as an arbitrary settling of matter, wrought by natural laws. Curiosity begets pilgrimage, a principle with which I am now well acquainted. As time would tell, destiny forced my hand. I eventually made the journey, to see the Maze for myself. In order to collect a sample, and to resume my research. Under microscopic lens must one closely examine fragments of stone fortifications, which compose the Maze's hard caraprice, and delve into its material properties. The stone's unique chemical arrangement unearths a profound truth: 'twas a being of great wisdom that first concieved of the Starmaze. These are not thine average catacombs, though piles upon piles of corpses reside within the subterranean veins. Crypt it may be, the Maze conceals a multitude of purposes unknown. The upper layers, (dilapidated, bone-filled ruins) conceal a network of sacred warrens, brimming with spiritual vitality!\nA travesty indeed to mistake its dasein for mere happenstance. As the surreptitious labyrinth taketh hold of my waking throughts, so too it begins to shape the landscape of my non-cognizant realms. I can conveniently place anyone or anything within the Starmaze and they will more or less remain there indefinitely, provided the associations are in alignment. If, perchance, such an appirition grows restless, or else does not find sufficient comfort in the room I had chosen for it, the agent will perambulate about the Maze of its own volition, in quest of solace.\nTake caution, traveler. One such apparition haunts the maze's depths. A dangerous patroling Minotaur of unknown origin. Minotaurs are known for their aggressive tendencies, and immense strength. The dastardly denizen will immediately make its way toward any foe that encroaches on its domain, regardless of further provocations. Be that as it may, his navigational processes remain a mystery. What I do know is that he lacks suitable methods to fully explore the 9-dimensional space. Three-dimensional microcosms can be rather appealing for one unacquainted with the Maze's structure. The bovine himself oft travels in circles for days on end. It appears my initial estimate of his intelligence had been too generous.\nThese 'cycles' as Cartan dubs them are given seasonal patterns, denoted as\n\nspring, summer, winter, fall\n\nIf one wishes to chart the Maze thoroughly, it will require the dreamer to break free from rigid notions of time and space. There are instances where fall will become summer, then fall, then summer once again.\n",
+    "description": "Beyond darkness deep, 'neath the <span class=\"super-bold\">Eternal Eclipse</span>,\nIt dwells within \nA long-lost metropolis, bathed in light. Here, shadow ne'er prevails.\nImpenetrable walls doth secrets keep,\nA place unseen, save in dreamer’s sleep.\n\nThe Starmaze hath proven a more fitting meditation tool than the map erstwhile used for introspection.\nIt is most meet to observe that the Maze's arcane lore hath long persisted through epoch and era alike. Some of the most devout Oneironauts doth proclaim that the Maze in its prevailing guise, hath ever stayed the same, dating back eons. 'Twas no accident, however. Foolish be it to reduce the Starmaze's creation to happy chance, in equal measure to view it as an arbitrary settling of matter, wrought by natural laws. Curiosity begets pilgrimage, a principle with which I am now well acquainted. As time would tell, destiny forced my hand. I eventually made the journey, to see the Maze for myself. In order to collect a sample, and to resume my research. Under microscopic lens must one closely examine fragments of stone fortifications, which compose the Maze's hard caraprice, and delve into its material properties. The stone's unique chemical arrangement unearths a profound truth: 'twas a being of great wisdom that first concieved of the Starmaze. These are not thine average catacombs, though piles upon piles of corpses reside within the subterranean veins. Crypt it may be, the Maze conceals a multitude of purposes unknown. The upper layers, (dilapidated, bone-filled ruins) conceal a network of sacred warrens, brimming with spiritual vitality!\nA travesty indeed to mistake its dasein for mere happenstance. As the surreptitious labyrinth taketh hold of my waking throughts, so too it begins to shape the landscape of my non-cognizant realms. I can conveniently place anyone or anything within the Starmaze and they will more or less remain there indefinitely, provided the associations are in alignment. If, perchance, such an appirition grows restless, or else does not find sufficient comfort in the room I had chosen for it, the agent will perambulate about the Maze of its own volition, in quest of solace.\nTake caution, traveler. One such apparition haunts the maze's depths. A dangerous patroling Minotaur of unknown origin. Minotaurs are known for their aggressive tendencies, and immense strength. The dastardly denizen will immediately make its way toward any foe that encroaches on its domain, regardless of further provocations. Be that as it may, his navigational processes remain a mystery. What I do know is that he lacks suitable methods to fully explore the 9-dimensional space. Three-dimensional microcosms can be rather appealing for one unacquainted with the Maze's structure. The bovine himself oft travels in circles for days on end. It appears my initial estimate of his intelligence had been too generous.\nThese 'cycles' as Cartan dubs them are given seasonal patterns, denoted as\n\nspring, summer, winter, fall\n\nIf one wishes to chart the Maze thoroughly, it will require the dreamer to break free from rigid notions of time and space. There are instances where fall becomes summer, then fall, then summer once again.\n",
     "doors": [
       227,
       245,
@@ -8208,7 +8208,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
-    "description": "",
+    "description": "In midsummer night,\n'Neath distant star's gleam.\n\nNaught doth beseem,\nAs it had in thy dream.\n\n<span class=\"super-bold\">Metallic melody</span>,\nFamiliar song.\n\nOne must tread the beaten path,\nto find truths were hidden there all along.",
     "doors": [
       336
     ]
@@ -8257,7 +8257,7 @@ const smData = {
     "position": "6",
     "rank": "terminus",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       137,
       164
@@ -8534,7 +8534,7 @@ const smData = {
     "position": "11",
     "rank": "terminus",
     "level": "3",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       153,
       320,
@@ -8877,7 +8877,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       308,
       89
@@ -9173,7 +9173,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       292,
       365,
@@ -9504,7 +9504,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "Western Depths.",
     "doors": [
       342,
       280,
@@ -9802,7 +9802,7 @@ const smData = {
     "position": "3",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "Western depths.",
     "doors": [
       326,
       264,
@@ -9988,13 +9988,6 @@ const smData = {
 
 
 /*
-
-Room 002 – Metal Mirage:
-
-In summer’s night, a distant star’s faint gleam,
-Where metal dreams and coral thrones redeem.
-In the private halls where innocence is found,
-A hidden world on night’s foundation grounds.
 
 Room 003 – Celestial Court:
 
