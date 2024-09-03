@@ -370,63 +370,108 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function updateLayout() {
         const now = performance.now(); // Get the current time
-        let animation_offset = 0; //Staggering to account for invisible nodes;
+        let animation_offset = 0; // Staggering to account for invisible nodes
 
         const text_string = "HELP ME"; // The text to spell out
         const total_nodes = 512; // Total number of nodes
+        const canvas_width = 800; // Width of the canvas
+        const canvas_height = 600; // Height of the canvas
+        const char_width = 40; // Width of each character in the bitmap
+        const char_height = 40; // Height of each character in the bitmap
+        const rows = 10; // Number of rows for the grid
+        const cols = 10; // Number of columns for the grid
 
-        // Function to generate coordinates from a string
-        function generateTextLayout(text, x_start, y_start, char_spacing, row_spacing, total_nodes) {
-              const layout = {};
-              const text_array = text.split('');
-              const total_chars = text_array.length;
-              const nodes_per_char = Math.floor(total_nodes / total_chars); // Nodes per character
-              const max_chars_per_row = 10; // Number of characters per row
+            // Mapping of characters to 5x5 bitmaps
+            const character_map = {
+                'H': [
+                    [1, 0, 1, 0, 1],
+                    [1, 0, 1, 0, 1],
+                    [1, 1, 1, 1, 1],
+                    [1, 0, 1, 0, 1],
+                    [1, 0, 1, 0, 1]
+                ],
+                'E': [
+                    [1, 1, 1, 1, 1],
+                    [1, 0, 0, 0, 0],
+                    [1, 1, 1, 1, 1],
+                    [1, 0, 0, 0, 0],
+                    [1, 1, 1, 1, 1]
+                ],
+                'L': [
+                    [1, 0, 0, 0, 0],
+                    [1, 0, 0, 0, 0],
+                    [1, 0, 0, 0, 0],
+                    [1, 0, 0, 0, 0],
+                    [1, 1, 1, 1, 1]
+                ],
+                'P': [
+                    [1, 1, 1, 1, 0],
+                    [1, 0, 0, 1, 0],
+                    [1, 1, 1, 1, 0],
+                    [1, 0, 0, 0, 0],
+                    [1, 0, 0, 0, 0]
+                ],
+                'M': [
+                    [1, 0, 0, 0, 1],
+                    [1, 1, 0, 1, 1],
+                    [1, 1, 1, 1, 1],
+                    [1, 0, 1, 0, 1],
+                    [1, 0, 0, 0, 1]
+                ],
+                ' ': [
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0]
+                ]
+            };
 
-              let node_index = 0;
-              let x = x_start;
-              let y = y_start;
+            function generateTextLayout(text, total_nodes) {
+                const layout = {};
+                const nodes_per_cell = Math.floor(total_nodes / (text.length * 5 * 5)); // Nodes per grid cell
+                let node_index = 0;
+                const char_spacing = 10; // Spacing between characters
 
-              text_array.forEach((char, char_index) => {
-                  if (char === ' ') {
-                      x += char_spacing; // Move to the next space for spaces in the text
-                      return;
-                  }
+                for (let char_index = 0; char_index < text.length; char_index++) {
+                    const char = text[char_index];
+                    const char_map = character_map[char];
+                    const x_start = char_index * (char_width + char_spacing);
+                    const y_start = 0;
 
-                  // Determine the number of nodes to assign for this character
-                  for (let i = 0; i < nodes_per_char; i++) {
-                      if (node_index >= total_nodes) return;
-                      layout[node_index] = { x, y };
-                      node_index++;
-                  }
+                    for (let row = 0; row < char_map.length; row++) {
+                        for (let col = 0; col < char_map[row].length; col++) {
+                            if (char_map[row][col] === 1) {
+                                for (let n = 0; n < nodes_per_cell; n++) {
+                                    if (node_index >= total_nodes) return layout;
 
-                  x += char_spacing; // Move to the next character position
+                                    // Distribute nodes within each cell
+                                    const x = x_start + col * (char_width / 5) + Math.random() * (char_width / 5);
+                                    const y = y_start + row * (char_height / 5) + Math.random() * (char_height / 5);
 
-                  // Move to the next row if necessary
-                  if ((char_index + 1) % max_chars_per_row === 0) {
-                      x = x_start; // Reset x to start position
-                      y += row_spacing; // Move down to the next row
-                  }
-              });
+                                    layout[node_index] = { x, y };
+                                    node_index++;
+                                }
+                            }
+                        }
+                    }
+                }
 
-              // If there are any remaining nodes, assign them to the last position
-              while (node_index < total_nodes) {
-                  layout[node_index] = { x, y };
-                  node_index++;
-              }
+                // If there are any remaining nodes, distribute them randomly
+                while (node_index < total_nodes) {
+                    layout[node_index] = {
+                        x: Math.random() * canvas_width,
+                        y: Math.random() * canvas_height
+                    };
+                    node_index++;
+                }
 
-              return layout;
+                return layout;
             }
 
-
-            if (layout_type == "text") {
-                const start_x = canvas.width / 4;
-                const start_y = canvas.height / 4;
-                const char_spacing = 30;   //
-                const row_spacing = 60;   //
-
-                // Generate layout based on text string
-                const text_layout = generateTextLayout(text_string, start_x, start_y, char_spacing, row_spacing, total_nodes);
+            // Layout type handling
+            if (layout_type === "text") {
+                const text_layout = generateTextLayout(text_string, total_nodes);
 
                 // Set positions and animation start times
                 Object.keys(nodes).forEach((key, index) => {
@@ -437,6 +482,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     }
                 });
             }
+
             else if (layout_type == "ring") {
               const num_nodes = Object.keys(nodes).length;
               const angle_step = 2 * Math.PI / num_nodes;
