@@ -519,7 +519,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
-    "description": "",
+    "description": "In Summer's haze, at dawn's first light,\n<span class=\"super-bold\">Time's Tapestry</span> doth show what's hid from sight.\n\nPraythee, read each letter I send.\nThough only in time, shall our love find its mend.",
     "doors": [
       354,
       300,
@@ -540,7 +540,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
-    "description": "",
+    "description": "Once every autumn,\nThe Sun and Moon conspire,\n\nAn <span class=\"super-bold\">Avian Adversary</span>,\nWielding carnelian fire.\n\nIn the grand arena,\nBoth King and commoner take a seat.\n\nA spirit of sunlight,\nWho hath never known defeat.",
     "doors": [
       355,
       301,
@@ -867,7 +867,7 @@ const smData = {
     "position": "12",
     "rank": "foundation",
     "level": "4",
-    "description": "",
+    "description": "In autumn’s stillness, crane and peacock dance,\n\nA <span class=\"super-bold\">Birds' Ballet</span>, soft moonlit romance.\n\nForgetting raven in night's calm expanse,\n\nUnited in a fletting, wistful trance.",
     "doors": [
       452,
       4,
@@ -1339,7 +1339,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
-    "description": "Fleeting thoughts. I drift into<span class=\"super-bold\"> Dusk’s Daydream</span>.\nAt twilight’s edge, day yields to night.\nPhantoms doth murmur in the dark,\nAnd silhouette doth stir at the peripherals of sight.",
+    "description": "Fleeting thoughts. I drift into <span class=\"super-bold\">Dusk’s Daydream</span>.\nAt twilight’s edge, day yields to night.\nPhantoms doth murmur in the dark,\nAnd silhouette doth stir at the peripherals of sight.",
     "doors": [
       438,
       504,
@@ -2380,7 +2380,7 @@ const smData = {
     "position": "2",
     "rank": "dais",
     "level": "2",
-    "description": "",
+    "description": "There is a letter from Ophelia here.",
     "doors": [
       451,
       397,
@@ -2617,7 +2617,7 @@ const smData = {
     "position": "7",
     "rank": "seat",
     "level": "3",
-    "description": "Western depths.",
+    "description": "Western depths.\n\nThere is a letter from Ophelia here.",
     "doors": [
       503,
       441,
@@ -2761,7 +2761,7 @@ const smData = {
     "position": "14",
     "rank": "dais",
     "level": "4",
-    "description": "",
+    "description": "Ophelia...",
     "doors": [
       416,
       423,
@@ -3854,7 +3854,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
-    "description": "",
+    "description": "Ophelia...",
     "doors": [
       55,
       33,
@@ -3874,7 +3874,7 @@ const smData = {
     "position": "10",
     "rank": "step",
     "level": "3",
-    "description": "",
+    "description": "Ophelia...",
     "doors": [
       48,
       38,
@@ -4935,7 +4935,7 @@ const smData = {
     "position": "11",
     "rank": "step",
     "level": "3",
-    "description": "",
+    "description": "Ophelia...",
     "doors": [
       104,
       48,
@@ -5298,7 +5298,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
-    "description": "",
+    "description": "There is a letter from Ophelia here.",
     "doors": [
       126,
       504,
@@ -7803,7 +7803,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
-    "description": "",
+    "description": "In the house of Dreams, resides dear Uncle Claudius. He powerful lion rear is seated upon the crystal throne. All denizens of the Starmaze congregate, bowing at the subtle flick of his mighty paws, to wait patiently upon his royal decree.",
     "doors": [
       243,
       229,
@@ -8178,7 +8178,7 @@ const smData = {
     "position": "16",
     "rank": "terminus",
     "level": "5",
-    "description": "In shadowed depths, where pathways come to end,\nNo door appears, nor light doth pierce the gloom.\nA <span class=\"super-bold\">Silent Snare</span>, where time itself seems paused,\nA realm of stillness, untouched by restless steps.",
+    "description": "In shadowed depths, where raods come to end,\nNo door appears, nor light doth pierce the gloom.\nA <span class=\"super-bold\">Silent Snare</span>, where time itself seems paused,\nA realm of stillness, untouched by restless steps.\n\n\n      \"You died.\" \n\n                --ancient proverb \n",
     "doors": []
   },
   "001": {
@@ -8192,7 +8192,7 @@ const smData = {
     "position": "12",
     "rank": "terminus",
     "level": "4",
-    "description": "The path unfolds beneath an icy sky,\n<span class=\"super-bold\">First Frostnip</span> bite, a star so distant yet so bright.\nChilling whisper beckons through the dark,\nAs winter's grip leaves its indelible mark.",
+    "description": "The path unfolds,\nBeneath an icy sky.\n\n<span class=\"super-bold\">First Frostnip</span> bite.\n\nA star distant,\nYet so bright.\n\nChilling whispers,\nBeckon in the dark.\n\nAs winter's grip,\nLeaves its indelible mark.",
     "doors": [
       160
     ]
@@ -8342,7 +8342,7 @@ const smData = {
     "position": "16",
     "rank": "step",
     "level": "5",
-    "description": "In winter’s chill, frozen waters lie still,\nThrough the night, ravens dream of <span class=\"super-bold\">Frost’s Flight</span>,\nThe Jade Throne’s steps lead northwest through the dark.",
+    "description": "In winter’s chill, frozen waters lie still,\nThroughout the night, ravens dream of <span class=\"super-bold\">Frost’s Flight</span>,\nThe Jade Throne’s steps lead northwest through the dark.",
     "doors": [
       278,
       344
@@ -8430,7 +8430,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
-    "description": "",
+    "description": "O my dearest Ophelia! What love dost thou speak of?\nThere is naught here but <span class=\"super-bold\">Water, Wind</span> and starry night sky.",
     "doors": [
       275,
       349,
@@ -8661,7 +8661,7 @@ const smData = {
     "position": "13",
     "rank": "foundation",
     "level": "4",
-    "description": "",
+    "description": "Ophelia...",
     "doors": [
       256,
       144,
@@ -10145,21 +10145,6 @@ And night’s own secrets in stillness hold.
 
 ---
 
-**Room 126 – Time's Tapestry**
-
-In summer’s gleam, where dancing dogs persist,  
-Time’s Tapestry reveals lapis’ twist.  
-A public domain where moments intertwine,  
-And daylight’s play reveals the grand design.
-
----
-
-**Room 127 – Birds' Ballet**
-
-In autumn’s light, where sun and moon conspire,  
-Birds’ Ballet guards the carnelian fire.  
-A public space where day and shadows meet,  
-And ancient dreams in sunlight’s warmth entreat.
 
 ---
 
@@ -11809,8 +11794,8 @@ With crystal throne and public cheer,
 
 ### 309 - **Fall’s Innocence**
 
-In Autumn’s mist, where ravens blend,  
 The cranes and shadows softly send,  
+In Autumn’s mist, where ravens blend,  
 With falcon throne and public plea,  
 “Cranes and Ravens” set free.
 
@@ -12209,7 +12194,7 @@ In dreams' own house, the private realm is bright.
 An amber seat in night’s own sphere is set,  
 The thirteenth place in step, where steps are met.
 
-**372: Time's Tapestry**
+**372: ??? time?**
 
 In autumn’s veil, where cranes and ravens soar,  
 The house of time, where public paths implore.  
