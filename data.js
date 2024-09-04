@@ -519,7 +519,7 @@ const smData = {
     "position": "8",
     "rank": "dais",
     "level": "3",
-    "description": "In Summer's haze, at dawn's first light,\n<span class=\"super-bold\">Time's Tapestry</span> doth show what's hid from sight.\n\nPraythee, read each letter I send.\nThough only in time, shall our love find its mend.",
+    "description": "In Summer's haze, at dawn's first light,\n<span class=\"super-bold\">Time's Tapestry</span> doth show what's hid from sight.\n\nPraythee, read each letter I send.\nThough only in time shall our love find its mend.",
     "doors": [
       354,
       300,
@@ -1653,7 +1653,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
-    "description": "Before the end, is the <span class=\"super-bold\">Final Frontier</span>,\nLuminous flame... hidden secrets emerge.\nUpon the crystal throne, royalty sleeps,\nA dragon soars as twilight greets the dawn,\nAt Spring’s last breath, all destinies converge.",
+    "description": "Before the end, is the <span class=\"super-bold\">Final Frontier</span>,\nLuminous flame... hidden secrets emerge.\nUpon the Crystal Throne, royalty sleeps,\nA dragon soars as twilight greets the dawn,\nAt Spring’s last breath, all destinies converge.",
     "doors": [
       422,
       488,
@@ -3035,7 +3035,7 @@ const smData = {
     "position": "15",
     "rank": "seat",
     "level": "4",
-    "description": "<span class=\"super-bold\">Fleeting Flames</span>, barely piercing the looming dark. Hallway torches doth flicker as winter’s chill descends,\nA distant star, fading in the depths of cold.\nIn lingering glow, the jade throne reflects a faint light,\nA final gleam 'gainst the endless night.",
+    "description": "<span class=\"super-bold\">Fleeting Flames</span>, barely piercing the looming dark. Hallway torches doth flicker as winter’s chill descends,\nA distant star, fading in the depths of cold.\nIn lingering glow, the Jade Throne reflects a faint light,\nA final gleam 'gainst the endless night.",
     "doors": [
       483,
       429,
@@ -3058,7 +3058,7 @@ const smData = {
     "position": "15",
     "rank": "terminus",
     "level": "4",
-    "description": "In <span class=\"super-bold\">cosmic convergence</span>, paths doth align,\nA celestial dance in which stars and dreams entwine.\nTerminus of the jade throne’s grand rule,\nRepose, within the very heart of the Maze.\nHere I pause and find my bearings,\nFor the moment, fate is neither kind nor cruel.",
+    "description": "In <span class=\"super-bold\">cosmic convergence</span>, paths doth align,\nA celestial dance in which stars and dreams entwine.\nTerminus of the Jade Throne’s grand rule,\nRepose, within the very heart of the Maze.\nHere I pause and find my bearings,\nFor the moment, fate is neither kind nor cruel.",
     "doors": [
       10
     ]
@@ -4149,7 +4149,7 @@ const smData = {
     "position": "15",
     "rank": "dais",
     "level": "4",
-    "description": "A number vast, its sequence never fades,\nWhere dancing dogs bark at birds in sunny glades.\nEncircling the ivory throne, the waters sway,\nIn Summer’s <span class=\"super-bold\">Endless Embrace</span>,\ntime drifts away.",
+    "description": "A number vast, its sequence never fades,\nWhere dancing dogs bark at birds in sunny glades.\nEncircling the Ivory Throne, the waters sway,\nIn Summer’s <span class=\"super-bold\">Endless Embrace</span>,\ntime drifts away.",
     "doors": [
       38,
       48,
@@ -7803,7 +7803,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
-    "description": "In the house of Dreams, resides dear Uncle Claudius. His powerful lion rear is seated upon the crystal throne. All denizens of the Starmaze congregate, bowing at the subtle flick of his mighty paw, to wait patiently upon his royal decree.",
+    "description": "In the House of <span class=\"super-bold\">Dreams, Dear</span> Uncle Claudius resides.\nHis powerful lion rear is seated upon the Crystal Throne.\n\nAll denizens of the Starmaze congregate,\nBowing at the subtle flick of his mighty paw,\nTo wait patiently upon his royal decree.",
     "doors": [
       243,
       229,
@@ -8131,7 +8131,7 @@ const smData = {
     "position": "12",
     "rank": "seat",
     "level": "4",
-    "description": "In winter’s chill, flame begets shadow,\nA <span class=\"super-bold\">Harbor Hidden</span> beyond the frozen dunes,\nUpon southernmost horizon, in the House of Sand,\nThe Baroness presides upon her throne.",
+    "description": "In winter’s chill, flame begets shadow,\nA <span class=\"super-bold\">Harbor Hidden</span> beyond the frozen dunes,\nUpon southernmost horizon, in the House of Sand,\nThe Baroness presides upon her Throne.",
     "doors": [
       226,
       244,
@@ -8208,7 +8208,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
-    "description": "In midsummer night,\n'Neath distant star's gleam.\n\nNaught doth beseem,\nAs it had in thy dream.\n\n<span class=\"super-bold\">Metallic melody</span>,\nFamiliar song.\n\nOne must tread the beaten path,\nto find truths were hidden there all along.",
+    "description": "In midsummer night,\n'Neath distant star's gleam.\n\nNaught doth beseem,\nAs it had in thy dream.\n\n<span class=\"super-bold\">Metallic Melody</span>,\nFamiliar song.\n\nOne must tread the beaten path,\nto find truths were hidden there all along.",
     "doors": [
       336
     ]
@@ -8224,7 +8224,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
-    "description": "",
+    "description": "Autumn’s hush. The realm of the peacock lies still.\n\nThe young <span class=\"super-bold\">Prince Prays</span> that no more blood shall spill.\n\nShedding tears of lamentation,\n\nAnd quieting fears of dark temptation.",
     "doors": [
       337,
       162
@@ -8241,7 +8241,7 @@ const smData = {
     "position": "13",
     "rank": "terminus",
     "level": "4",
-    "description": "",
+    "description": "Winter’s chill. The light of a distant star\nThe Peacock Throne's rule is near, yet far.\nCommonfolk celebrate the new year in delight.\nThe annual <span class=\"super-bold\">Frost Festival</span>. Raging late into the night.",
     "doors": [
       136
     ]
@@ -8257,7 +8257,7 @@ const smData = {
     "position": "6",
     "rank": "terminus",
     "level": "3",
-    "description": "Western depths.",
+    "description": "Endulge once more in Spring’s soft breath,\nBefore thou descendest into the Western depths.\nAnon to the rookery, thence come hence,\nFor the <span class=\"super-bold\">Raven’s Reverie</span> doth soon commence.",
     "doors": [
       137,
       164
@@ -8274,7 +8274,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
-    "description": "",
+    "description": "Lions aplently,\nLions galore,\nYou won't believe how many lions we've got in store!\n\nIt's a kangaroo courthouse.\nBe that as it may,\nThe <span class=\"super-bold\">Jury's Judgement</span> holds all the sway.",
     "doors": [
       340,
       138
@@ -8624,7 +8624,7 @@ const smData = {
     "position": "1",
     "rank": "step",
     "level": "1",
-    "description": "",
+    "description": "The ravens abide by mysterious laws.\nAnd unkindness ne'er escapes the lion’s claws.\nIn <span class=\"super-bold\">Onyx Oubliettes</span>, their feathers doth fade.\nTill in the House of Sand, their escape is made.",
     "doors": [
       262,
       328,
@@ -9989,32 +9989,7 @@ const smData = {
 
 /*
 
-Room 003 – Celestial Court:
 
-In autumn’s hush, where sun and moon entwine,
-The peacock throne in daylight’s realm does shine.
-In private chambers of lamentation’s grace,
-The celestial court holds its quiet space.
-
-Room 004 – Frosted Festival:
-
-In winter’s chill, a distant star’s light gleams,
-Where peacock thrones in laughter’s echo dreams.
-In the public realm where earth and snow unite,
-The frosted festival dances through the night.
-
-Room 005 – Raven’s Reverie:
-In spring’s soft breath, where ravens softly call,
-The coral throne in whispered shadows fall.
-In the public realm where secrets softly tread,
-The raven’s reverie through whispers spread.
-
-Room 006 – Judgement’s Jewel:
-
-In autumn’s light, where sun and moon align,
-The lion’s throne in judgment’s day does shine.
-In private realms where wood and balance blend,
-Judgement’s jewel holds truths that never end.
 
 Room 100 – Ivory Introspection:
 
