@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const height = window.innerHeight - margin - extra_bottom_margin;
     const nodes = smData;
     let positions = {};
+    let hex_positions = {}; //hexagram symbol positions
     let target_positions = {}; // Node destination position after layout update
     let animation_start_times = {}; // When each node starts moving
     let anim_duration = 500; // Duration of the animation in ms
@@ -39,6 +40,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const info_div = document.getElementById('info');
     let layout_type = "grid";
     let show_solution_path = true;
+    
+    let canvas_awake = false; // Used to hide references div
+    let show_hexagram_symbols = false;
     
     var audio_cd = false; // audio cooldown to prevent speaker damage
     const audio_cooldown = 90;
@@ -86,18 +90,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         'darkness':    [true,  '#555555'],   // Dim
         'lamentation': [true,  '#800080'],  // Rich                     / 
         'whispers':    [false, '#D3D3D3'], // Light                    /
-        'judgement':   [true,  '#8B0000'] // Strong                   /
-        
-    };
-                                         //      text-color,  bg     /
+        'judgement':   [true,  '#540000'] // Strong                   /
+    };                                   //      text-color,  bg     /
     // Element colors                   // key: [bool (b/w),  string] 
     const element_colors = {           
-        'wood':  [false,     '#00FF00'], ///////   5 steps to inverse
-        'fire':  [true,      '#FF0000'],  ///////   7 steps to inverse
-        'water': [true,      '#0000FF'],   ///////   9 steps to inverse
-        'earth': [false,     '#FFFF00'],    ///////   11 steps to inverse    /
-        'metal': [false,     '#B0B0B0'],     ///////   13 steps to inverse  /
-        'emptiness': [false, '#FFFFFF']       ///////   unreachable inverse
+        'wood':        [false, '#00FF00'], /////   5 steps to inverse
+        'fire':        [true,  '#FF0000'],///////   7 steps to inverse
+        'water':       [true,  '#0000FF'], ///////   9 steps to inverse
+        'earth':       [false, '#FFFF00'],  ///////   11 steps to inverse    /
+        'metal':       [false, '#B0B0B0'],   ///////   13 steps to inverse  /
+        'emptiness':   [false, '#FFFFFF']     ///////   unreachable inverse
     };
 
     // Rank sizes
@@ -282,6 +284,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ctx.fill();
     }
 
+    function getHexagramLines(hexagramId) {
+        return Array(6).fill(0).map((_, i) => (hexagramId & (1 << i)) ? 1 : 0).reverse();
+    }
 
     function drawSolutionPath() {
         ctx.beginPath();
@@ -324,6 +329,43 @@ document.addEventListener('DOMContentLoaded', (event) => {
             drawArrows();
             drawNode(dragging_node);
         }
+        
+        if (show_hexagram_symbols) {
+            const hexagramWidth = 40; // Width of the hexagram
+            const hexagramHeight = 40; // Height of the hexagram
+            const lineHeight = 3; // Height of each line
+            const lineSpacing = 2; // Spacing between lines
+
+            function drawHexagram(x, y, hexagram) {
+                y -= 54;
+                ctx.fillStyle = 'white';
+                ctx.fillRect(x-5, y-5, 44, 38);
+                ctx.fillStyle = 'black';
+
+                // Each hexagram is represented by six lines
+                for (let i = 0; i < 6; i++) {
+                    const lineY = y + i * (lineHeight + lineSpacing);
+                    if (hexagram[i] === 1) {
+                        // Unbroken line
+                        ctx.fillRect(x, lineY, hexagramWidth/2 + hexagramWidth/3, lineHeight);
+                    } else {
+                        // Broken line
+                        ctx.fillRect(x, lineY, hexagramWidth/3, lineHeight);
+                        ctx.fillRect(x + hexagramWidth/2, lineY, hexagramWidth/3, lineHeight);
+                    }
+                }
+            }
+
+            // Draw each hexagram
+            for (let i = 0; i < 64; i++) {
+                const hexagram = getHexagramLines(i);
+                const x = hex_positions[i][0];
+                const y = hex_positions[i][1];
+
+                drawHexagram(x, y, hexagram);
+            }
+        }
+
 
         if (show_solution_path) {
             drawSolutionPath();
@@ -360,12 +402,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
     
-    function drawNumber(x, y, number) {
+    function drawNumber(x, y, num) {
         ctx.font = `$14px Arial`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillStyle = 'black';
-        ctx.fillText(number, x, y);
+        ctx.fillText(num, x, y);
+    }
+    
+    function enableHexagramSymbol(x, y, num) {
+        hex_positions[num] = [x, y];
+        show_hexagram_symbols = true;
+    }
+    
+    function disableHexagramSymbols() {
+        show_hexagram_symbols = false;
     }
 
     function updateLayout() {
@@ -530,7 +581,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 i--;
             });
         } else if (layout_type == "hexagram") {
-          
+
             const hexagram_width = 80;
             const hexagram_height = 120;
             const margin = 30;
@@ -555,6 +606,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 let n_pad = 20;
                 if (group_index % 2 == 0) n_pad = -20;
                 const group = hexagram_groups[hexagram];
+                enableHexagramSymbol(x_offset, y_offset + n_pad, group_index);
                 group.forEach((key, index) => {
                     const col = index % 6;
                     const row = Math.floor(index / 6);
@@ -727,6 +779,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const rect = canvas.getBoundingClientRect();
             const mouse_x = event.clientX - rect.left;
             const mouse_y = event.clientY - rect.top;
+            
+            //if (show_hexagram_symbols == true)
+            disableHexagramSymbols();
 
             // Update node position based on mouse movement
             positions[dragging_node].x = mouse_x - drag_offset_x;
@@ -734,6 +789,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             drawAll();
         } else {
+            // hide references div
+            if (!canvas_awake) { 
+                document.getElementById("ref").remove();
+                canvas_awake = true;
+            }
+          
             // Show node info on hover
             const rect = canvas.getBoundingClientRect();
             const mouse_x = event.clientX - rect.left;
@@ -871,7 +932,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (layout_type == "grid") layout_type = "ring";
         else if (layout_type == "ring") layout_type = "spiral";
         else if (layout_type == "spiral") layout_type = "hexagram";
-        else if (layout_type == "hexagram") layout_type = "text";
+        else if (layout_type == "hexagram") {
+            layout_type = "text";
+            disableHexagramSymbols();
+        }
         else if (layout_type == "text") layout_type = "grid";
         updateLayout();
     }
