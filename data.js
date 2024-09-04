@@ -7803,7 +7803,7 @@ const smData = {
     "position": "1",
     "rank": "seat",
     "level": "1",
-    "description": "In the house of Dreams, resides dear Uncle Claudius. He powerful lion rear is seated upon the crystal throne. All denizens of the Starmaze congregate, bowing at the subtle flick of his mighty paws, to wait patiently upon his royal decree.",
+    "description": "In the house of Dreams, resides dear Uncle Claudius. His powerful lion rear is seated upon the crystal throne. All denizens of the Starmaze congregate, bowing at the subtle flick of his mighty paw, to wait patiently upon his royal decree.",
     "doors": [
       243,
       229,
