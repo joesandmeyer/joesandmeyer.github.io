@@ -433,10 +433,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
          //   WIP CODE
     //
     
-    
-    
+    const total_nodes = 512; // Total number of nodes
     const text_string = "HELP ME"; // The text to spell out
-        const total_nodes = 512; // Total number of nodes
+
+    function generateTextLayout(text) {
+        const layout = {};
+        const nodes_per_cell = Math.floor(total_nodes / (text.length * 5 * 5)); // Nodes per grid cell
+        let node_index = 0;
+        const char_spacing = 10; // Spacing between characters
+        
         const canvas_width = 800; // Width of the canvas
         const canvas_height = 600; // Height of the canvas
         const char_width = 40; // Width of each character in the bitmap
@@ -489,12 +494,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     [0, 0, 0, 0, 0]
                 ]
             };
-    
-    function generateTextLayout(text, total_nodes) {
-        const layout = {};
-        const nodes_per_cell = Math.floor(total_nodes / (text.length * 5 * 5)); // Nodes per grid cell
-        let node_index = 0;
-        const char_spacing = 10; // Spacing between characters
 
         for (let char_index = 0; char_index < text.length; char_index++) {
             const char = text[char_index];
