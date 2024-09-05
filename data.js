@@ -3035,7 +3035,7 @@ const smData = {
     "position": "15",
     "rank": "seat",
     "level": "4",
-    "description": "<span class=\"super-bold\">Fleeting Flames</span>, barely piercing the looming dark. Hallway torches doth flicker as winter’s chill descends,\nA distant star, fading in the depths of cold.\nIn lingering glow, the Jade Throne reflects a faint light,\nA final gleam 'gainst the endless night.",
+    "description": "<span class=\"super-bold\">Fleeting Flames</span>, barely piercing the looming dark.\nHallway torches doth flicker as winter’s chill descends,\nA distant star, fading in the depths of cold.\nIn lingering glow, the Jade Throne reflects a faint light,\nA final gleam 'gainst the endless night.",
     "doors": [
       483,
       429,
@@ -8309,7 +8309,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
-    "description": "",
+    "description": "'Neath lapis sky,\nStood tallest tower.\n\nTherein was once a\nSlumbering noble,\nWhom oft mumbl'd,\nThroughout the\nWitching hour.\n\nAnyone who heard the\nWords thus spake,\nFell deep into\nSleep, ne'er to\nWake.\n\nA wizened Sage,\nWell-versed in\nMagical downpour,\nDidst summon a\n<span class=\"super-bold\">Pitter-Patter</span>,\nTo drown out\nHer words\nForevermore.\n\nThusly, the House of\nRain came to be—\nA noble House\nOf quietude\nAnd tranquility.",
     "doors": [
       276
     ]
@@ -8325,7 +8325,7 @@ const smData = {
     "position": "5",
     "rank": "foundation",
     "level": "2",
-    "description": "",
+    "description": "Autumn leaves turn from green to gold,\nAnd fauna doth gather stock to prepare for the cold.\n\nThe fox, too playful, ample time didst he bide.\nThe owl, too grim, allowed fear to decide.\n\n<span class=\"super-bold\">Stoic Standeth</span> the tree, who therein holds the key:\nTis not the woods, but the feeling, that sets us free.",
     "doors": [
       277,
       168
@@ -8359,7 +8359,7 @@ const smData = {
     "position": "12",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "In Winter’s hush\nWithout any light,\nA young maiden wanders\nSearching for her lost parasite.\n\nGreen fields begin to glimmer\nIn the morning sun,\nShe moves now at a quicker pace\nThan when she had begun.\n\nRavens of emerald, flocking ever near,\nWonder whether or not her thoughts are clear.\nThey needn't worry, she won't be here much longer.\nHer dream starts to fade, as reality’s <span class=\"super-bold\">Grasp Grows</span> stronger.",
     "doors": [
       279,
       345,
@@ -8412,7 +8412,7 @@ const smData = {
     "position": "13",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "On Summer's wind,\nThe Iron Talons soar,\nGuardians of legend,\nOft yclept in tales of yore.\n\nStrong in number,\n<span class=\"super-bold\">By Blood</span> they are sworn,\nIn battle alone,\nAre the Iron Talons born.",
     "doors": [
       274,
       348,
@@ -8912,7 +8912,7 @@ const smData = {
     "position": "1",
     "rank": "dais",
     "level": "1",
-    "description": "\"To sleep, perchance to dream———Ay, there's the rub.\"\n\nWith the weight of his <span class=\"super-bold\">Being Banished</span>, Leo fell into disrepair,\nHis mind awash with burdens difficult to bear.\nIn exile he doth ponder life, the universe, and all that is there.",
+    "description": "\"To sleep, perchance to dream———Ay, there's the rub.\"\n\nWith the weight of his <span class=\"super-bold\">Being Banished</span>,\nLeo fell into disrepair.\nHis mind awash with burdens,\nDifficult to bear.\n\nIn exile he doth ponder life,\nThe universe, and all that is there.",
     "doors": [
       310,
       376,
@@ -13182,42 +13182,10 @@ Where distant stars weave into summer’s dreams.
 
 ---
 
-Here are the final poems with that romantic, flowery touch:
 
----
 
-**008. Celestial Crown**
 
-In summer’s quiet, where distant stars gleam,  
-Rain’s house holds lapis in night’s gentle dream.  
-Private and pure, where foundations are laid,  
-In summer’s embrace, where celestial charms fade.
-
----
-
-**009. Moonlit Melodies**
-
-As fall’s sun and moon in harmony play,  
-Words’ house with carnelian shines bright in the day.  
-Private foundation, where dreams softly weave,  
-In autumn’s warm light, where golden moments cleave.
-
----
-
-Here are the new set of poems with a romantic, flowery, and upbeat tone:
-
----
-
-**011. Dreamy Emerald**
-
-In winter’s hush, where dreams take flight,  
-Ravens face emerald in day’s soft light.  
-Public realms where stepwise paths wind,  
-In dreams’ gentle hold, where hope’s refined.
-
----
-
-**012. Timeless Tranquility**
+**012. 
 
 As fall’s embrace brings cranes to play,  
 Emerald throne in Time’s house holds sway.  
@@ -13226,7 +13194,7 @@ In autumn’s calm, where time’s threads mend.
 
 ---
 
-**013. Nocturnal Chase**
+**013.
 
 Summer’s night where cranes left-wing glide,  
 Iron throne in Birds’ house does abide.  
