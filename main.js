@@ -284,8 +284,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ctx.fill();
     }
 
-    function getHexagramLines(hexagramId) {
-        return Array(6).fill(0).map((_, i) => (hexagramId & (1 << i)) ? 1 : 0).reverse();
+    function getHexagramLines(hex_id) {
+        return Array(6).fill(0).map((_, i) => (hex_id & (1<<i))?1:0).reverse();
     }
 
     function drawSolutionPath() {
@@ -418,12 +418,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function disableHexagramSymbols() {
         show_hexagram_symbols = false;
     }
-
-    function updateLayout() {
-        const now = performance.now(); // Get the current time
-        let animation_offset = 0; // Staggering to account for invisible nodes
-
-        const text_string = "HELP ME"; // The text to spell out
+    
+    
+    
+    
+    
+    
+    
+    
+    //////
+    ////
+    //
+    //
+         //   WIP CODE
+    //
+    
+    
+    
+    const text_string = "HELP ME"; // The text to spell out
         const total_nodes = 512; // Total number of nodes
         const canvas_width = 800; // Width of the canvas
         const canvas_height = 600; // Height of the canvas
@@ -477,48 +489,67 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     [0, 0, 0, 0, 0]
                 ]
             };
+    
+    function generateTextLayout(text, total_nodes) {
+        const layout = {};
+        const nodes_per_cell = Math.floor(total_nodes / (text.length * 5 * 5)); // Nodes per grid cell
+        let node_index = 0;
+        const char_spacing = 10; // Spacing between characters
 
-            function generateTextLayout(text, total_nodes) {
-                const layout = {};
-                const nodes_per_cell = Math.floor(total_nodes / (text.length * 5 * 5)); // Nodes per grid cell
-                let node_index = 0;
-                const char_spacing = 10; // Spacing between characters
+        for (let char_index = 0; char_index < text.length; char_index++) {
+            const char = text[char_index];
+            const char_map = character_map[char];
+            const x_start = char_index * (char_width + char_spacing);
+            const y_start = 0;
 
-                for (let char_index = 0; char_index < text.length; char_index++) {
-                    const char = text[char_index];
-                    const char_map = character_map[char];
-                    const x_start = char_index * (char_width + char_spacing);
-                    const y_start = 0;
+            for (let row = 0; row < char_map.length; row++) {
+                for (let col = 0; col < char_map[row].length; col++) {
+                    if (char_map[row][col] === 1) {
+                        for (let n = 0; n < nodes_per_cell; n++) {
+                            if (node_index >= total_nodes) return layout;
 
-                    for (let row = 0; row < char_map.length; row++) {
-                        for (let col = 0; col < char_map[row].length; col++) {
-                            if (char_map[row][col] === 1) {
-                                for (let n = 0; n < nodes_per_cell; n++) {
-                                    if (node_index >= total_nodes) return layout;
+                            // Distribute nodes within each cell
+                            const x = x_start + col * (char_width / 5) + Math.random() * (char_width / 5);
+                            const y = y_start + row * (char_height / 5) + Math.random() * (char_height / 5);
 
-                                    // Distribute nodes within each cell
-                                    const x = x_start + col * (char_width / 5) + Math.random() * (char_width / 5);
-                                    const y = y_start + row * (char_height / 5) + Math.random() * (char_height / 5);
-
-                                    layout[node_index] = { x, y };
-                                    node_index++;
-                                }
-                            }
+                            layout[node_index] = { x, y };
+                            node_index++;
                         }
                     }
                 }
-
-                // If there are any remaining nodes, distribute them randomly
-                while (node_index < total_nodes) {
-                    layout[node_index] = {
-                        x: Math.random() * canvas_width,
-                        y: Math.random() * canvas_height
-                    };
-                    node_index++;
-                }
-
-                return layout;
             }
+        }
+
+        // If there are any remaining nodes, distribute them randomly
+        while (node_index < total_nodes) {
+            layout[node_index] = {
+                x: Math.random() * canvas_width,
+                y: Math.random() * canvas_height
+            };
+            node_index++;
+        }
+
+        return layout;
+    }
+    
+    
+    
+    //////
+    ////
+    //
+    //
+    
+    //
+    
+    
+    
+    
+    
+    
+
+    function updateLayout() {
+        const now = performance.now(); // Get the current time
+        let animation_offset = 0; // Staggering to account for invisible nodes
 
             // Layout type handling
             if (layout_type === "text") {
@@ -706,8 +737,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             requestAnimationFrame(animateNodes);
         }
     }
-
-
 
     // Add drag-related event listeners
     canvas.addEventListener('mousedown', (event) => {
