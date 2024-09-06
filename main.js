@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const extra_bottom_margin = 200;
     const width = window.innerWidth - margin - extra_right_margin;
     const height = window.innerHeight - margin - extra_bottom_margin;
-    const nodes = smData;
+    const nodes = smData; //loaded from json file
     let positions = {};
     let hex_positions = {}; //hexagram symbol positions
     let target_positions = {}; // Node destination position after layout update
@@ -46,8 +46,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     var audio_cd = false; // audio cooldown to prevent speaker damage
     const audio_cooldown = 90;
+    let page_muted = false;
     
-    const frameRateCap = 60; // fps
+    const framerate_cap = 60; // fps
     
     const notes = [
         new Audio('audio/A.ogg'),
@@ -259,8 +260,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Adjust start and end points based on node radius
         const ajd_start_x = x1 + (r_start / Math.sqrt(dx * dx + dy * dy)) * dx;
         const ajd_start_y = y1 + (r_start / Math.sqrt(dx * dx + dy * dy)) * dy;
-        const ajd_end_x = x2 - (r_end / Math.sqrt(dx * dx + dy * dy)) * dx;
-        const ajd_end_y = y2 - (r_end / Math.sqrt(dx * dx + dy * dy)) * dy;
+        const ajd_end_x =   x2 - (r_end   / Math.sqrt(dx * dx + dy * dy)) * dx;
+        const ajd_end_y =   y2 - (r_end   / Math.sqrt(dx * dx + dy * dy)) * dy;
         
         //line segments
         const seg_1 = ajd_end_x - head_length * Math.cos(angle - Math.PI / 6);
@@ -297,7 +298,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         for (let i = 0; i < solution_path.length - 1; i++) {
             const start = positions[solution_path[i]];
-            const end = positions[solution_path[i + 1]];
+            const end =   positions[solution_path[i + 1]];
 
             if (start && end) {
                 ctx.moveTo(start.x, start.y);
@@ -325,6 +326,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
         
         if (dragging_node) {
+            canvas.style.cursor = "grabbing";
             
             drawArrows();
             drawNode(dragging_node);
@@ -569,11 +571,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
               const angle_step = 2 * Math.PI / num_nodes;
               Object.keys(nodes).forEach((key, index) => {
                 
-                  //check node visibility
-                  if (!element_states[nodes[key].element]) {
-                      
-                  }
-                
                   const angle = angle_step * index;
                   const radius = 280;
                   const x = canvas.width / 2 + radius * Math.cos(angle);
@@ -690,7 +687,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function animateNodes(timestamp) {
         let node_animation_complete = {};
         
-        if (timestamp - last_frame_time < 1000 / frameRateCap) {
+        if (timestamp - last_frame_time < 1000 / framerate_cap) {
             requestAnimationFrame(animateNodes);
             return;
         }
@@ -758,8 +755,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
     
     function playNoteForNode(node_id) {
-      
-        if (audio_cd) return;
+        if (page_muted || audio_cd) return;
         if (!element_states[nodes[node_id].element]) return;
         audio_cd = true;
         
@@ -830,6 +826,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             let highlighted_node = null;
             let highlighted_node_id = null;
+
+            canvas.style.cursor = "grab";
 
             Object.keys(positions).forEach(key => {
                 const { x, y } = positions[key];
@@ -939,6 +937,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 `;
 
             } else {
+                canvas.style.cursor = "default";
+              
                 info_div.innerHTML = '';
                 lastnode = -1;
             }
@@ -946,6 +946,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     canvas.addEventListener('mouseup', () => {
+        canvas.style.cursor = "default";
+      
         dragging_node = null;
         drawAll();
     });
@@ -972,10 +974,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
         show_solution_path = !show_solution_path;
         drawAll();
     }
+    
+    function toggleMuteUnmute() {
+        page_muted = !page_muted;
+        if (page_muted) {
+            document.getElementById('mute').style.display = "none";
+            document.getElementById('unmute').style.display = "inline-block";
+        } else {
+            document.getElementById('mute').style.display = "inline-block";
+            document.getElementById('unmute').style.display = "none";
+        }
+    }
 
     // Ensure elements exist before adding event listeners
     const toggle_layout_button = document.getElementById('toggleLayout');
     const toggle_solution_btn = document.getElementById('toggleSolutionPath');
+    const toggle_mute_btn = document.getElementById('muteUnmute');
 
     if (toggle_layout_button) {
         toggle_layout_button.addEventListener('click', toggleLayout);
@@ -984,7 +998,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (toggle_solution_btn) {
         toggle_solution_btn.addEventListener('click', toggleSolutionPath);
     }
+    
+    if (toggle_mute_btn) {
+        toggle_mute_btn.addEventListener('click', toggleMuteUnmute);
+    }
 
     updateLayout();
     drawAll();
 });
+
+const printAllPoems = function() {
+    Object.keys(smData).forEach(key => {
+        console.log(smData[key].description);
+    });
+};

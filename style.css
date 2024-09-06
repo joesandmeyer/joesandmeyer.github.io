@@ -1,38 +1,58 @@
  canvas {
-            border: none; /* Remove the border around the canvas */
-        }
+    margin-top: 10px;
+    border: none;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    transform: translateY(2px);
+    box-shadow: none;
+    background-color: #ccc;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+    background-color: #777;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    position: absolute; 
+    right: 10px;
+    top: 5px;
+}
+
+#muteUnmute {
+    padding-left: 14px;
+}
+
+#unmute {
+    display: none;
+}
 
 .element-legend {
     position: absolute;
-    top: 320px; /* Adjust as needed */
-    right: 20px; /* Move legend to the right */
+    top: 320px;
+    right: 20px;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-}
-
-#toggleSolutionPath {
-    right: 180px;
-    position: fixed;
-    padding: 5px 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#toggleLayout {
-    position: fixed;
-    padding: 5px 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
+    flex-direction: column;
 }
 
 .element-legend div {
-    margin-bottom: 10px; /* Space between items */
+    margin-bottom: 10px;
 }
 
 .element-legend span {
@@ -43,39 +63,17 @@
     text-align: center;
 }
 
-.element-legend .wood {
-    background-color: #00FF00;
-}
-
-.element-legend .fire {
-    background-color: #FF0000;
-    color: white;
-}
-
-.element-legend .water {
-    background-color: #0000FF;
-    color: white;
-}
-
-.element-legend .earth {
-    background-color: #FFFF00;
-}
-
-.element-legend .metal {
-    background-color: #B0B0B0;
-}
-
 .house-legend {
     position: absolute;
-    bottom: 130px; /* Move legend to the bottom */
-    left: 100px; /* Adjust as needed */
+    bottom: 130px;
+    left: 100px;
     display: flex;
     flex-wrap: wrap;
-    max-width: calc(100% - 40px); /* Ensure it fits within the width */
+    max-width: calc(100% - 40px);
 }
 
 .house-legend div {
-    margin-right: 20px; /* Space between items */
+    margin-right: 20px;
     margin-bottom: 10px;
 }
 
@@ -109,15 +107,23 @@
 }
 
 #info hr {
-  padding-top: 3px;
-  margin-top: -30px;
-  margin-bottom: -30px;
+    padding-top: 3px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+#info:hover {
+    cursor: text;
+}
+
+#info:active {
+    cursor: default;
 }
 
 .super-bold {
     font-weight: 900;
-    font-size: 1.2em; /* You can increase the size slightly for extra emphasis */
-    text-shadow: 1px 1px 1px lightblue; /* Optional: adds a shadow for more emphasis */
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px lightblue;
 }
 
 #poetry {
