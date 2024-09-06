@@ -8377,7 +8377,7 @@ const smData = {
     "position": "4",
     "rank": "foundation",
     "level": "2",
-    "description": "",
+    "description": "Autumn’s wind doth beckon fledgelings to fly,\n\n<span class=\"super-bold\">Setting Sun</span>, the world in fading hue.\n\n'Neath gusts of wind the branches creak and sigh, \n\nLeo looks on, as baby bird bids its nest adieu.",
     "doors": [
       272,
       128
@@ -8394,7 +8394,7 @@ const smData = {
     "position": "11",
     "rank": "foundation",
     "level": "3",
-    "description": "",
+    "description": "Misfortune struck the woodland nymph,\nDefender of the sacred glyph,\nWhence treasure hunters marred her shaded glen,\nSpreading sheets of flame, where <span class=\"super-bold\">Once Overgrowth</span> had been.\nSummoning vengeful magic, didst she end their lease,\n\"At last,\" chirped the mockingbird, \“For true wealth is peace.\”",
     "doors": [
       273,
       129,
@@ -8430,7 +8430,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
-    "description": "O my dearest Ophelia! What love dost thou speak of?\nThere is naught here but <span class=\"super-bold\">Water, Wind</span> and starry night sky.",
+    "description": "O my dearest Ophelia! Of what love dost thou speak?\nHere, there is naught but <span class=\"super-bold\">Water, Wind</span> and starry night sky.",
     "doors": [
       275,
       349,
@@ -8858,7 +8858,7 @@ const smData = {
     "position": "6",
     "rank": "step",
     "level": "3",
-    "description": "",
+    "description": "Springtime breeze, the night is calm,\n<span class=\"super-bold\">Sapphire Sand</span> 'neath moonlit sky.\nAn oasis marked by desert palm,\nWhere dunes like frozen waters lie.",
     "doors": [
       373,
       171,
@@ -11169,9 +11169,6 @@ A dais grand in summer’s night.
 Dancing dragons in day’s embrace,  
 A step of dreams, a sacred space.
 
----
-
-Here are the poems for the next set, numbered according to the main key from the JSON data:
 
 ---
 
@@ -13185,23 +13182,7 @@ Where distant stars weave into summer’s dreams.
 
 
 
-**012. 
 
-As fall’s embrace brings cranes to play,  
-Emerald throne in Time’s house holds sway.  
-Private foundation where moments blend,  
-In autumn’s calm, where time’s threads mend.
-
----
-
-**013.
-
-Summer’s night where cranes left-wing glide,  
-Iron throne in Birds’ house does abide.  
-Private and bold, where foundations are born,  
-In summer’s warmth, where dreams are adorned.
-
----
 
 **014. Radiant Chase**
 
@@ -13422,14 +13403,6 @@ In winter’s night, where hope survives.
 
 ---
 
-**039. Sapphire Sand**
-
-Springtime hues with clouds so high,  
-Sapphire throne in Sand’s reply.  
-Public paths where steps ascend,  
-In spring’s warm glow, where dreams blend.
-
----
 
 **040. Crystal Whispers**
 
