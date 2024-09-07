@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let canvas_awake = false; // Used to hide references div
     let show_hexagram_symbols = false;
     
+    let page_muted = true;
     var audio_cd = false; // audio cooldown to prevent speaker damage
     const audio_cooldown = 90;
-    let page_muted = false;
     
     const framerate_cap = 60; // fps
     
@@ -167,19 +167,43 @@ document.addEventListener('DOMContentLoaded', (event) => {
         positions[key] = { x, y };
     });
     
+    html_snippets = {
+        legend_element: [[`<span style="background-color: `],
+        [`; color: `], [`; border: `], [`"><b>`], [`</b></span>`]]
+    };
+    
+    function getSnippet(key, bg, txt, border, el) {
+        if (!page_muted) playSound(tap_noise);
+      
+        let snip = "";
+        snip += html_snippets[key][0] + bg;
+        snip += html_snippets[key][1] + txt;
+        snip += html_snippets[key][2] + border;
+        snip += html_snippets[key][3] + el;
+        snip += html_snippets[key][4];
+        return snip;
+    }
+    
     // Create house legend
     const house_legend_div = document.querySelector('.house-legend');
     Object.keys(house_colors).forEach(house => {
         const bg_clr = house_colors[house][1];
         const txt_clr = (house_colors[house][0] ? '#F2FFFF' : 'black');
         const legend_item = document.createElement('div');
-        legend_item.innerHTML = `<span style="background-color: ${bg_clr};
-                                             color: ${txt_clr}"><b>${house}</b>
-                                 </span>`;
+        legend_item.innerHTML = getSnippet('legend_element', bg_clr, txt_clr, 
+                                                  "1px solid" + bg_clr, house);
         house_states[house] = true;
 
         // Add click event listener for toggling visibility
         legend_item.addEventListener('click', () => {
+            if (house_states[house]) {
+                legend_item.innerHTML = getSnippet('legend_element', "white", 
+                                          bg_clr, "1px solid" + bg_clr, house);
+            } else {
+                legend_item.innerHTML = getSnippet('legend_element', bg_clr,
+                                         txt_clr, "1px solid" + bg_clr, house);
+            }
+            
             house_states[house] = !house_states[house];
             drawAll();
         });
@@ -193,21 +217,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const txt_clr = (element_colors[element][0] ? '#F5FFFF' : 'black');
         const bg_clr = element_colors[element][1];
         const legend_item = document.createElement('div');
-        legend_item.innerHTML = `<span style="background-color: ${bg_clr};
-                                      color: ${txt_clr}"><b>${element}</b>
-                                 </span>`;
+        legend_item.innerHTML = getSnippet('legend_element', bg_clr, txt_clr, 
+                                            "1px solid" + bg_clr, element);
         element_states[element] = true;
         
         if (element == "emptiness") {
-                  legend_item.innerHTML = `<span style=
-                                              "outline: 1px solid lightgray;
-                                              background-color: ${bg_clr}; 
-                                              color: #222"><b>${element}</b>
-                                           </span>`;
+                  legend_item.innerHTML = getSnippet('legend_element', bg_clr, 
+                                txt_clr, "1px solid" + " lightgray", element);
         };
 
         // Add click event listener for toggling visibility
         legend_item.addEventListener('click', () => {
+            if (element_states[element]) {
+                if (element == "emptiness") {
+                    legend_item.innerHTML = getSnippet('legend_element', 
+                        "#f5f5f5", "#bbb", "1px solid" + " #dddddd", element);
+                } else {
+                    legend_item.innerHTML = getSnippet('legend_element', 
+                                "#fff", bg_clr, "1px solid" + bg_clr, element);
+                }
+            }
+            else {
+                if (element == "emptiness") {
+                    legend_item.innerHTML = getSnippet('legend_element', 
+                        bg_clr, txt_clr, "1px solid" + " lightgray", element);
+                } else {
+                    legend_item.innerHTML = getSnippet('legend_element', 
+                              bg_clr, txt_clr, "1px solid" + bg_clr, element);
+                }
+            }
+          
             element_states[element] = !element_states[element];
             drawAll();
         });
@@ -265,9 +304,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         }
     }
-
+                                                    //radius start & end
     function drawArrow(x1, y1, x2, y2, house_color, r_start, r_end) {
-        const head_length = 10;                     //radius start & end
+        const head_length = 10;                     
         const dx = x2 - x1;
         const dy = y2 - y1;
         const angle = fastAtan2(dy, dx);
@@ -591,7 +630,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                   const x = canvas.width / 2 + radius * Math.cos(angle);
                   const y = canvas.height / 2 + radius * Math.sin(angle);
                   target_positions[key] = { x, y };
-                  animation_start_times[key] = now + index * stagger_time; // Stagger start time
+                  animation_start_times[key] = now + index * stagger_time;
               });
         } else if (layout_type == "spiral") {
             const num_nodes = Object.keys(nodes).length;
@@ -785,13 +824,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
         playSound(audio_element);
         
-        lastnode = node_id; // Update lastNodeId --- prevents note spamming
+        lastnode = node_id; // Update the lastNodeId --- prevents note spamming
     }
     
     
-     ///
-    ///  Define callback funcs
-   ///
+      ///
+     ///  Define callback funcs
+    ///
     
 
     canvas.addEventListener('mousemove', (event) => {
@@ -953,6 +992,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         drawAll();
         //lastnode = -1;   uncomment for node's sound to repeat on click
     });
+    
+    canvas.addEventListener('mouseleave', function(event) {
+        dragging_node = null;
+        canvas.style.cursor = "default";
+        info_div.innerHTML = '';
+        lastnode = -1;
+    });
 
     function toggleLayout() {
         if (!page_muted) playSound(tap_noise);
@@ -970,6 +1016,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function toggleSolutionPath() {
         if (!page_muted) playSound(tap_noise);
+
+        if (show_solution_path) {
+            document.getElementById('toggleSolutionPath').style.color = "#aaa";
+        } else {
+            document.getElementById('toggleSolutionPath').style.color = "#333";
+        }
       
         show_solution_path = !show_solution_path;
         drawAll();
@@ -978,10 +1030,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function toggleMuteUnmute() {
         page_muted = !page_muted;
         if (page_muted) {
-            document.getElementById('mute').style.display = "none";
-            document.getElementById('unmute').style.display = "inline-block";
+            document.getElementById("mute").style.display = "none";
+            document.getElementById("unmute").style.display = "inline-block";
         } else {
-            //snd
             playSound(tap_noise);
             document.getElementById('mute').style.display = "inline-block";
             document.getElementById('unmute').style.display = "none";
