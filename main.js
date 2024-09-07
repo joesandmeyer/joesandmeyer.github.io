@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         'water':       [true,  '#0000FF'], ///////   9 steps to inverse
         'earth':       [false, '#FFFF00'],  ///////   11 steps to inverse    /
         'metal':       [false, '#B0B0B0'],   ///////   13 steps to inverse  /
-        'emptiness':   [false, '#FFFFFF']     ///////   unreachable inverse
+        'emptiness':   [false, '#EEEEEE']     ///////   unreachable inverse
     };
 
     // Rank sizes
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             if (element_states[element]) {
                 if (element == "emptiness") {
                     legend_item.innerHTML = getSnippet('legend_element', 
-                        "#f5f5f5", "#bbb", "1px solid" + " #dddddd", element);
+                        "#FFFFFF", "#bbb", "1px solid" + "#ddd", element);
                 } else {
                     legend_item.innerHTML = getSnippet('legend_element', 
                                 "#fff", bg_clr, "1px solid" + bg_clr, element);
