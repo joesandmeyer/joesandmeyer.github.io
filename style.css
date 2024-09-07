@@ -7,6 +7,8 @@ button {
     padding: 5px 10px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
+    color: #333;
+    box-shadow: 1px 2px 1px 1px #ccc; /* Simulate uneven border on the bottom */
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
@@ -16,14 +18,19 @@ button {
 
 button:hover {
     transform: translateY(2px);
+    color: #777;
     box-shadow: none;
     background-color: #ccc;
+    box-shadow: 1px 1px 1px 1px #ccc; /* Simulate uneven border on the bottom */
+
 }
 
 button:active {
     transform: translateY(4px);
     box-shadow: none;
+    color: #fafafa;
     background-color: #777;
+    border: 1px solid #222;
 }
 
 .button-group {
@@ -104,6 +111,7 @@ button:active {
     border-radius: 8px;
     padding-right: 40px;
     padding-left: 20px;
+    z-index: 10;
 }
 
 #info hr {

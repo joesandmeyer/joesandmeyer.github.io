@@ -20,6 +20,19 @@ function fastAtan2(y, x) {
     return y < 0 ? -angle : angle;
 }
 
+function playSound(snd) {
+    try {
+        if (snd.play) {
+            snd.play().catch(e => {
+            });
+        } else {
+            throw new Error('Audio element does not support play!');
+        }
+    } catch (e) {
+        console.error('An error occurred while trying to play audio:', e);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const body = document.body;
     const canvas = document.getElementById('canvas');
@@ -58,6 +71,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         new Audio('audio/E.ogg'),
         new Audio('audio/G.ogg')
     ];
+    
+    const tap_noise = new Audio('audio/btn.ogg');
 
     let lastnode = -1; //for audio on hover
 
@@ -768,26 +783,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
         const audio_element = notes[note_index];
         
-        try {
-            // Check if the play method exists
-            if (audio_element.play) {
-                audio_element.play().catch(e => {
-                    // Handle the DOMException error
-                    
-                    //////////////////////////////////////////////
-        // <----      console.error('Playback failed:', error);     ---->
-                    ///////////
-                    // Optional: Provide user feedback or fallback action
-                    /////////////////////////////
-                    
-                });
-            } else {
-                throw new Error('Audio element does not support play!');
-            }
-        } catch (e) {
-            // Handle other errors
-            console.error('An error occurred while trying to play audio:', e);
-        }
+        playSound(audio_element);
         
         lastnode = node_id; // Update lastNodeId --- prevents note spamming
     }
@@ -959,6 +955,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     function toggleLayout() {
+        if (!page_muted) playSound(tap_noise);
+      
         if (layout_type == "grid") layout_type = "ring";
         else if (layout_type == "ring") layout_type = "spiral";
         else if (layout_type == "spiral") layout_type = "hexagram";
@@ -971,6 +969,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function toggleSolutionPath() {
+        if (!page_muted) playSound(tap_noise);
+      
         show_solution_path = !show_solution_path;
         drawAll();
     }
@@ -981,18 +981,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById('mute').style.display = "none";
             document.getElementById('unmute').style.display = "inline-block";
         } else {
+            //snd
+            playSound(tap_noise);
             document.getElementById('mute').style.display = "inline-block";
             document.getElementById('unmute').style.display = "none";
         }
     }
 
     // Ensure elements exist before adding event listeners
-    const toggle_layout_button = document.getElementById('toggleLayout');
+    const toggle_layout_btn = document.getElementById('toggleLayout');
     const toggle_solution_btn = document.getElementById('toggleSolutionPath');
     const toggle_mute_btn = document.getElementById('muteUnmute');
 
-    if (toggle_layout_button) {
-        toggle_layout_button.addEventListener('click', toggleLayout);
+    if (toggle_layout_btn) {
+        toggle_layout_btn.addEventListener('click', toggleLayout);
     }
 
     if (toggle_solution_btn) {
