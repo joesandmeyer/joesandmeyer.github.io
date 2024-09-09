@@ -3418,7 +3418,7 @@ const smData = {
     "position": "7",
     "rank": "terminus",
     "level": "3",
-    "description": "",
+    "description": "A wizened Sage,\nWell-versed in\nMagical downpour,\nDidst summon a\n<span class=\"super-bold\">Pitter-Patter</span>,\nTo drown out\nHer words\nForevermore.\n\nThusly, the House of\nRain came to be—\nA noble House\nOf quietude\nAnd tranquility.",
     "doors": [
       30,
       408,
@@ -4834,7 +4834,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
-    "description": "",
+    "description": "IN HOUSE OF RAIN   --->  GOES TO TALLEST TOWER (also house of rain, both a foundation of lapis throne)",
     "doors": [
       65,
       87,
@@ -4993,7 +4993,7 @@ const smData = {
     "position": "16",
     "rank": "foundation",
     "level": "5",
-    "description": "",
+    "description": "[GOES TO PITTER-PATTER]",
     "doors": [
       111,
       489,
@@ -5571,7 +5571,7 @@ const smData = {
     "position": "8",
     "rank": "foundation",
     "level": "3",
-    "description": "",
+    "description": "[GOES TO PITTER-PATTER]",
     "doors": [
       139,
       276,
@@ -6014,7 +6014,7 @@ const smData = {
     "position": "2",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "[AFTER PITTER-PATTER]",
     "doors": [
       132,
       146,
@@ -6598,7 +6598,7 @@ const smData = {
     "position": "14",
     "rank": "step",
     "level": "4",
-    "description": "",
+    "description": "[GOES TO PITTER-PATTER]",
     "doors": [
       191,
       313,
@@ -8309,7 +8309,7 @@ const smData = {
     "position": "1",
     "rank": "foundation",
     "level": "1",
-    "description": "'Neath lapis sky,\nStood tallest tower.\n\nTherein was once a\nSlumbering noble,\nWhom oft mumbl'd,\nThroughout the\nWitching hour.\n\nAnyone who heard the\nWords thus spake,\nFell deep into\nSleep, ne'er to\nWake.\n\nA wizened Sage,\nWell-versed in\nMagical downpour,\nDidst summon a\n<span class=\"super-bold\">Pitter-Patter</span>,\nTo drown out\nHer words\nForevermore.\n\nThusly, the House of\nRain came to be—\nA noble House\nOf quietude\nAnd tranquility.",
+    "description": "'Neath lapis sky,\nStood <span class=\"super-bold\">Tallest Tower,</span>.\n\nTherein was once a\nSlumbering noble,\nWhom oft mumbl'd,\nThroughout the\nWitching hour.\n\nAny who heard the\nWords she spake,\nFell deep into\nSleep, ne'er to\nWake.",
     "doors": [
       276
     ]
@@ -8698,7 +8698,7 @@ const smData = {
     "position": "4",
     "rank": "step",
     "level": "2",
-    "description": "",
+    "description": "[AFTER PITTER-PATTER]",
     "doors": [
       258,
       332,
@@ -9345,7 +9345,7 @@ const smData = {
     "position": "7",
     "rank": "terminus",
     "level": "3",
-    "description": "",
+    "description": "[AFTER PITTER-PATTER]",
     "doors": [
       35,
       224
@@ -9432,7 +9432,7 @@ const smData = {
     "position": "9",
     "rank": "foundation",
     "level": "3",
-    "description": "",
+    "description": "[GOES TO PITTER-PATTER]",
     "doors": [
       276,
       202,
@@ -11530,13 +11530,6 @@ In summer’s light, the dog doth leap,
 By words’ own house, where secrets sleep.  
 Lapis throne in daylight’s gleam,  
 Foundation laid in summer’s dream.  
-
-### **Bone’s End**
-**276**  
-In spring’s own grace, the ravens call,  
-By bones’ own house, where shadows fall.  
-Lapis throne in daylight’s space,  
-Terminus in spring’s embrace.  
 
 ### **Dragon’s Keep**
 **277**  
