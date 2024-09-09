@@ -61,6 +61,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var audio_cd = false; // audio cooldown to prevent speaker damage
     const audio_cooldown = 90;
     
+    let mousedown = false;
+    
     const framerate_cap = 60; // fps
     
     const notes = [
@@ -881,7 +883,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 playNoteForNode(lastnode);
             }
                 
-            if (n_id && element_states[nodes[n_id].element]) {
+            if (!mousedown && n_id && element_states[nodes[n_id].element]) {
                 const poem = highlighted_node.description;
                 
                 // Extrapolate data (e.g. house types [districts], from houses)
@@ -982,22 +984,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     canvas.addEventListener('mouseup', () => {
         canvas.style.cursor = "default";
-      
         dragging_node = null;
         drawAll();
     });
     
-    body.addEventListener('click', () => {
+    document.addEventListener('mouseup', () => {
         info_div.innerHTML = '';
+        mousedown = false;
+    });
+    
+    document.addEventListener('mousedown', () => {
         drawAll();
+        mousedown = true;
         //lastnode = -1;   uncomment for node's sound to repeat on click
     });
     
     canvas.addEventListener('mouseleave', function(event) {
         dragging_node = null;
-        canvas.style.cursor = "default";
-        info_div.innerHTML = '';
-        lastnode = -1;
+        drawAll();
     });
 
     function toggleLayout() {
