@@ -492,102 +492,163 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //
     
     const total_nodes = 512; // Total number of nodes
-    const text_string = "HELP ME"; // The text to spell out
+    const text_string = "STARMAZE"; // The text to spell out
 
-    function generateTextLayout(text) {
-        const layout = {};
-        const nodes_per_cell = Math.floor(total_nodes / (text.length * 5 * 5)); // Nodes per grid cell
-        let node_index = 0;
-        const char_spacing = 10; // Spacing between characters
-        
-        const canvas_width = 800; // Width of the canvas
-        const canvas_height = 600; // Height of the canvas
-        const char_width = 40; // Width of each character in the bitmap
-        const char_height = 40; // Height of each character in the bitmap
-        const rows = 10; // Number of rows for the grid
-        const cols = 10; // Number of columns for the grid
+   function generateTextLayout(text) {
+    const layout = {};
+    const nodes_per_cell = 2; // Nodes per grid cell, scaled for all nodes
+    console.log(nodes_per_cell);
+    let node_index = 0;
+    const char_spacing = 100; // Spacing between characters for larger text
 
-            // Mapping of characters to 5x5 bitmaps
-            const character_map = {
-                'H': [
-                    [1, 0, 1, 0, 1],
-                    [1, 0, 1, 0, 1],
-                    [1, 1, 1, 1, 1],
-                    [1, 0, 1, 0, 1],
-                    [1, 0, 1, 0, 1]
-                ],
-                'E': [
-                    [1, 1, 1, 1, 1],
-                    [1, 0, 0, 0, 0],
-                    [1, 1, 1, 1, 1],
-                    [1, 0, 0, 0, 0],
-                    [1, 1, 1, 1, 1]
-                ],
-                'L': [
-                    [1, 0, 0, 0, 0],
-                    [1, 0, 0, 0, 0],
-                    [1, 0, 0, 0, 0],
-                    [1, 0, 0, 0, 0],
-                    [1, 1, 1, 1, 1]
-                ],
-                'P': [
-                    [1, 1, 1, 1, 0],
-                    [1, 0, 0, 1, 0],
-                    [1, 1, 1, 1, 0],
-                    [1, 0, 0, 0, 0],
-                    [1, 0, 0, 0, 0]
-                ],
-                'M': [
-                    [1, 0, 0, 0, 1],
-                    [1, 1, 0, 1, 1],
-                    [1, 1, 1, 1, 1],
-                    [1, 0, 1, 0, 1],
-                    [1, 0, 0, 0, 1]
-                ],
-                ' ': [
-                    [0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0]
-                ]
-            };
+    const canvas_width = 800;
+    const canvas_height = 600;
+    const char_width = 50; // Width of each character, increased for larger words
+    const char_height = 100; // Height of each character
 
-        for (let char_index = 0; char_index < text.length; char_index++) {
-            const char = text[char_index];
-            const char_map = character_map[char];
-            const x_start = char_index * (char_width + char_spacing);
-            const y_start = 0;
+    // Mapping of characters to 5x5 bitmaps
+    const character_map = {
+    'S': [
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+    'T': [
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+    ],
+    'A': [
+        [0, 0, 0, 0, 1, 1, 1, 1, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0, 1, 1, 0],
+        [0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+        [0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+    'R': [
+        [1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+    ],
+    'M': [
+        [1, 0, 0, 1, 0, 1, 0, 0, 0, 0],
+        [1, 1, 0, 1, 1, 0, 1, 1, 0, 0],
+        [1, 0, 0, 0, 1, 0, 0, 0, 1, 0],
+        [1, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 1, 0, 0, 0, 1]
+    ],
+    'E': [
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+    'Z': [
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    ],
+    ' ': [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ]
+};
 
-            for (let row = 0; row < char_map.length; row++) {
-                for (let col = 0; col < char_map[row].length; col++) {
-                    if (char_map[row][col] === 1) {
-                        for (let n = 0; n < nodes_per_cell; n++) {
-                            if (node_index >= total_nodes) return layout;
 
-                            // Distribute nodes within each cell
-                            const x = x_start + col * (char_width / 5) + Math.random() * (char_width / 5);
-                            const y = y_start + row * (char_height / 5) + Math.random() * (char_height / 5);
 
-                            layout[node_index] = { x, y };
-                            node_index++;
-                        }
+    const x_origin = Math.ceil(canvas.width/3) - 320;
+    const y_origin = 200;
+
+    for (let char_index = 0; char_index < text.length; char_index++) {
+        const char = text[char_index];
+        const char_map = character_map[char];
+        const x_start = char_index * (char_width + char_spacing) + x_origin;
+        const y_start = y_origin;
+
+        for (let row = 0; row < char_map.length; row++) {
+            for (let col = 0; col < char_map[row].length; col++) {
+                if (char_map[row][col] === 1) {
+                    for (let n = 0; n < nodes_per_cell; n++) {
+                        if (node_index >= total_nodes) return layout;
+
+                        // Place each node sequentially, no randomness
+                        const x = x_start + col * (char_width / 5); 
+                        const y = y_start + row * (char_height / 5);
+
+                        layout[node_index] = { x, y };
+                        node_index++;
                     }
                 }
             }
         }
-
-        // If there are any remaining nodes, distribute them randomly
-        while (node_index < total_nodes) {
-            layout[node_index] = {
-                x: Math.random() * canvas_width,
-                y: Math.random() * canvas_height
-            };
-            node_index++;
-        }
-
-        return layout;
     }
+
+    // If nodes are remaining, continue assigning them in sequence at the last valid position
+    while (node_index < total_nodes) {
+        const last_x = layout[node_index - 1].x;
+        const last_y = layout[node_index - 1].y;
+        layout[node_index] = { x: last_x, y: last_y };
+        node_index++;
+    }
+
+    return layout;
+}
+
+
+
+
     
     
     
@@ -608,7 +669,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const now = performance.now(); // Get the current time
         let animation_offset = 0; // Staggering to account for invisible nodes
 
-            // Layout type handling
             if (layout_type === "text") {
                 const text_layout = generateTextLayout(text_string, total_nodes);
 
@@ -616,7 +676,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 Object.keys(nodes).forEach((key, index) => {
                     if (text_layout[index]) {
                         target_positions[key] = text_layout[index];
-                        console.log(text_layout[index].y);
                         animation_start_times[key] = now + index * stagger_time;
                     }
                 });
