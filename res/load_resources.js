@@ -12,8 +12,9 @@ const js_dirs = [
     './res/js/func.js',
     './res/json/starmaze.js',
     './res/js/init.js',
+    './res/js/obj.js',
     './res/js/layouts.js'
-]
+];
 
 let scripts_loaded = 0;
 

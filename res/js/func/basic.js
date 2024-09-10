@@ -11,6 +11,10 @@ function paddedIdToNumber(id) {
     return parseInt(id, 10); 
 }
 
+function lerp(start, end, t) {
+    return start + (end - start) * t;
+}
+
 // approximate atan2
 function fastAtan2(y, x) {
     const abs_y = Math.abs(y) + 1e-10; // Prevent division by zero
@@ -55,13 +59,4 @@ function getSnippet(key, bg, txt, border, el) {
     snip += html_snippets[key][3] + el;
     snip += html_snippets[key][4];
     return snip;
-}
-
-// helper function to check if a node overlaps with existing nodes
-function isOverlapping(x, y, radius, existing_positions) {
-    return Object.values(existing_positions).some(pos => {
-        const dx = x - pos.x;
-        const dy = y - pos.y;
-        return Math.sqrt(dx * dx + dy * dy) < radius * 2;
-    });
 }

@@ -166,6 +166,9 @@ Object.keys(element_colors).forEach(element => {
 
     // Add click event listener for toggling visibility
     legend_item.addEventListener('click', () => {
+        if (!page_muted) playSound(tap_noise); //play tap noise if page is not muted
+
+      
         if (element_states[element]) {
             if (element == "emptiness") {
                 legend_item.innerHTML = getSnippet('legend_element', 
