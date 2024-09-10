@@ -1,6 +1,36 @@
 const Node = {};
 
 ///////
+// node init
+/////
+
+// Sort nodes by ID
+const sorted_node_keys = Object.keys(nodes).sort((a, b) => {
+    return paddedIdToNumber(a) - paddedIdToNumber(b);
+});
+
+// Calculate grid dimensions
+const num_nodes = sorted_node_keys.length;
+const cols = Math.ceil(Math.sqrt(num_nodes));
+const rows = Math.ceil(num_nodes / cols);
+const cell_width = (width - 100) / cols;
+const cell_height = (height - 100) / rows;
+
+// Generate staggered grid positions for nodes
+sorted_node_keys.forEach((key, index) => {
+    const row = Math.floor(index / cols); // Determine row based on index
+    const col = index % cols;            // Determine col based on index
+    const radius = rank_sizes[nodes[key].rank] || 15;
+
+    // Calculate x and y positions
+    const x = 50 + col * cell_width;
+    const y = 50 + row * cell_height;
+
+    // Assign calculated position to node
+    positions[key] = { x, y };
+});
+
+///////
 // motion functions
 /////
 

@@ -1,5 +1,11 @@
 const Arrow = {};
 
+const solution_path = [
+    '016', '325', '484', '238',   
+    '123', '010', '344', '013',
+    '273', '027', '186', '495'
+];
+
 function drawArrows() {
     if (dragging_node) {
         const key = dragging_node;
@@ -81,43 +87,19 @@ function drawArrow(x1, y1, x2, y2, house_color, r_start, r_end) {
     ctx.fill();
 }
 
-function getHexagramLines(hex_id) {
-    return Array(6).fill(0).map((_, i) => (hex_id & (1<<i))?1:0).reverse();
-}
-
 function drawSolutionPath() {
     ctx.beginPath();
     ctx.lineWidth = 3;
-    ctx.setLineDash([5, 10]); // Create dotted line effect
-
-    ctx.strokeStyle = 'black'; // Color of the solution path
-
+    ctx.setLineDash([5, 10]); // create dotted line effect
+    ctx.strokeStyle = 'black'; // color of the solution path
     for (let i = 0; i < solution_path.length - 1; i++) {
         const start = positions[solution_path[i]];
         const end =   positions[solution_path[i + 1]];
-
         if (start && end) {
             ctx.moveTo(start.x, start.y);
             ctx.lineTo(end.x, end.y);
         }
     }
-
     ctx.stroke();
-    ctx.setLineDash([]); // Reset line dash
-}
-
-
-
-
-
-
-
-
-function enableHexagramSymbol(x, y, num) {
-    hex_positions[num] = [x, y];
-    show_hexagram_symbols = true;
-}
-
-function disableHexagramSymbols() {
-    show_hexagram_symbols = false;
+    ctx.setLineDash([]); // reset line dash
 }

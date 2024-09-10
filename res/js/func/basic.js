@@ -60,3 +60,10 @@ function getSnippet(key, bg, txt, border, el) {
     snip += html_snippets[key][4];
     return snip;
 }
+
+// console command to show node data
+function printAllPoems() {
+    Object.keys(smData).forEach(key => {
+        console.log(smData[key].description);
+    });
+};

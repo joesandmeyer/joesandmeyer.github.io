@@ -1,2 +1,2 @@
-loadScript('./res/js/obj/node.js');
-loadScript('./res/js/obj/arrow.js');
+const prefabs = ["node", "arrow", "hexagram_label", "button", "legend"];
+for (const prefab of prefabs) loadScript("./res/js/obj/" + prefab + ".js");
