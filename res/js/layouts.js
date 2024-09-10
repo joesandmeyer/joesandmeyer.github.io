@@ -1,0 +1,1 @@
+loadScript('./res/js/layouts/text.js');
