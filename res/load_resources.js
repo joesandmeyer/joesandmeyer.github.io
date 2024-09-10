@@ -25,31 +25,26 @@ function loadScriptCB() {
         loadComplete();
         return;
     }
-  
     scripts_loaded++;
-    
     // callback makes sure to load next script when previous script ends
     loadScript(js_dirs[scripts_loaded], loadScriptCB);
 }
 
-
-
 function layoutsLoaded() {
-    console.log("Layouts Loaded.");
+    //console.log("Layouts Loaded.");
     layouts_complete = true;
-    
     if (scripts_complete) {
-        console.log("Load Complete.");
+        //console.log("Load Complete.");
         const event = new CustomEvent('loadComplete', { });
         document.dispatchEvent(event);
     }
 }
 
 function loadComplete() {
+    //console.log("Objects Loaded.");
     scripts_complete = true;
-    
     if (layouts_complete) {
-        console.log("Load Complete.");
+        //onsole.log("Load Complete.");
         const event = new CustomEvent('loadComplete', { });
         document.dispatchEvent(event);
     }

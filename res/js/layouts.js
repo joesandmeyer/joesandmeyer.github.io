@@ -6,7 +6,7 @@ function loadLayout(k) {
             
             updateLayout = function (n) {
                 layout_type = layout_list[n];
-                console.log("Layout type: " + layout_type);
+                //console.log("Layout type: " + layout_type);
                 const now = performance.now(); // get the current time
                 let animation_offset = 0; // staggering to account for invisible nodes
 
@@ -16,24 +16,13 @@ function loadLayout(k) {
                     // Set positions and animation start times
                     Object.keys(nodes).forEach((key, index) => {
                         if (text_layout[index]) {
-                            target_positions[key] = text_layout[index];
-                            animation_start_times[key] = now + index * stagger_time;
+                            window.target_positions[key] = text_layout[index];
+                            window.animation_start_times[key] = now + index * stagger_time;
                         }
                     });
                 }
                 else if (layout_type == "ring") {
-                    generateRingLayout();
-                    
-                    let num_nodes = Object.keys(nodes).length;
-                    let angle_step = 2 * Math.PI / num_nodes;
-                    Object.keys(nodes).forEach((key, index) => {
-                        let angle = angle_step * index;
-                        let radius = 280;
-                        let x = canvas.width / 2 + radius * Math.cos(angle);
-                        let y = canvas.height / 2 + radius * Math.sin(angle);
-                        target_positions[key] = { x, y };
-                        animation_start_times[key] = now + index * stagger_time;
-                    });
+                    generateRingLayout(now);
                 } else if (layout_type == "spiral") {
                     generateSpiralLayout();
                     
