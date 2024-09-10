@@ -7,9 +7,8 @@ const Button = {};
 function toggleLayout() {
     if (!page_muted) playSound(tap_noise); //play "tap" sound
     layout_index = (layout_index + 1) % layout_list.length;
-    layout_type = layout_list[layout_index];
-    if (layout_type != "hexagram") disableHexagramSymbols();
-    updateLayout();
+    if (layout_list[layout_index] != "hexagram") disableHexagramSymbols();
+    updateLayout(layout_index);
 }
 
 function toggleSolutionPath() {

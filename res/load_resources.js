@@ -17,6 +17,8 @@ const js_dirs = [
 ];
 
 let scripts_loaded = 0;
+let scripts_complete = false;
+let layouts_complete = false;
 
 function loadScriptCB() {
     if (scripts_loaded >= js_dirs.length - 1) {
@@ -30,11 +32,32 @@ function loadScriptCB() {
     loadScript(js_dirs[scripts_loaded], loadScriptCB);
 }
 
-function loadComplete() {
-    console.log("Load Complete.");
-    const event = new CustomEvent('loadComplete', { });
-    document.dispatchEvent(event);
+
+
+function layoutsLoaded() {
+    console.log("Layouts Loaded.");
+    layouts_complete = true;
+    
+    if (scripts_complete) {
+        console.log("Load Complete.");
+        const event = new CustomEvent('loadComplete', { });
+        document.dispatchEvent(event);
+    }
 }
+
+function loadComplete() {
+    scripts_complete = true;
+    
+    if (layouts_complete) {
+        console.log("Load Complete.");
+        const event = new CustomEvent('loadComplete', { });
+        document.dispatchEvent(event);
+    }
+}
+
+document.addEventListener('layoutsLoaded', (event) => {
+    layoutsLoaded();
+});
 
 // load first script in the chain
 loadScript(js_dirs[0], loadScriptCB);
