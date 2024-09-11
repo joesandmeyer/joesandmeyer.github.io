@@ -1,4 +1,5 @@
 const layouts_path = "./res/js/layouts/";
+window.layout = {};
 
 function loadLayout(k) {
     loadScript(layouts_path + layout_list[k] + ".js", (n) => {
@@ -15,6 +16,8 @@ function loadLayout(k) {
                     generateRingLayout(now);
                 } else if (layout_type == "spiral") {
                     generateSpiralLayout(now);
+                } else if (layout_type == "doublespiral") {
+                  generateDoubleSpiralLayout(now);
                 } else if (layout_type == "hexagram") {
                     generateHexagramLayout(now);
                 } else { //grid layout

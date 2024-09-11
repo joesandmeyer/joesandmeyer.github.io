@@ -1,4 +1,4 @@
-const layout_list = ["grid", "ring", "spiral", "hexagram", "text"];
+const layout_list = ["grid", "ring", "spiral", "doublespiral", "hexagram", "text"];
 let updateLayout = (n) => {};
 let layout_index = 0;
 

@@ -1339,7 +1339,7 @@ const smData = {
     "position": "16",
     "rank": "seat",
     "level": "5",
-    "description": "Fleeting thoughts. I drift into <span class=\"super-bold\">Dusk’s Daydream</span>.\nAt twilight’s edge, day yields to night.\nPhantoms doth murmur in the dark,\nAnd silhouette doth stir at the peripherals of sight.",
+    "description": "Fleeting thoughts. I drift into <span class=\"super-bold\">Dusk’s Daydream</span>.\nAt twilight’s edge, day yields to night.\nPhantoms doth murmur in the dark,\nAnd silhouettes doth stir at the peripherals of sight.",
     "doors": [
       438,
       504,
