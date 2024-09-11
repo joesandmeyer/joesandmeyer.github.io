@@ -143,6 +143,20 @@ button:active {
 }
 
 #poetry {
-  white-space: pre-wrap;
-  margin-top: -5px;"
+    white-space: pre-wrap;
+    margin-top: -5px;"
+}
+
+#animation-speed {
+    position: absolute;
+    right: 42px;
+    top: 160px;
+    font-size: 18px;
+}
+
+#animation-speed input {
+    margin-top: 5px;
+    max-width: 40px;
+    caret-color: transparent;
+    font-size: 18px;
 }

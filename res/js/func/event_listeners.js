@@ -25,13 +25,14 @@ canvas.addEventListener("mousemove", (event) => {
         const mouse_x = event.clientX - rect.left;
         const mouse_y = event.clientY - rect.top;
         
-        //if (show_hexagram_symbols == true)
+        // clear additional info objects while dragging
         disableHexagramSymbols();
+        info_div.innerHTML = '';
 
         // update node position based on mouse movement
         positions[dragging_node].x = mouse_x - drag_offset_x;
         positions[dragging_node].y = mouse_y - drag_offset_y;
-
+        
         drawAll();
     } else {
         // hide references div
