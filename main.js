@@ -1,5 +1,6 @@
-const layout_list = ["grid", "ring", "spiral", "doublespiral", "hexagram", "text"];
-let updateLayout = (n) => {};
+const layout_list = ["grid", "doublespiral", "ring", "spiral", "hexagram",
+                     "text"];
+let updateLayout;
 let layout_index = 0;
 
 function startVisualizer() {

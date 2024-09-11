@@ -1,5 +1,4 @@
 const layouts_path = "./res/js/layouts/";
-window.layout = {};
 
 function loadLayout(k) {
     loadScript(layouts_path + layout_list[k] + ".js", (n) => {
@@ -25,13 +24,10 @@ function loadLayout(k) {
                 }
                 animateNodes();
             }
-            
             const event = new CustomEvent('layoutsLoaded', { });
             document.dispatchEvent(event);
-            
             return;
         }
-        
         loadLayout(k + 1);
     });
 }

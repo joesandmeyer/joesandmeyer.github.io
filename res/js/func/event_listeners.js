@@ -47,8 +47,28 @@ canvas.addEventListener("mousemove", (event) => {
 
         let highlighted_node = null;
         let highlighted_node_id = null;
+        let hexagram_hovered = false;
+        
+        if (show_hexagram_symbols) {
+        Object.keys(hex_positions).forEach(key => {
+            const x = hex_positions[key][0]; // x position of the hexagram
+            const y = hex_positions[key][1] - 54; // Adjusted y position of the hexagram
 
-        canvas.style.cursor = "grab";
+            const hexagramWidth = 40;
+            const hexagramHeight = 40;
+
+            // check if mouse is within the bounds of the hexagram rect
+            if (mouse_x >= x && mouse_x <= x + hexagramWidth &&
+                mouse_y >= y && mouse_y <= y + hexagramHeight) {
+                highlighted_node_id = key;
+
+                info_div.textContent = `\n\t\tHexagram ${key}\t\t\t\t\n\t`;
+                canvas.style.cursor = "help";
+                hexagram_hovered = true;
+            }
+        });
+
+        }
 
         Object.keys(positions).forEach(key => {
             const { x, y } = positions[key];
@@ -66,9 +86,12 @@ canvas.addEventListener("mousemove", (event) => {
             lastnode = n_id;
             playNoteForNode(lastnode);
         }
+        
+        if (hexagram_hovered) return;
             
         if (!mousedown && n_id && element_states[nodes[n_id].element]) {
             const poem = highlighted_node.description;
+            canvas.style.cursor = "grab";
             
             // Extrapolate data (e.g. house types [districts], from houses)
                 
@@ -168,6 +191,7 @@ canvas.addEventListener("mousemove", (event) => {
 
 canvas.addEventListener('mouseup', () => {
     canvas.style.cursor = "default";
+    disableHexagramSymbols();
     dragging_node = null;
     drawAll();
 });
