@@ -35,18 +35,27 @@ function toggleMuteUnmute() {
 }
 
 const input_element = document.getElementById('numberInput');
-input_element.old_val = input_element.value; 
-
+input_element.old_val = input_element.value;
 input_element.addEventListener('input', (event) => {
-  let current_val = Number(event.target.value);
-  // ignore manual text input changes
-  if (event.inputType === 'insertText' || event.inputType === 'insertFromPaste') {
+  let current_val = event.target.value;
+  const validPattern = /^(\d+(\.5)?|\.\d)$/;
+  if (validPattern.test(current_val)) {
+    current_val = Number(current_val);
+    if (current_val > 10) {
+      current_val = 10;
+    }
+    if (current_val < 0) {
+      current_val = 0;
+    }
+    window.stagger_time = 10 - current_val;
+    input_element.value = current_val;
+    input_element.old_val = current_val;
+  } else {
     event.target.value = input_element.old_val;
-    return;
   }
-  window.stagger_time = 10 - current_val; 
-  input_element.old_val = current_val;
 });
+
+
 
 // ensure elements exist before adding event listeners
 const toggle_layout_btn = document.getElementById('toggleLayout');
