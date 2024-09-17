@@ -34,7 +34,21 @@ function toggleMuteUnmute() {
     }
 }
 
-// Ensure elements exist before adding event listeners
+const input_element = document.getElementById('numberInput');
+input_element.old_val = input_element.value; 
+
+input_element.addEventListener('input', (event) => {
+  let current_val = Number(event.target.value);
+  // ignore manual text input changes
+  if (event.inputType === 'insertText' || event.inputType === 'insertFromPaste') {
+    event.target.value = input_element.old_val;
+    return;
+  }
+  window.stagger_time = 10 - current_val; 
+  input_element.old_val = current_val;
+});
+
+// ensure elements exist before adding event listeners
 const toggle_layout_btn = document.getElementById('toggleLayout');
 const toggle_solution_btn = document.getElementById('toggleSolutionPath');
 const toggle_mute_btn = document.getElementById('muteUnmute');
