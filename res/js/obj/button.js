@@ -55,8 +55,6 @@ input_element.addEventListener('input', (event) => {
   }
 });
 
-
-
 // ensure elements exist before adding event listeners
 const toggle_layout_btn = document.getElementById('toggleLayout');
 const toggle_solution_btn = document.getElementById('toggleSolutionPath');
