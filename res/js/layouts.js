@@ -16,12 +16,13 @@ function loadLayout(k) {
                 } else if (layout_type == "spiral") {
                     generateSpiralLayout(now);
                 } else if (layout_type == "doublespiral") {
-                  generateDoubleSpiralLayout(now);
+                    generateDoubleSpiralLayout(now);
                 } else if (layout_type == "hexagram") {
                     generateHexagramLayout(now);
                 } else { //grid layout
                     generateGridLayout(now);
                 }
+                window.animating = true;
                 animateNodes();
             }
             const event = new CustomEvent('layoutsLoaded', { });

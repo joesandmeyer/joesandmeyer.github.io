@@ -4,12 +4,28 @@ const Button = {};
 // functions
 /////
 
-function toggleLayout() {
-    if (!page_muted) playSound(tap_noise); //play "tap" sound
+function nextLayout() {
     layout_index = (layout_index + 1) % layout_list.length;
     if (layout_list[layout_index] != "hexagram") disableHexagramSymbols();
     updateLayout(layout_index);
 }
+
+function toggleLayout() {
+    if (!page_muted) playSound(tap_noise); //play "tap" sound
+    nextLayout();
+}
+
+const auto_anim_switch = document.getElementById('auto');
+// Add an event listener for the 'change' event
+auto_anim_switch.addEventListener('change', function() {
+    if (!page_muted) playSound(tap_noise); //play "tap" sound
+    if (this.checked) {
+        window.auto_animate = true;
+        if (!window.animating) nextLayout();
+        return;
+    }
+    window.auto_animate = false;
+});
 
 function toggleSolutionPath() {
     if (!page_muted) playSound(tap_noise);

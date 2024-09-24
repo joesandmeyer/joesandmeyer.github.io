@@ -92,6 +92,14 @@ function animateNodes(timestamp) {
 
     if (!all_nodes_reached) {
         requestAnimationFrame(animateNodes);
+    } else {
+        if (window.auto_animate) {
+            layout_index = (layout_index + 1) % layout_list.length;
+            if (layout_list[layout_index] != "hexagram") disableHexagramSymbols();
+            updateLayout(layout_index);
+        } else {
+            window.animating = false;
+        }
     }
 }
 
