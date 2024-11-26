@@ -60,8 +60,8 @@ input_element.addEventListener('input', (event) => {
     if (current_val > 10) {
       current_val = 10;
     }
-    if (current_val < 0) {
-      current_val = 0;
+    if (current_val < 0.5) {
+      current_val = 0.5;
     }
     window.stagger_time = 10 - current_val;
     input_element.value = current_val;
