@@ -1,0 +1,213 @@
+ canvas {
+    margin-top: 10px;
+    border: none;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
+    box-shadow: 1px 2px 1px 1px #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    transform: translateY(2px);
+    color: #777 !important;
+    box-shadow: none;
+    background-color: #ccc;
+    box-shadow: 1px 1px 1px 1px #ccc;
+
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+    color: #fafafa !important;
+    background-color: #777;
+    border: 1px solid #222;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    position: absolute; 
+    right: 5.5%;
+    top: 5px;
+}
+
+#muteUnmute {
+    padding-left: 14px;
+}
+
+#mute {
+    display: none;
+}
+
+#snd-pressed {
+    display: none;
+}
+
+.element-legend {
+    position: absolute;
+    top: 320px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.element-legend div {
+    margin-bottom: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.element-legend span {
+    display: inline-block;
+    width: 80px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+
+.house-legend {
+    position: absolute;
+    bottom: 130px;
+    left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100% - 40px);
+}
+
+.house-legend div {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.house-legend span {
+    display: inline-block;
+    width: 80px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+    border: none;
+}
+
+.highlight {
+    border: 2px solid black;
+}
+
+#info {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0px;
+    font-size: 12px;
+    white-space: pre-wrap;
+    overflow: auto;
+    max-width: 860px;
+    border-radius: 8px;
+    padding-right: 40px;
+    padding-left: 20px;
+    z-index: 10;
+}
+
+#info hr {
+    padding-top: 3px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+#info:hover {
+    cursor: text;
+}
+
+#info:active {
+    cursor: default;
+}
+
+.super-bold {
+    font-weight: 900;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px lightblue;
+}
+
+#poetry {
+    white-space: pre-wrap;
+    margin-top: -5px;"
+}
+
+#animation-speed {
+    position: absolute;
+    right: 42px;
+    top: 160px;
+    font-size: 18px;
+}
+
+#animation-speed input {
+    margin-top: 5px;
+    max-width: 40px;
+    caret-color: transparent;
+    font-size: 18px;
+}
+
+.toggle-switch {
+  position: absolute;
+  right: 47.5px;
+  top: 250px;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+/* Hide the default checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-switch p {
+  margin-top: -20px;
+  margin-left: 2px;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px; /* Adjust to match the new height */
+}
+/* Toggle switch handle */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+/* When checked, change the background color */
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+/* Move the toggle handle when checked */
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
