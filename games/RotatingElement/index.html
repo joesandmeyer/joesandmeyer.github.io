@@ -1,17 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Spinning Element</title>
-    <link href="style.css" rel="stylesheet"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8" />
+  <title>Spinning Element with Source View</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Highlight.js for code coloring -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background: #f9f9f9;
+      max-width: 960px;
+      margin: auto;
+    }
+    canvas {
+      display: block;
+      margin: 0 auto 2em auto;
+      border: 1px solid #ccc;
+    }
+    section {
+      margin-top: 2em;
+    }
+    pre {
+      background: #eee;
+      padding: 1em;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+    h2 {
+      margin-top: 2em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+  </style>
 </head>
 <body>
-    <canvas id="canvas" width=300 height=300></canvas>
 
-    <div></div>
-    
-    <script src="./main.js"></script>
-    
+  <canvas id="canvas" width="300" height="300"></canvas>
 
+  <!-- Source Code Display -->
+  <section>
+    <h2>HTML: index.html</h2>
+    <pre><code class="language-html" id="html-code">Loading...</code></pre>
+
+    <h2>JavaScript: main.js</h2>
+    <pre><code class="language-javascript" id="js-code">Loading...</code></pre>
+
+    <h2>CSS: style.css</h2>
+    <pre><code class="language-css" id="css-code">Loading...</code></pre>
+  </section>
+
+  <!-- Main Script -->
+  <script src="./main.js"></script>
+
+  <!-- Fetch code files as text -->
+  <script>
+    fetch('code/index.html.txt')
+      .then(res => res.text())
+      .then(text => {
+        const el = document.getElementById('html-code');
+        el.textContent = text;
+        hljs.highlightElement(el);
+      });
+
+    fetch('code/main.js.txt')
+      .then(res => res.text())
+      .then(text => {
+        const el = document.getElementById('js-code');
+        el.textContent = text;
+        hljs.highlightElement(el);
+      });
+
+    fetch('code/style.css.txt')
+      .then(res => res.text())
+      .then(text => {
+        const el = document.getElementById('css-code');
+        el.textContent = text;
+        hljs.highlightElement(el);
+      });
+  </script>
 </body>
 </html>
