@@ -70,19 +70,19 @@
         el.textContent = text;
         hljs.highlightElement(el);
       });
+      
+    fetch('code/style.css.txt')
+      .then(res => res.text())
+      .then(text => {
+        const el = document.getElementById('css-code');
+        el.textContent = text;
+        hljs.highlightElement(el);
+      });
 
     fetch('code/main.js.txt')
       .then(res => res.text())
       .then(text => {
         const el = document.getElementById('js-code');
-        el.textContent = text;
-        hljs.highlightElement(el);
-      });
-
-    fetch('code/style.css.txt')
-      .then(res => res.text())
-      .then(text => {
-        const el = document.getElementById('css-code');
         el.textContent = text;
         hljs.highlightElement(el);
       });

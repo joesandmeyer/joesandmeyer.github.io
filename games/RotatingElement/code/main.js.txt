@@ -17,7 +17,6 @@ var h;
 var r = .14;
 
 //@@@@@@@
-//diminish vars
 var period = 1   //1 = fast   //99 = slow
 var speed = .99 //.01 = fast  //.99 = slow
 //@@@@@@@
@@ -25,7 +24,7 @@ var speed = .99 //.01 = fast  //.99 = slow
 var time = setInterval(myTimer, period);
 
 // add music
-var audio = new Audio("oiiaoiia.mp3");
+var audio = new Audio("https://joesandmeyer.github.io/games/RotatingElement/oiiaoiia.mp3");
 
 var img = new Image();
 img.onload = function () {
@@ -45,11 +44,8 @@ function drawRect() {
     ctx.translate(cx, cy);
     ctx.rotate(r);
     ctx.drawImage(img, 0, 0, img.width, img.height, -w / 2, -h / 2, w, h);
-    //    ctx.fillStyle="yellow";
-    //    ctx.fillRect(-w/2,-h/2,w,h);
     ctx.restore();
 }
-
 
 function handleMouseMove(e) {
     r += 1/18.77;
