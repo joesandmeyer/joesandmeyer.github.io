@@ -1,0 +1,69 @@
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+var canvasOffset = $("#canvas").offset();
+var offsetX = canvasOffset.left;
+var offsetY = canvasOffset.top;
+
+
+var startX;
+var startY;
+var isDown = true;
+
+var cx = canvas.width / 2;
+var cy = canvas.height / 2;
+var w;
+var h;
+var r = .14;
+
+//@@@@@@@
+//diminish vars
+var period = 1   //1 = fast   //99 = slow
+var speed = .99 //.01 = fast  //.99 = slow
+//@@@@@@@
+
+var time = setInterval(myTimer, period);
+
+// add music
+var audio = new Audio("oiiaoiia.mp3");
+
+var img = new Image();
+img.onload = function () {
+    w = img.width / 2;
+    h = img.height / 2;
+    draw();
+}
+img.src = "http://i.imgur.com/bEXozBH.png";
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawRect();
+}
+
+function drawRect() {
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(r);
+    ctx.drawImage(img, 0, 0, img.width, img.height, -w / 2, -h / 2, w, h);
+    //    ctx.fillStyle="yellow";
+    //    ctx.fillRect(-w/2,-h/2,w,h);
+    ctx.restore();
+}
+
+
+function handleMouseMove(e) {
+    r += 1/18.77;
+    audio.play();
+    audio.volume = 1;
+    draw();
+}
+
+function myTimer() {
+    if (audio.volume > 0) {
+    	audio.volume *= speed;
+    }
+}
+
+$("#canvas").mousemove(function (e) {
+    handleMouseMove(e);
+});
