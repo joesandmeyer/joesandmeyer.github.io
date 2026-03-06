@@ -179,7 +179,7 @@ button:active {
   margin-top: -20px;
   margin-left: 2px;
 }
-/* The slider */
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -189,7 +189,7 @@ button:active {
   bottom: 0;
   background-color: #ccc;
   transition: 0.4s;
-  border-radius: 20px; /* Adjust to match the new height */
+  border-radius: 20px;
 }
 /* Toggle switch handle */
 .slider:before {
@@ -203,11 +203,11 @@ button:active {
   transition: 0.4s;
   border-radius: 50%;
 }
-/* When checked, change the background color */
+
 input:checked + .slider {
   background-color: #4CAF50;
 }
-/* Move the toggle handle when checked */
+
 input:checked + .slider:before {
   transform: translateX(20px);
 }

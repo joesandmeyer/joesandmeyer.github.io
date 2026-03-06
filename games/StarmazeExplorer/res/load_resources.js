@@ -3,7 +3,7 @@ function loadScript(url, onLoadCallback) {
     script.src = url;
     script.type = 'text/javascript';
     script.async = false;  // ensure the script loads in order
-    script.onload = onLoadCallback; // set the onload callback
+    script.onload = onLoadCallback;
     document.head.appendChild(script);
 }
 

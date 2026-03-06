@@ -5,7 +5,7 @@ let layout_index = 0;
 
 function startVisualizer() {
     updateLayout(layout_index); // located in layouts.js
-    drawAll(); // located in node.js
+    drawAll(); // located in script called node.js
 }
 
 // listens for custom event 'loadComplete' (located in load_resources.js)
