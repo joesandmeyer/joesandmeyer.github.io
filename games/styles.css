@@ -48,3 +48,31 @@ footer {
     background-color: #333;
     color: white;
 }
+
+.image-link {
+  width: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.image-link:hover {
+  transform: scale(1.05);
+}
+
+.image-link img {
+  width: 100%;
+  display: block;
+}
+
+.image-link p {
+  margin: 0;
+  padding: 10px;
+  background: #222;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}

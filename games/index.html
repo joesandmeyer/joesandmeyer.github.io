@@ -19,8 +19,12 @@
     
     <section id="games">
         <h1>Computer Games</h1>
-        <p>.</p>
+        <div class="image-link" data-link="https://pigrocket.itch.io/jumpland">
+            <img src="89Rpny.png" alt="Preview">
+            <p style="">Welcome to Jumpland</p>
+        </div>
         <script src="game.js"></script>
+        
     </section>
 
     <section id="external">
@@ -50,5 +54,13 @@
     <footer>
         <p>&copy; 2025 Joey Sandmeyer. All rights reserved.</p>
     </footer>
+    
+    <script>
+        document.querySelectorAll(".image-link").forEach(link => {
+            link.addEventListener("click", function () {
+                window.location.href = this.dataset.link;
+            });
+        });
+    </script>
 </body>
 </html>
