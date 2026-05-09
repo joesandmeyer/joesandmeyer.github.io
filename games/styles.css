@@ -76,3 +76,9 @@ footer {
   text-align: center;
   font-family: sans-serif;
 }
+
+#showScratch {
+  background: white;
+  width: 300px;
+  cursor: pointer;
+}

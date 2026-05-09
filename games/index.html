@@ -33,7 +33,6 @@
                 <li><a href="itch.html">pigrocket.itch.io</a></li>
                 <br>
             </ul>
-            <script src="game.js"></script>
     </section>
 
     <section id="tools">
@@ -44,6 +43,43 @@
             <li><a href="WorldmapQuiz/index.html">World Map Quiz</a></li>
             <br>
             <li><a href="RotatingElement/index.html">Rotating Element</a></li>
+            <br>
+        </ul>
+    </section>
+    
+    <section id="scratch">
+        <h1>Scratch Embeds</h1>
+        <div id="showScratch">Click me</div>
+        <div id="scratchContainer">
+            
+
+            
+        </div>
+        
+        <script>
+        document.getElementById("showScratch").addEventListener("click", () => {
+
+            const sources = ["1172281694", "1298232354", "1168567031"]
+            sources.forEach((id) => {
+                const iframe = document.createElement("iframe");
+
+                iframe.src = "https://scratch.mit.edu/projects/" + id + "/embed";
+                iframe.width = "485";
+                iframe.height = "402";
+                iframe.style.border = "none";
+                iframe.allowFullscreen = true;
+
+                document.getElementById("scratchContainer").appendChild(iframe);
+                const box = document.getElementById("showScratch").style.visibility = "hidden";
+            });
+        });
+        </script>
+    </section>
+    
+    <section id="reading">
+        <h1>Reading Lists</h1>
+        <ul>
+            <li></li>
             <br>
         </ul>
         <script src="game.js"></script>
