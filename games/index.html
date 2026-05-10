@@ -95,10 +95,11 @@
                 const title = document.createElement("p");
                 title.innerHTML = titles[currentIndex];
                 title.className = "card-title";
-                card.appendChild(title);
-
+                
                 card.appendChild(iframe);
                 container.appendChild(card);
+                card.appendChild(title);
+
                 
                 currentIndex++;
             }

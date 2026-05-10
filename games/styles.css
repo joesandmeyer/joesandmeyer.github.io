@@ -94,16 +94,21 @@ footer {
 
 #scratchContainer {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    gap: 12px;
+    overflow-y: hidden;
+    gap: 20px;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 iframe {
     padding-right: 10px;
     flex-shrink: 0;
+    position: relative;
+    flex: 0 0 auto;
 }
 
 .load-more-card {
@@ -128,5 +133,5 @@ iframe {
     text-align: center;
     font-size: 20px;
     margin: 0;
-    transform: translateY(34px);
+    transform: translateY(-396px);
 }
