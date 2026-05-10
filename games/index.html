@@ -57,10 +57,30 @@
         </div>
         
         <script>
-        document.getElementById("showScratch").addEventListener("click", () => {
+        let currentIndex = 0;
+        const batchSize = 3;
 
-            const sources = ["1172281694", "1298232354", "1168567031"]
-            sources.forEach((id) => {
+        const container = document.getElementById("scratchContainer");
+        const startButton = document.getElementById("showScratch");
+        
+        const sources = ["1172281694", "1298232354", "1168567031", 
+                         "1304409137", "1307147584", "1168567351",
+                         "1168193727"];
+                         
+        const titles = ["Connect 4", "Solar system model", "I Ching Divination",
+                        "Trigonometry Dash", "Minecraft game", "Tower Defense game", "Breakout game"];
+
+        function loadBatch() {
+
+            const oldButton = document.getElementById("loadMoreCard");
+            if (oldButton) {
+                oldButton.remove();
+            }
+
+            for (let i = 0; i < batchSize && currentIndex < sources.length; i++) {
+
+                const id = sources[currentIndex];
+
                 const iframe = document.createElement("iframe");
 
                 iframe.src = "https://scratch.mit.edu/projects/" + id + "/embed";
@@ -69,10 +89,41 @@
                 iframe.style.border = "none";
                 iframe.allowFullscreen = true;
 
-                document.getElementById("scratchContainer").appendChild(iframe);
-                const box = document.getElementById("showScratch").style.visibility = "hidden";
-            });
-        });
+                const card = document.createElement("div");
+                card.className = "card";
+                
+                const title = document.createElement("p");
+                title.innerHTML = titles[currentIndex];
+                title.className = "card-title";
+                card.appendChild(title);
+
+                card.appendChild(iframe);
+                container.appendChild(card);
+                
+                currentIndex++;
+            }
+
+            // add load-more button if more remain
+            if (currentIndex < sources.length) {
+
+                const loadMore = document.createElement("div");
+
+                loadMore.id = "loadMoreCard";
+                loadMore.className = "load-more-card";
+                loadMore.textContent = "Load More";
+
+                loadMore.addEventListener("click", loadBatch);
+
+                container.appendChild(loadMore);
+            }
+        }
+
+startButton.addEventListener("click", () => {
+
+    startButton.remove();
+
+    loadBatch();
+});
         </script>
     </section>
     
@@ -85,6 +136,8 @@
                 <li><i>Beginning Game Programming v3.0</i> (C++ / SDL)&nbsp;&nbsp;&nbsp;&nbsp; Lazy Foo' Productions&nbsp;&nbsp;&nbsp; <a href="https://lazyfoo.net/tutorials/SDL3/index.php">[link]</a></li>
                 <li><i>Lode's Computer Graphics Tutorial</i> (C++ / SDL)&nbsp;&nbsp;&nbsp;&nbsp; Lode Vandevenne&nbsp;&nbsp;&nbsp; <a href="https://lodev.org/cgtutor/index.html">[link]</a></li>
                 <li><i>The BlueJ Tutorial</i> (Java)&nbsp;&nbsp;&nbsp;&nbsp; Michael Kölling&nbsp;&nbsp;&nbsp; <a href="https://bluej.org/tutorial/tutorial-201.pdf">[link]</a></li>
+                <li><i>Programming PHP 4th Ed.</i>&nbsp;&nbsp;&nbsp;&nbsp; Kevin Tatroe and Peter MacIntyre&nbsp;&nbsp;&nbsp; ISBN: 9781492054122</a></li>
+                <li><i>Learn WebAssembly</i>&nbsp;&nbsp;&nbsp;&nbsp; Mike Rourke&nbsp;&nbsp;&nbsp; ISBN: 1788997379</a></li>
                 </ul></li>
             <br>
         </ul>
@@ -101,6 +154,23 @@
                 <li><i>Greek Mathematical Thought and the Origin of Algebra</i>&nbsp;&nbsp;&nbsp;&nbsp; Jacob Klein</li>
                 <li><i>Ruler and the Round</i>&nbsp;&nbsp;&nbsp;&nbsp; Nicholas D. Zazarinoff</li>
                 <li><i>The Mathematics of Plato's Academy</i>&nbsp;&nbsp;&nbsp;&nbsp; D.H. Fowler</li>
+                <li><i>Euclid: The Creation of Mathematics</i>&nbsp;&nbsp;&nbsp;&nbsp; Benno Artmann &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0387984232</li>
+                <li><i>Ptolemy's Almagest</i>&nbsp;&nbsp;&nbsp;&nbsp; Trans. G.J.Toomer &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 9780691002606</li>
+                <li><i>The Ancient Tradition of Geometric Problems</i>&nbsp;&nbsp;&nbsp;&nbsp; Wilbur Richard Knorr &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0486675327</li>
+                <li><i>Leonardo of Pisa and the new mathematics of the Middle Ages</i>&nbsp;&nbsp;&nbsp;&nbsp; Joseph and Frances Gies &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0317578499</li>
+                <li><i>The Man of Numbers: Fibonacci's Arithmetic Revolution</i>&nbsp;&nbsp;&nbsp;&nbsp; Keith Devlin &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0802778127</li>
+                <li><i>Ars Magna or the Rules of Algebra</i>&nbsp;&nbsp;&nbsp;&nbsp; Girolamo Cardano &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0486458733</li>
+                <li><i>The Geometry of René Descartes</i>&nbsp;&nbsp;&nbsp;&nbsp; Trans. David Eugene Smith and Marcia L. Latham &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0486600688</li>
+                <li><i>Kepler</i>&nbsp;&nbsp;&nbsp;&nbsp; John Banville &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0679743707</li>
+                <li><i>Kepler</i>&nbsp;&nbsp;&nbsp;&nbsp; Max Caspar &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0486676056</li>
+                <li><i>The Sleepwlakers</i>&nbsp;&nbsp;&nbsp;&nbsp; Arthur Koestler &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 9780140192469</li>
+                <li><i>Kepler's Physical Astronomy</i>&nbsp;&nbsp;&nbsp;&nbsp; Bruce Stephenson &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0691036527</li>
+                <li><i>Between Copernicus and Galileo</i>&nbsp;&nbsp;&nbsp;&nbsp; James M. Lattis &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0226469263</li>
+                <li><i>Epitome of Copernican Astronomy & Harmonies of the World</i>&nbsp;&nbsp;&nbsp;&nbsp; Johannes Kepler &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 2901573920369</li>
+                <li><i>Solving Kepler's Equation over Three Centuries</i>&nbsp;&nbsp;&nbsp;&nbsp; Peter Colwell &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0943396409</li>
+                <li><i>Doctor Copernicus</i>&nbsp;&nbsp;&nbsp;&nbsp; John Banville &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 1335145893</li>
+                <li><i>The Crime of Galileo</i>&nbsp;&nbsp;&nbsp;&nbsp; Giorgio de Santillana &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 0226734811</li>
+                <li><i>The Copernican Revolution</i>&nbsp;&nbsp;&nbsp;&nbsp; Thomas S. Kuhn &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 9780674171039</li>
                 
                 
                 <li><i>How to Prove It</i>&nbsp;&nbsp;&nbsp;&nbsp; Daniel J. Velleman &nbsp;&nbsp;&nbsp;&nbsp; ISBN: 9781108439534</li>

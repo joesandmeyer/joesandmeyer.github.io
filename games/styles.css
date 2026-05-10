@@ -87,3 +87,46 @@ footer {
   cursor: pointer;
   font-size: 24px;
 }
+
+#reading a {
+    color: lightblue;
+}
+
+#scratchContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    width: 100%;
+    padding: 10px;
+}
+
+iframe {
+    padding-right: 10px;
+    flex-shrink: 0;
+}
+
+.load-more-card {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 200px;
+    margin-top: 101px;
+    margin-bottom: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card-title {
+    color: Gray;
+    width: 479px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    transform: translateY(34px);
+}
