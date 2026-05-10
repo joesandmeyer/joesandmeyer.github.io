@@ -72,3 +72,9 @@ footer {
     pointer-events: none;
     opacity: .85;
 }
+
+@media (max-width: 768px) {
+  #shimeji {
+    display: none !important;
+  }
+}
