@@ -78,7 +78,12 @@ footer {
 }
 
 #showScratch {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
   background: white;
   width: 300px;
+  height: 26px;
   cursor: pointer;
+  font-size: 24px;
 }
