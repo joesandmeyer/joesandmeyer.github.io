@@ -50,42 +50,42 @@ footer {
 }
 
 .image-link {
-  width: 180px;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  cursor: pointer;
+    width: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 .image-link:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .image-link img {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 .image-link p {
-  margin: 0;
-  padding: 10px;
-  background: #222;
-  color: white;
-  text-align: center;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 10px;
+    background: #222;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 #showScratch {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  background: white;
-  width: 300px;
-  height: 26px;
-  cursor: pointer;
-  font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    background: white;
+    width: 300px;
+    height: 26px;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 #reading a {
@@ -129,9 +129,9 @@ iframe {
 
 .card-title {
     color: Gray;
-    width: 479px;
+    width: 319px;
     text-align: center;
     font-size: 20px;
     margin: 0;
-    transform: translateY(-396px);
+    transform: translateX(80px) translateY(-396px);
 }
